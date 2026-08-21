@@ -14,6 +14,8 @@ import {
   Calendar,
   Drama,
   Sparkles,
+  BookOpen,
+
   Zap,
 } from "lucide-react";
 
@@ -23,6 +25,36 @@ import { SocialButton } from "@/components/social-button";
 import { ServiceCard } from "@/components/service-card";
 import { CONTACT, PRODUCT_LINKS, SOCIAL_LINKS } from "@/lib/links";
 import kitImg from "@/assets/kit-rpg-teatro.svg";
+import mascoteAsset from "@/assets/mascote.png.asset.json";
+import ebookPacote from "@/assets/ebook-pacote.png.asset.json";
+import ebookRpg from "@/assets/ebook-rpg.jpg.asset.json";
+import ebookCriancas from "@/assets/ebook-criancas.jpg.asset.json";
+
+const ebooks = [
+  {
+    img: ebookPacote.url,
+    title: "SUPER PACOTE COMPLETO",
+    description: "Todos os 3 ebooks em um único pacote com desconto especial",
+    price: "R$ 45,90",
+    oldPrice: "R$ 69,80",
+    href: "https://go.hotmart.com/L104847133B",
+  },
+  {
+    img: ebookRpg.url,
+    title: "COMO ENSINAR TEATRO COM RPG",
+    description: "Guia completo para integrar RPG no ensino teatral",
+    price: "R$ 24,90",
+    href: "https://go.hotmart.com/I104079611H",
+  },
+  {
+    img: ebookCriancas.url,
+    title: "TEATRO PARA CRIANÇAS",
+    description: "Técnicas e atividades teatrais para crianças",
+    price: "R$ 19,90",
+    href: "https://go.hotmart.com/P86223542K",
+  },
+];
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,17 +87,24 @@ function Index() {
 
       <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Hero */}
-        <section className="flex flex-col items-center py-12 text-center">
+        <section className="flex flex-col items-center py-10 text-center">
           <div className="relative">
-            <NerdLogo className="h-36 w-auto drop-shadow-[0_0_25px_rgba(242,196,9,0.35)] md:h-44" />
-            <Sparkles className="absolute -right-4 top-0 h-6 w-6 text-gold animate-pulse" />
-            <Zap className="absolute -left-6 bottom-4 h-7 w-7 text-gold" />
+            <NerdLogo className="w-full max-w-sm rounded-3xl border border-gold/30 shadow-[0_0_50px_-15px_rgba(242,196,9,0.5)]" />
+            <Sparkles className="absolute -right-4 -top-4 h-6 w-6 animate-pulse text-gold" />
+            <Zap className="absolute -left-5 bottom-6 h-7 w-7 text-gold" />
           </div>
 
-          <h1 className="mt-6 font-heading text-5xl tracking-wide text-foreground md:text-7xl">
-            NERD <span className="text-gold">EM</span> CENA
-          </h1>
-          <p className="mt-2 font-mono text-sm uppercase tracking-widest text-gold">
+          <h1 className="sr-only">Nerd em Cena</h1>
+
+          <img
+            src={mascoteAsset.url}
+            alt="Mascote do Nerd em Cena com capa amarela e pena gigante"
+            width={520}
+            height={680}
+            className="mt-6 h-56 w-auto drop-shadow-[0_0_35px_rgba(242,196,9,0.25)] md:h-72"
+          />
+
+          <p className="mt-4 font-mono text-sm uppercase tracking-widest text-gold">
             @nerdemcenaoficial
           </p>
 
@@ -80,6 +119,7 @@ function Index() {
             <span className="font-semibold text-gold">com humor!</span>
           </p>
         </section>
+
 
         {/* Videos */}
         <section className="mt-4">
@@ -147,6 +187,61 @@ function Index() {
             </div>
           </div>
         </section>
+
+        {/* Acervo / ebooks */}
+        <section className="mt-6">
+          <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
+            <SectionTitle
+              icon={<BookOpen className="h-5 w-5" />}
+              subtitle="Nossos e-books sobre teatro, RPG e cultura pop."
+            >
+              ACERVO ORIGINAL
+            </SectionTitle>
+            <div className="grid gap-5 grid-cols-1">
+              {ebooks.map((ebook) => (
+                <a
+                  key={ebook.title}
+                  href={ebook.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col gap-4 rounded-2xl border border-gold/30 bg-black p-4 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center"
+                >
+                  <img
+                    src={ebook.img}
+                    alt={`Capa do e-book ${ebook.title}`}
+                    width={300}
+                    height={400}
+                    loading="lazy"
+                    className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-heading text-xl tracking-wide text-gold">
+                      {ebook.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {ebook.description}
+                    </p>
+                    <p className="mt-2 flex items-baseline gap-2">
+                      <span className="font-heading text-2xl text-foreground">
+                        {ebook.price}
+                      </span>
+                      {ebook.oldPrice && (
+                        <span className="text-sm text-muted-foreground line-through">
+                          {ebook.oldPrice}
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                  <div className="flex shrink-0 items-center justify-between gap-3 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+                    <span>COMPRAR</span>
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
 
         {/* Kit highlight */}
         <section className="mt-6">
