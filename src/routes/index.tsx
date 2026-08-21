@@ -85,17 +85,24 @@ function Index() {
 
       <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Hero */}
-        <section className="flex flex-col items-center py-12 text-center">
+        <section className="flex flex-col items-center py-10 text-center">
           <div className="relative">
-            <NerdLogo className="h-36 w-auto drop-shadow-[0_0_25px_rgba(242,196,9,0.35)] md:h-44" />
-            <Sparkles className="absolute -right-4 top-0 h-6 w-6 text-gold animate-pulse" />
-            <Zap className="absolute -left-6 bottom-4 h-7 w-7 text-gold" />
+            <NerdLogo className="w-full max-w-sm rounded-3xl border border-gold/30 shadow-[0_0_50px_-15px_rgba(242,196,9,0.5)]" />
+            <Sparkles className="absolute -right-4 -top-4 h-6 w-6 animate-pulse text-gold" />
+            <Zap className="absolute -left-5 bottom-6 h-7 w-7 text-gold" />
           </div>
 
-          <h1 className="mt-6 font-heading text-5xl tracking-wide text-foreground md:text-7xl">
-            NERD <span className="text-gold">EM</span> CENA
-          </h1>
-          <p className="mt-2 font-mono text-sm uppercase tracking-widest text-gold">
+          <h1 className="sr-only">Nerd em Cena</h1>
+
+          <img
+            src={mascoteAsset.url}
+            alt="Mascote do Nerd em Cena com capa amarela e pena gigante"
+            width={520}
+            height={680}
+            className="mt-6 h-56 w-auto drop-shadow-[0_0_35px_rgba(242,196,9,0.25)] md:h-72"
+          />
+
+          <p className="mt-4 font-mono text-sm uppercase tracking-widest text-gold">
             @nerdemcenaoficial
           </p>
 
@@ -110,6 +117,7 @@ function Index() {
             <span className="font-semibold text-gold">com humor!</span>
           </p>
         </section>
+
 
         {/* Videos */}
         <section className="mt-4">
