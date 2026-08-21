@@ -23,6 +23,36 @@ import { SocialButton } from "@/components/social-button";
 import { ServiceCard } from "@/components/service-card";
 import { CONTACT, PRODUCT_LINKS, SOCIAL_LINKS } from "@/lib/links";
 import kitImg from "@/assets/kit-rpg-teatro.svg";
+import mascoteAsset from "@/assets/mascote.png.asset.json";
+import ebookPacote from "@/assets/ebook-pacote.png.asset.json";
+import ebookRpg from "@/assets/ebook-rpg.jpg.asset.json";
+import ebookCriancas from "@/assets/ebook-criancas.jpg.asset.json";
+
+const ebooks = [
+  {
+    img: ebookPacote.url,
+    title: "SUPER PACOTE COMPLETO",
+    description: "Todos os 3 ebooks em um único pacote com desconto especial",
+    price: "R$ 45,90",
+    oldPrice: "R$ 69,80",
+    href: "https://go.hotmart.com/L104847133B",
+  },
+  {
+    img: ebookRpg.url,
+    title: "COMO ENSINAR TEATRO COM RPG",
+    description: "Guia completo para integrar RPG no ensino teatral",
+    price: "R$ 24,90",
+    href: "https://go.hotmart.com/I104079611H",
+  },
+  {
+    img: ebookCriancas.url,
+    title: "TEATRO PARA CRIANÇAS",
+    description: "Técnicas e atividades teatrais para crianças",
+    price: "R$ 19,90",
+    href: "https://go.hotmart.com/P86223542K",
+  },
+];
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
