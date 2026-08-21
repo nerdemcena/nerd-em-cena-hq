@@ -1,47 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
-import {
-  Instagram,
-  Youtube,
-  Music2,
-  Clapperboard,
-  Star,
-  Gift,
-  MessageCircle,
-  Mail,
-  ArrowRight,
-  Download,
-  Trophy,
-  Calendar,
-  Drama,
-  Sparkles,
-
-  Zap,
-} from "lucide-react";
+import { Instagram, MessageCircle, Mail, ArrowRight } from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
-import { SocialButton } from "@/components/social-button";
-import { ServiceCard } from "@/components/service-card";
 import { AcervoSection } from "@/components/acervo-section";
-import { CONTACT, PRODUCT_LINKS, SOCIAL_LINKS } from "@/lib/links";
-import kitImg from "@/assets/kit-rpg-teatro.svg";
-import mascoteAsset from "@/assets/mascote.png.asset.json";
-
+import { CONTACT, SOCIAL_LINKS } from "@/lib/links";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nerd em Cena — Animes, games e cultura nerd com humor" },
+      { title: "Nerd em Cena — Acervo original de teatro e RPG" },
       {
         name: "description",
         content:
-          "Nerd em Cena: animes, games, cobertura de eventos, RPG e teatro. Siga no Instagram, YouTube e TikTok.",
+          "Acervo original do Nerd em Cena: kit iniciante gratuito e e-books sobre teatro, RPG e cultura pop.",
       },
-      { property: "og:title", content: "Nerd em Cena — Animes, games e cultura nerd com humor" },
+      { property: "og:title", content: "Nerd em Cena — Acervo original de teatro e RPG" },
       {
         property: "og:description",
         content:
-          "Nerd em Cena: animes, games, cobertura de eventos, RPG e teatro. Siga no Instagram, YouTube e TikTok.",
+          "Acervo original do Nerd em Cena: kit iniciante gratuito e e-books sobre teatro, RPG e cultura pop.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,153 +36,10 @@ function Index() {
       <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
       <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
-        {/* Hero */}
-        <section className="flex flex-col items-center py-10 text-center">
-          <div className="relative">
-            <NerdLogo className="w-full max-w-sm rounded-3xl border border-gold/30 shadow-[0_0_50px_-15px_rgba(242,196,9,0.5)]" />
-            <Sparkles className="absolute -right-4 -top-4 h-6 w-6 animate-pulse text-gold" />
-            <Zap className="absolute -left-5 bottom-6 h-7 w-7 text-gold" />
-          </div>
-
-          <h1 className="sr-only">Nerd em Cena</h1>
-
-          <img
-            src={mascoteAsset.url}
-            alt="Mascote do Nerd em Cena com capa amarela e pena gigante"
-            width={520}
-            height={680}
-            className="mt-6 h-56 w-auto drop-shadow-[0_0_35px_rgba(242,196,9,0.25)] md:h-72"
-          />
-
-          <p className="mt-4 font-mono text-sm uppercase tracking-widest text-gold">
-            @nerdemcenaoficial
-          </p>
-
-          <div className="mt-6 flex items-center gap-4">
-            <SocialIcon href={SOCIAL_LINKS.instagram} icon={<Instagram className="h-5 w-5" />} label="Instagram" />
-            <SocialIcon href={SOCIAL_LINKS.youtube} icon={<Youtube className="h-5 w-5" />} label="YouTube" />
-            <SocialIcon href={SOCIAL_LINKS.tiktok} icon={<Music2 className="h-5 w-5" />} label="TikTok" />
-          </div>
-
-          <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-            Animes, games e cobertura de eventos sempre{" "}
-            <span className="font-semibold text-gold">com humor!</span>
-          </p>
-        </section>
-
-
-        {/* Videos */}
-        <section className="mt-4">
-          <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
-            <SectionTitle
-              icon={<Clapperboard className="h-5 w-5" />}
-              subtitle="Shorts, reels e momentos épicos da cultura nerd."
-            >
-              VEJA NOSSOS VÍDEOS
-            </SectionTitle>
-            <div className="grid gap-5 grid-cols-1">
-              <SocialButton
-                platform="instagram"
-                label="Instagram"
-                handle="@NerdEmCenaOficial"
-                href={SOCIAL_LINKS.instagram}
-              />
-              <SocialButton
-                platform="youtube"
-                label="YouTube Shorts"
-                handle="Nerd em Cena"
-                href={SOCIAL_LINKS.youtube}
-              />
-              <SocialButton
-                platform="tiktok"
-                label="TikTok"
-                handle="@NerdEmCenaOficial"
-                href={SOCIAL_LINKS.tiktok}
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="mt-6">
-          <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
-            <SectionTitle
-              icon={<Star className="h-5 w-5" />}
-              subtitle="Projetos, cursos e experiências para quem vive a cultura nerd."
-            >
-              TAMBÉM FAZEMOS
-            </SectionTitle>
-            <div className="grid gap-5 grid-cols-1">
-              <ServiceCard
-                icon={<Drama className="h-7 w-7" />}
-                title="TEATRO + RPG"
-                description="Cursos, materiais e projetos que misturam teatro e cultura nerd."
-                href={PRODUCT_LINKS.comoEnsinar}
-                buttonText="SAIBA MAIS"
-              />
-              <ServiceCard
-                icon={<Calendar className="h-7 w-7" />}
-                title="EVENTOS"
-                description="Cobertura, participações e experiências nos principais eventos nerds."
-                href={SOCIAL_LINKS.instagram}
-                buttonText="SAIBA MAIS"
-              />
-              <ServiceCard
-                icon={<Trophy className="h-7 w-7" />}
-                title="TORNEIOS"
-                description="Competições e projetos especiais do Nerd em Cena."
-                href="/torneios"
-                buttonText="SAIBA MAIS"
-              />
-            </div>
-          </div>
-        </section>
+        <h1 className="sr-only">Nerd em Cena — Acervo original</h1>
 
         {/* Acervo / ebooks */}
         <AcervoSection />
-
-
-
-        {/* Kit highlight */}
-        <section className="mt-6">
-          <div className="relative overflow-hidden rounded-3xl border border-gold/30 bg-gradient-to-br from-gold via-gold to-gold-muted p-6 text-black md:p-8">
-            <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full bg-black/10 blur-3xl" />
-            <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-black/10 blur-3xl" />
-            <div className="relative flex flex-col items-center gap-6 md:flex-row">
-              <div className="w-40 shrink-0 md:w-48">
-                <img
-                  src={kitImg}
-                  alt="Kit Iniciante de RPG e Teatro"
-                  width={260}
-                  height={360}
-                  className="drop-shadow-2xl"
-                />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <div className="inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1 text-sm font-semibold text-black">
-                  <Gift className="h-4 w-4" />
-                  DESTAQUE
-                </div>
-                <h2 className="mt-3 font-heading text-3xl tracking-wide md:text-4xl">
-                  KIT INICIANTE DE RPG E TEATRO
-                </h2>
-                <p className="mt-2 max-w-lg text-black/80">
-                  Quer experimentar uma atividade diferente? Baixe gratuitamente
-                  nosso Kit Iniciante!
-                </p>
-              </div>
-              <a
-                href={PRODUCT_LINKS.kitIniciante}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex shrink-0 items-center gap-2 rounded-xl bg-black px-6 py-3.5 text-sm font-bold text-gold transition-transform hover:scale-105 hover:gold-glow"
-              >
-                BAIXAR GRÁTIS
-                <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-              </a>
-            </div>
-          </div>
-        </section>
 
         {/* Contact */}
         <section className="mt-6">
@@ -262,27 +97,5 @@ function Index() {
         </footer>
       </main>
     </div>
-  );
-}
-
-function SocialIcon({
-  href,
-  icon,
-  label,
-}: {
-  href: string;
-  icon: React.ReactNode;
-  label: string;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label}
-      className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold text-black transition-transform hover:scale-110 hover:gold-glow"
-    >
-      {icon}
-    </a>
   );
 }
