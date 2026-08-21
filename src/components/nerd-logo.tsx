@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-nerd-em-cena.png";
+import logoAsset from "@/assets/logo-nerd-em-cena.png.asset.json";
 
 interface NerdLogoProps {
   className?: string;
@@ -8,10 +8,10 @@ interface NerdLogoProps {
 export function NerdLogo({ className = "h-24 w-auto", alt = "Nerd em Cena" }: NerdLogoProps) {
   return (
     <img
-      src={logo}
+      src={logoAsset.url}
       alt={alt}
-      width={512}
-      height={512}
+      width={1024}
+      height={1024}
       className={className}
     />
   );
