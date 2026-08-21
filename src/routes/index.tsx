@@ -14,6 +14,8 @@ import {
   Calendar,
   Drama,
   Sparkles,
+  BookOpen,
+
   Zap,
 } from "lucide-react";
 
