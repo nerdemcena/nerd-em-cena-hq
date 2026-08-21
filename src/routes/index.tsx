@@ -22,7 +22,7 @@ import { SectionTitle } from "@/components/section-title";
 import { SocialButton } from "@/components/social-button";
 import { ServiceCard } from "@/components/service-card";
 import { CONTACT, PRODUCT_LINKS, SOCIAL_LINKS } from "@/lib/links";
-import kitImg from "@/assets/kit-rpg-teatro.png";
+import kitImg from "@/assets/kit-rpg-teatro.svg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
