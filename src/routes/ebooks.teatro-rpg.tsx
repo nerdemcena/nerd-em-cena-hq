@@ -3,7 +3,6 @@ import {
   ArrowRight,
   BookOpen,
   Check,
-  Clock,
   Dices,
   Sparkles,
   Star,
@@ -37,13 +36,6 @@ const PACOTE_ITEMS = [
     title: "+20 Atividades de Teatro-RPG",
     description: "Exercícios rápidos para qualquer faixa etária.",
   },
-];
-
-const DORES = [
-  "A turma dispersa em 5 minutos e você perde a aula.",
-  "Você passa horas planejando e o resultado não empolga ninguém.",
-  "Falta repertório de jogos para grupos grandes e bagunceiros.",
-  "Você sabe que RPG funcionaria — mas não sabe por onde começar.",
 ];
 
 const APRENDIZADOS = [
