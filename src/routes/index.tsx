@@ -158,8 +158,8 @@ function Index() {
                 <img
                   src={kitImg}
                   alt="Kit Iniciante de RPG e Teatro"
-                  width={512}
-                  height={700}
+                  width={260}
+                  height={360}
                   className="drop-shadow-2xl"
                 />
               </div>
