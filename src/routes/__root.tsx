@@ -16,8 +16,8 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-['Bangers'] text-8xl text-gold">404</h1>
-        <h2 className="mt-4 font-['Bangers'] text-2xl text-foreground">
+        <h1 className="font-heading text-8xl text-gold">404</h1>
+        <h2 className="mt-4 font-heading text-2xl text-foreground">
           Página não encontrada
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
@@ -46,7 +46,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-['Bangers'] text-3xl tracking-wide text-foreground">
+        <h1 className="font-heading text-3xl tracking-wide text-foreground">
           Ops, algo deu errado
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
@@ -113,7 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap",
       },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],

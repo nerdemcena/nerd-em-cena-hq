@@ -31,7 +31,7 @@ export function SocialButton({ platform, label, handle, href, variant = "outline
           <Icon className="h-6 w-6" />
         </div>
         <div>
-          <p className="font-['Bangers'] text-lg tracking-wide text-gold">{label}</p>
+          <p className="font-heading text-lg tracking-wide text-gold">{label}</p>
           <p className="text-sm text-muted-foreground">{handle}</p>
         </div>
       </div>

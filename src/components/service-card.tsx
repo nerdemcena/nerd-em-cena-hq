@@ -22,7 +22,7 @@ export function ServiceCard({ icon, title, description, href, buttonText = "SAIB
           {icon}
         </div>
         <div>
-          <h3 className="font-['Bangers'] text-2xl tracking-wide">{title}</h3>
+          <h3 className="font-heading text-2xl tracking-wide">{title}</h3>
           <p className="mt-1 text-sm leading-relaxed text-black/80">{description}</p>
         </div>
       </div>

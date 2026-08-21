@@ -145,7 +145,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", "Bangers", system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
   h1,
@@ -154,7 +154,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Bangers", "Inter", system-ui, sans-serif;
+    font-family: "Anton", "Inter", system-ui, sans-serif;
     letter-spacing: 0.02em;
   }
 }

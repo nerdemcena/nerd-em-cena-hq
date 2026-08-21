@@ -62,7 +62,7 @@ function Index() {
             <Zap className="absolute -left-6 bottom-4 h-7 w-7 text-gold" />
           </div>
 
-          <h1 className="mt-6 font-['Bangers'] text-5xl tracking-wide text-foreground md:text-7xl">
+          <h1 className="mt-6 font-heading text-5xl tracking-wide text-foreground md:text-7xl">
             NERD <span className="text-gold">EM</span> CENA
           </h1>
           <p className="mt-2 font-mono text-sm uppercase tracking-widest text-gold">
@@ -168,7 +168,7 @@ function Index() {
                   <Gift className="h-4 w-4" />
                   DESTAQUE
                 </div>
-                <h2 className="mt-3 font-['Bangers'] text-3xl tracking-wide md:text-4xl">
+                <h2 className="mt-3 font-heading text-3xl tracking-wide md:text-4xl">
                   KIT INICIANTE DE RPG E TEATRO
                 </h2>
                 <p className="mt-2 max-w-lg text-black/80">
@@ -229,7 +229,7 @@ function Index() {
           <div className="flex items-center gap-3">
             <NerdLogo className="h-12 w-auto" />
             <div>
-              <p className="font-['Bangers'] text-xl tracking-wide text-foreground">
+              <p className="font-heading text-xl tracking-wide text-foreground">
                 NERD <span className="text-gold">EM</span> CENA
               </p>
               <p className="text-sm text-muted-foreground">
