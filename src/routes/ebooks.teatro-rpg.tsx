@@ -3,7 +3,6 @@ import {
   ArrowRight,
   BookOpen,
   Check,
-  Clock,
   Dices,
   Sparkles,
   Star,
@@ -37,13 +36,6 @@ const PACOTE_ITEMS = [
     title: "+20 Atividades de Teatro-RPG",
     description: "Exercícios rápidos para qualquer faixa etária.",
   },
-];
-
-const DORES = [
-  "A turma dispersa em 5 minutos e você perde a aula.",
-  "Você passa horas planejando e o resultado não empolga ninguém.",
-  "Falta repertório de jogos para grupos grandes e bagunceiros.",
-  "Você sabe que RPG funcionaria — mas não sabe por onde começar.",
 ];
 
 const APRENDIZADOS = [
@@ -108,18 +100,19 @@ function SalesPage() {
       <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
       <main className="relative mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        {/* Hero */}
+        {/* Hero — foco em pais nerds e RPGistas */}
         <section className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-10">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 text-xs font-bold tracking-widest text-gold">
             <Dices className="h-3.5 w-3.5" /> E-BOOK NERD EM CENA
           </span>
           <h1 className="mt-4 font-heading text-4xl leading-tight tracking-wide text-foreground md:text-6xl">
-            COMO ENSINAR TEATRO <span className="text-gold">COM RPG</span>
+            SEU GRUPO DE RPG <span className="text-gold">NA SALA DE AULA</span>
           </h1>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
-            O guia prático para trocar a aula que ninguém quer assistir por uma
-            aventura que a turma não quer que acabe. Método, exemplos e passo a
-            passo — do primeiro dado rolado ao aplauso final.
+            O guia prático para quem já joga RPG e quer levar essa magia para
+            crianças, adolescentes e até familiares. Transforme a mesa de
+            dados em uma aula de teatro, criatividade e colaboração que ninguém
+            quer que acabe.
           </p>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
@@ -152,33 +145,33 @@ function SalesPage() {
               </p>
             </div>
           </div>
-        </section>
 
-        {/* Dores */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
-          <SectionTitle
-            icon={<Clock className="h-5 w-5" />}
-            subtitle="Se você já viveu isso, esse material foi escrito pra você."
-          >
-            SOA FAMILIAR?
-          </SectionTitle>
-          <ul className="grid gap-3">
-            {DORES.map((d) => (
-              <li
-                key={d}
-                className="rounded-xl border border-gold/15 bg-black p-4 text-sm text-muted-foreground"
-              >
-                {d}
-              </li>
-            ))}
-          </ul>
+          {/* Teaser do pacote logo no início */}
+          <div className="mt-6 rounded-2xl border border-gold/30 bg-gold/10 p-5">
+            <div className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold text-black">
+                <Star className="h-4 w-4" />
+              </span>
+              <div>
+                <p className="font-heading text-lg tracking-wide text-foreground">
+                  Ainda mais barato levar o pacote
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  4 e-books juntos — método, aventuras prontas e atividades — por{" "}
+                  <span className="font-heading text-gold">R$ 45,90</span>{" "}
+                  <span className="text-muted-foreground line-through">R$ 69,80</span>.
+                  Veja a oferta completa mais abaixo.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* O que você aprende */}
         <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
           <SectionTitle
             icon={<Sparkles className="h-5 w-5" />}
-            subtitle="Nada de teoria solta: tudo pensado para aplicar na próxima aula."
+            subtitle="Nada de teoria solta: tudo pensado para aplicar na próxima mesa ou aula."
           >
             O QUE VOCÊ VAI DOMINAR
           </SectionTitle>
@@ -194,16 +187,16 @@ function SalesPage() {
           </ul>
         </section>
 
-        {/* Para quem é */}
+        {/* Para quem é — pais nerds e RPGistas em primeiro lugar */}
         <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
           <SectionTitle icon={<Users className="h-5 w-5" />}>
             PARA QUEM É
           </SectionTitle>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
+              "Pais nerds que jogam RPG com os filhos",
+              "Mestres de RPG que querem ensinar teatro",
               "Professores de teatro e artes",
-              "Pedagogos e coordenadores",
-              "Mestres de RPG que querem ensinar",
               "Educadores sociais e oficineiros",
             ].map((p) => (
               <div
