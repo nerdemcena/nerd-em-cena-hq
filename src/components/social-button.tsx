@@ -22,7 +22,7 @@ export function SocialButton({ platform, label, handle, href, variant = "outline
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group relative flex flex-col gap-3 rounded-2xl border border-gold/30 p-5 transition-all duration-300 hover:border-gold hover:gold-glow ${
+      className={`group relative flex flex-col gap-3 rounded-2xl border border-gold/30 p-4 transition-all duration-300 hover:border-gold hover:gold-glow sm:flex-row sm:items-center sm:justify-between sm:gap-6 ${
         variant === "solid" ? "bg-black-card" : "bg-black-card/60"
       }`}
     >
@@ -31,14 +31,15 @@ export function SocialButton({ platform, label, handle, href, variant = "outline
           <Icon className="h-6 w-6" />
         </div>
         <div>
-          <p className="font-heading text-lg tracking-wide text-gold">{label}</p>
+          <p className="font-heading text-xl tracking-wide text-gold">{label}</p>
           <p className="text-sm text-muted-foreground">{handle}</p>
         </div>
       </div>
-      <div className="mt-auto flex items-center justify-between rounded-xl bg-gold px-4 py-2.5 text-sm font-semibold text-black transition-colors group-hover:bg-gold-foreground">
+      <div className="flex shrink-0 items-center justify-between gap-3 rounded-xl bg-gold px-4 py-2.5 text-sm font-semibold text-black transition-colors group-hover:bg-gold-muted">
         <span>VER NO {label.toUpperCase()}</span>
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </div>
+
     </a>
   );
 }
