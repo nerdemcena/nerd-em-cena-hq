@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MidiakitRouteImport } from './routes/midiakit'
+import { Route as TorneiosRouteImport } from './routes/torneios'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MidiakitRoute = MidiakitRouteImport.update({
+  id: '/midiakit',
+  path: '/midiakit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TorneiosRoute = TorneiosRouteImport.update({
+  id: '/torneios',
+  path: '/torneios',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/midiakit': typeof MidiakitRoute
+  '/torneios': typeof TorneiosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/midiakit': typeof MidiakitRoute
+  '/torneios': typeof TorneiosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/midiakit': typeof MidiakitRoute
+  '/torneios': typeof TorneiosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/midiakit' | '/torneios'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/midiakit' | '/torneios'
+  id: '__root__' | '/' | '/midiakit' | '/torneios'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  MidiakitRoute: typeof MidiakitRoute
+  TorneiosRoute: typeof TorneiosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/midiakit': {
+      id: '/midiakit'
+      path: '/midiakit'
+      fullPath: '/midiakit'
+      preLoaderRoute: typeof MidiakitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/torneios': {
+      id: '/torneios'
+      path: '/torneios'
+      fullPath: '/torneios'
+      preLoaderRoute: typeof TorneiosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  MidiakitRoute: MidiakitRoute,
+  TorneiosRoute: TorneiosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
