@@ -60,7 +60,7 @@ function Torneios() {
             </div>
           </div>
 
-          <h1 className="mt-8 font-['Bangers'] text-5xl tracking-wide text-gold md:text-7xl">
+          <h1 className="mt-8 font-heading text-5xl tracking-wide text-gold md:text-7xl">
             EM BREVE
           </h1>
           <p className="mt-3 text-xl font-semibold text-foreground md:text-2xl">

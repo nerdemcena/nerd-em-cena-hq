@@ -67,7 +67,7 @@ function MidiaKit() {
 
         <header className="mt-8 flex flex-col items-center text-center">
           <NerdLogo className="h-28 w-auto drop-shadow-[0_0_25px_rgba(242,196,9,0.35)] md:h-36" />
-          <h1 className="mt-4 font-['Bangers'] text-4xl tracking-wide md:text-6xl">
+          <h1 className="mt-4 font-heading text-4xl tracking-wide md:text-6xl">
             MÍDIA KIT
           </h1>
           <p className="mt-2 max-w-xl text-muted-foreground">
@@ -80,7 +80,7 @@ function MidiaKit() {
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
             <div className="mb-6 flex items-center gap-3">
               <BarChart3 className="h-6 w-6 text-gold" />
-              <h2 className="font-['Bangers'] text-2xl tracking-wide md:text-3xl">
+              <h2 className="font-heading text-2xl tracking-wide md:text-3xl">
                 NÚMEROS
               </h2>
             </div>
@@ -91,7 +91,7 @@ function MidiaKit() {
                   className="rounded-2xl border border-gold/30 bg-black p-5 text-center transition-transform hover:-translate-y-1"
                 >
                   <stat.icon className="mx-auto h-7 w-7 text-gold" />
-                  <p className="mt-3 font-['Bangers'] text-3xl text-gold md:text-4xl">
+                  <p className="mt-3 font-heading text-3xl text-gold md:text-4xl">
                     {stat.value}
                   </p>
                   <p className="mt-1 font-semibold text-foreground">{stat.label}</p>
@@ -106,7 +106,7 @@ function MidiaKit() {
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
             <div className="mb-4 flex items-center gap-3">
               <Users className="h-6 w-6 text-gold" />
-              <h2 className="font-['Bangers'] text-2xl tracking-wide">PÚBLICO</h2>
+              <h2 className="font-heading text-2xl tracking-wide">PÚBLICO</h2>
             </div>
             <ul className="space-y-3">
               {audiences.map((item) => (
@@ -121,7 +121,7 @@ function MidiaKit() {
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
             <div className="mb-4 flex items-center gap-3">
               <Heart className="h-6 w-6 text-gold" />
-              <h2 className="font-['Bangers'] text-2xl tracking-wide">PARCERIAS</h2>
+              <h2 className="font-heading text-2xl tracking-wide">PARCERIAS</h2>
             </div>
             <ul className="space-y-3">
               {partnerships.map((item) => (
@@ -138,7 +138,7 @@ function MidiaKit() {
           <div className="rounded-3xl border border-gold/30 bg-gradient-to-br from-gold via-gold to-gold-muted p-6 text-black md:p-8">
             <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
               <div className="flex-1">
-                <h2 className="font-['Bangers'] text-2xl tracking-wide md:text-3xl">
+                <h2 className="font-heading text-2xl tracking-wide md:text-3xl">
                   QUER FECHAR UMA PARCERIA?
                 </h2>
                 <p className="mt-1 text-black/80">
