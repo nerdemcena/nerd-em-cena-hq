@@ -10,7 +10,11 @@ export const PRODUCT_LINKS = {
   comoEnsinar: "https://teatrorpg-anb2pr9e.manus.space",
   pergaminho: "https://go.hotmart.com/P86223542K",
   cupom: "https://go.hotmart.com/P86223542K",
+  pacoteCompleto: "https://go.hotmart.com/L104847133B",
+  ensinarTeatroRpg: "https://go.hotmart.com/I104079611H",
+  teatroCriancas: "https://go.hotmart.com/P86223542K",
 };
+
 
 export const CONTACT = {
   email: "mailto:contato.nerdemcena@gmail.com",
