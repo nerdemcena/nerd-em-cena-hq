@@ -53,7 +53,7 @@ function Index() {
       <div className="pointer-events-none fixed inset-0 stars" />
       <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
-      <main className="relative mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+      <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Hero */}
         <section className="flex flex-col items-center py-12 text-center">
           <div className="relative">
@@ -90,7 +90,7 @@ function Index() {
             >
               VEJA NOSSOS VÍDEOS
             </SectionTitle>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 grid-cols-1">
               <SocialButton
                 platform="instagram"
                 label="Instagram"
@@ -122,7 +122,7 @@ function Index() {
             >
               TAMBÉM FAZEMOS
             </SectionTitle>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 grid-cols-1">
               <ServiceCard
                 icon={<Drama className="h-7 w-7" />}
                 title="TEATRO + RPG"

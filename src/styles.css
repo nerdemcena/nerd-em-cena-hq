@@ -74,13 +74,13 @@
   --popover: oklch(0.1 0.02 260);
   --popover-foreground: oklch(0.98 0.005 260);
 
-  --primary: oklch(0.75 0.18 85);
+  --primary: oklch(0.83 0.17 88);
   --primary-foreground: oklch(0.05 0.01 260);
   --secondary: oklch(0.18 0.02 260);
   --secondary-foreground: oklch(0.98 0.005 260);
   --muted: oklch(0.18 0.02 260);
   --muted-foreground: oklch(0.65 0.03 260);
-  --accent: oklch(0.75 0.18 85);
+  --accent: oklch(0.83 0.17 88);
   --accent-foreground: oklch(0.05 0.01 260);
   --destructive: oklch(0.57 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.005 260);
@@ -88,7 +88,7 @@
   --input: oklch(0.2 0.02 260);
   --ring: oklch(0.75 0.18 85);
 
-  --gold: oklch(0.75 0.18 85);
+  --gold: oklch(0.83 0.17 88);
   --gold-foreground: oklch(0.05 0.01 260);
   --black: oklch(0.05 0.01 260);
   --black-soft: oklch(0.08 0.02 260);
@@ -118,13 +118,13 @@
   --card-foreground: oklch(0.98 0.005 260);
   --popover: oklch(0.1 0.02 260);
   --popover-foreground: oklch(0.98 0.005 260);
-  --primary: oklch(0.75 0.18 85);
+  --primary: oklch(0.83 0.17 88);
   --primary-foreground: oklch(0.05 0.01 260);
   --secondary: oklch(0.18 0.02 260);
   --secondary-foreground: oklch(0.98 0.005 260);
   --muted: oklch(0.18 0.02 260);
   --muted-foreground: oklch(0.65 0.03 260);
-  --accent: oklch(0.75 0.18 85);
+  --accent: oklch(0.83 0.17 88);
   --accent-foreground: oklch(0.05 0.01 260);
   --destructive: oklch(0.7 0.19 22.216);
   --destructive-foreground: oklch(0.98 0.005 260);
@@ -175,4 +175,10 @@
   background-image: radial-gradient(circle, var(--color-gold) 1px, transparent 1px);
   background-size: 3rem 3rem;
   opacity: 0.12;
+}
+
+/* Heading font utility */
+@utility font-heading {
+  font-family: "Anton", "Inter", system-ui, sans-serif;
+  letter-spacing: 0.01em;
 }
