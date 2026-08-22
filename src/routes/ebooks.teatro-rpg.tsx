@@ -100,13 +100,13 @@ function SalesPage() {
       <div className="pointer-events-none fixed inset-0 stars" />
       <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
-      <main className="relative mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <main className="relative mx-auto max-w-3xl px-3 py-6 sm:px-6 sm:py-8">
         {/* Hero — foco em pais nerds e RPGistas */}
-        <section className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-10">
+        <section className="rounded-3xl border border-gold/20 bg-black-card/50 p-5 backdrop-blur-sm sm:p-6 md:p-10">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 text-xs font-bold tracking-widest text-gold">
             <Dices className="h-3.5 w-3.5" /> E-BOOK NERD EM CENA
           </span>
-          <h1 className="mt-4 font-heading text-4xl leading-tight tracking-wide text-foreground md:text-6xl">
+          <h1 className="mt-4 font-heading text-3xl leading-[1.05] tracking-wide text-foreground sm:text-4xl md:text-6xl">
             SEU GRUPO DE RPG <span className="text-gold">NA SALA DE AULA</span>
           </h1>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
@@ -122,15 +122,17 @@ function SalesPage() {
               alt="Capa do e-book Como Ensinar Teatro com RPG"
               width={300}
               height={400}
-              className="h-48 w-auto self-center rounded-xl object-contain"
+              className="h-44 w-auto self-center rounded-xl object-contain sm:h-48"
             />
-            <div className="flex-1">
-              <p className="flex items-baseline gap-2">
-                <span className="font-heading text-4xl text-gold">R$ 24,90</span>
-                <span className="text-sm text-muted-foreground">
+            <div className="min-w-0 flex-1">
+              <div className="flex flex-col items-center gap-1 sm:items-start">
+                <span className="font-heading text-4xl leading-none text-gold">
+                  R$ 24,90
+                </span>
+                <span className="text-xs text-muted-foreground sm:text-sm">
                   pagamento único · acesso imediato
                 </span>
-              </p>
+              </div>
               <a
                 href={CHECKOUT_UNICO}
                 target="_blank"
@@ -159,15 +161,20 @@ function SalesPage() {
                 <Book className="absolute -left-0.5 top-0.5 h-5 w-5 rotate-[-8deg] opacity-60" />
                 <BookOpen className="relative h-6 w-6" />
               </span>
-              <div className="flex-1">
-                <p className="font-heading text-sm tracking-wide text-foreground">
+              <div className="min-w-0 flex-1">
+                <p className="font-heading text-sm leading-snug tracking-wide text-foreground">
                   Ainda mais barato levando o Pacote Completo
                 </p>
-                <p className="text-xs text-muted-foreground">
-                  4 e-books por{" "}
-                  <span className="font-heading text-gold">R$ 45,90</span>{" "}
-                  <span className="line-through">R$ 69,80</span> · ver oferta
-                  <ArrowRight className="ml-1 inline h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground">
+                  <span>
+                    4 e-books por{" "}
+                    <span className="font-heading text-gold">R$ 45,90</span>
+                  </span>
+                  <span className="line-through">R$ 69,80</span>
+                  <span className="inline-flex items-center whitespace-nowrap text-gold">
+                    · ver oferta
+                    <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                  </span>
                 </p>
               </div>
             </div>
@@ -175,7 +182,7 @@ function SalesPage() {
         </section>
 
         {/* O que você aprende */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
+        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
           <SectionTitle
             icon={<Sparkles className="h-5 w-5" />}
             subtitle="Nada de teoria solta: tudo pensado para aplicar na próxima mesa ou aula."
@@ -195,7 +202,7 @@ function SalesPage() {
         </section>
 
         {/* Para quem é — pais nerds e RPGistas em primeiro lugar */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
+        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
           <SectionTitle icon={<Users className="h-5 w-5" />}>
             PARA QUEM É
           </SectionTitle>
@@ -218,11 +225,11 @@ function SalesPage() {
 
         {/* Oferta do pacote — destaque */}
         <section className="mt-8">
-          <div className="relative overflow-hidden rounded-3xl border-2 border-gold bg-black-card p-6 gold-glow md:p-10">
+          <div className="relative overflow-hidden rounded-3xl border-2 border-gold bg-black-card p-5 gold-glow sm:p-6 md:p-10">
             <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold tracking-widest text-black">
               <Star className="h-3.5 w-3.5" /> ESCOLHA INTELIGENTE
             </span>
-            <h2 className="mt-4 font-heading text-3xl tracking-wide text-gold md:text-5xl">
+            <h2 className="mt-4 font-heading text-2xl leading-tight tracking-wide text-gold sm:text-3xl md:text-5xl">
               LEVE O PACOTE COMPLETO
             </h2>
             <p className="mt-3 text-sm text-muted-foreground md:text-base">
@@ -237,9 +244,9 @@ function SalesPage() {
                 alt="Capa do Super Pacote com 4 e-books de Teatro-RPG"
                 width={400}
                 height={400}
-                className="h-48 w-auto self-center rounded-xl object-contain"
+                className="h-44 w-auto self-center rounded-xl object-contain sm:h-48"
               />
-              <ul className="flex-1 grid gap-3">
+              <ul className="grid min-w-0 flex-1 gap-3">
                 {PACOTE_ITEMS.map((item) => (
                   <li key={item.title} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold text-black">
@@ -262,7 +269,7 @@ function SalesPage() {
                 <span className="text-sm text-muted-foreground line-through">
                   R$ 69,80
                 </span>
-                <span className="font-heading text-4xl text-gold md:text-5xl">
+                <span className="font-heading text-3xl text-gold sm:text-4xl md:text-5xl">
                   R$ 45,90
                 </span>
                 <span className="rounded-full bg-gold px-2.5 py-1 text-xs font-bold text-black">
@@ -297,7 +304,7 @@ function SalesPage() {
         </section>
 
         {/* FAQ simples */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
+        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
           <SectionTitle icon={<Dices className="h-5 w-5" />}>
             PERGUNTAS RÁPIDAS
           </SectionTitle>
