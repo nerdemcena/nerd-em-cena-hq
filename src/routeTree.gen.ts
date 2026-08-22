@@ -10,23 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as MidiakitRouteImport } from './routes/midiakit'
-import { Route as TorneiosRouteImport } from './routes/torneios'
 import { Route as EbooksTeatroRpgRouteImport } from './routes/ebooks.teatro-rpg'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MidiakitRoute = MidiakitRouteImport.update({
-  id: '/midiakit',
-  path: '/midiakit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TorneiosRoute = TorneiosRouteImport.update({
-  id: '/torneios',
-  path: '/torneios',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EbooksTeatroRpgRoute = EbooksTeatroRpgRouteImport.update({
@@ -37,35 +25,27 @@ const EbooksTeatroRpgRoute = EbooksTeatroRpgRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/midiakit': typeof MidiakitRoute
-  '/torneios': typeof TorneiosRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/midiakit': typeof MidiakitRoute
-  '/torneios': typeof TorneiosRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/midiakit': typeof MidiakitRoute
-  '/torneios': typeof TorneiosRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/midiakit' | '/torneios' | '/ebooks/teatro-rpg'
+  fullPaths: '/' | '/ebooks/teatro-rpg'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/midiakit' | '/torneios' | '/ebooks/teatro-rpg'
-  id: '__root__' | '/' | '/midiakit' | '/torneios' | '/ebooks/teatro-rpg'
+  to: '/' | '/ebooks/teatro-rpg'
+  id: '__root__' | '/' | '/ebooks/teatro-rpg'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  MidiakitRoute: typeof MidiakitRoute
-  TorneiosRoute: typeof TorneiosRoute
   EbooksTeatroRpgRoute: typeof EbooksTeatroRpgRoute
 }
 
@@ -76,20 +56,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/midiakit': {
-      id: '/midiakit'
-      path: '/midiakit'
-      fullPath: '/midiakit'
-      preLoaderRoute: typeof MidiakitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/torneios': {
-      id: '/torneios'
-      path: '/torneios'
-      fullPath: '/torneios'
-      preLoaderRoute: typeof TorneiosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ebooks/teatro-rpg': {
@@ -104,8 +70,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  MidiakitRoute: MidiakitRoute,
-  TorneiosRoute: TorneiosRoute,
   EbooksTeatroRpgRoute: EbooksTeatroRpgRoute,
 }
 export const routeTree = rootRouteImport
