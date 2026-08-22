@@ -66,10 +66,17 @@ function Index() {
                 </a>
                 <a
                   href={CONTACT.email}
-                  className="group inline-flex items-center justify-center gap-2 rounded-xl border border-gold px-6 py-3.5 text-sm font-bold text-gold transition-colors hover:bg-gold/10"
+                  className="group inline-flex items-center gap-3 rounded-xl border border-gold/60 bg-gold/5 px-5 py-3 text-left transition-colors hover:border-gold hover:bg-gold/10"
                 >
-                  <Mail className="h-4 w-4" />
-                  E-MAIL
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold text-black">
+                    <Mail className="h-4 w-4" />
+                  </span>
+                  <span className="flex flex-col">
+                    <span className="font-heading text-xs tracking-widest text-gold">E-MAIL</span>
+                    <span className="text-sm font-medium text-foreground break-all">
+                      {CONTACT.emailAddress}
+                    </span>
+                  </span>
                 </a>
               </div>
             </div>
