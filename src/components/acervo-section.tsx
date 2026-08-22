@@ -53,7 +53,7 @@ export const ACERVO_ITEMS: AcervoItem[] = [
 export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }) {
   return (
     <section className="mt-6">
-      <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-6 backdrop-blur-sm md:p-8">
+      <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
         <SectionTitle
           icon={<BookOpen className="h-5 w-5" />}
           subtitle="Nossos e-books sobre teatro, RPG e cultura pop."
@@ -64,7 +64,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
           {items.map((item) => {
             const isInternal = item.href.startsWith("/");
             const cardClass =
-              "group flex flex-col gap-4 rounded-2xl border border-gold/30 bg-black p-4 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center";
+              "group flex flex-col gap-3 rounded-2xl border border-gold/30 bg-black p-3 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center sm:gap-4 sm:p-4";
             const inner = (
               <>
               <img
@@ -75,10 +75,10 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                 loading="lazy"
                 className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
               />
-              <div className="flex-1">
-                <h3 className="font-heading text-xl tracking-wide text-gold">{item.title}</h3>
+              <div className="min-w-0 flex-1 text-center sm:text-left">
+                <h3 className="font-heading text-lg leading-tight tracking-wide text-gold sm:text-xl">{item.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
-                <p className="mt-2 flex items-baseline gap-2">
+                <p className="mt-2 flex flex-wrap items-baseline justify-center gap-2 sm:justify-start">
                   <span className="font-heading text-2xl text-foreground">{item.price}</span>
                   {item.oldPrice && (
                     <span className="text-sm text-muted-foreground line-through">
@@ -87,7 +87,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                   )}
                 </p>
               </div>
-              <div className="flex shrink-0 items-center justify-between gap-3 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+              <div className="flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
                 <span>{item.cta ?? "COMPRAR"}</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </div>
