@@ -1,4 +1,5 @@
 import { ArrowRight, BookOpen } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 import { SectionTitle } from "@/components/section-title";
 import kitCapa from "@/assets/kit-iniciante-capa.jpg.asset.json";
@@ -30,14 +31,14 @@ export const ACERVO_ITEMS: AcervoItem[] = [
     title: "COMO ENSINAR TEATRO COM RPG",
     description: "Guia completo para integrar RPG no ensino teatral",
     price: "R$ 24,90",
-    href: "https://go.hotmart.com/I104079611H",
+    href: "/ebooks/teatro-rpg",
   },
   {
     img: ebookCriancas.url,
     title: "TEATRO PARA CRIANÇAS",
     description: "Técnicas e atividades teatrais para crianças",
     price: "R$ 19,90",
-    href: "https://go.hotmart.com/P86223542K",
+    href: "https://hotmart.com/pt-br/marketplace/produtos/como-ensinar-teatro-para-criancas/P86223542K?sck=HOTMART_PRODUCT_PAGE",
   },
   {
     img: ebookPacote.url,
@@ -60,14 +61,12 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
           ACERVO ORIGINAL
         </SectionTitle>
         <div className="grid grid-cols-1 gap-5">
-          {items.map((item) => (
-            <a
-              key={item.title}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col gap-4 rounded-2xl border border-gold/30 bg-black p-4 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center"
-            >
+          {items.map((item) => {
+            const isInternal = item.href.startsWith("/");
+            const cardClass =
+              "group flex flex-col gap-4 rounded-2xl border border-gold/30 bg-black p-4 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center";
+            const inner = (
+              <>
               <img
                 src={item.img}
                 alt={`Capa do e-book ${item.title}`}
@@ -92,8 +91,24 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                 <span>{item.cta ?? "COMPRAR"}</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </div>
-            </a>
-          ))}
+              </>
+            );
+            return isInternal ? (
+              <Link key={item.title} to={item.href} className={cardClass}>
+                {inner}
+              </Link>
+            ) : (
+              <a
+                key={item.title}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cardClass}
+              >
+                {inner}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
