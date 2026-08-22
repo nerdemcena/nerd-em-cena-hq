@@ -148,24 +148,30 @@ function SalesPage() {
           </div>
 
           {/* Teaser do pacote logo no início */}
-          <div className="mt-6 rounded-2xl border border-gold/30 bg-gold/10 p-5">
-            <div className="flex items-start gap-3">
-              <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold text-black">
-                <Star className="h-4 w-4" />
+          <a
+            href={CHECKOUT_PACOTE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-6 block rounded-2xl border border-gold/30 bg-gold/10 p-4 transition-colors hover:bg-gold/20"
+          >
+            <div className="flex items-center gap-3">
+              <span className="relative flex h-10 w-10 shrink-0 items-center justify-center text-gold">
+                <Book className="absolute -left-0.5 top-0.5 h-5 w-5 rotate-[-8deg] opacity-60" />
+                <BookOpen className="relative h-6 w-6" />
               </span>
-              <div>
-                <p className="font-heading text-lg tracking-wide text-foreground">
-                  Ainda mais barato levar o pacote
+              <div className="flex-1">
+                <p className="font-heading text-sm tracking-wide text-foreground">
+                  Ainda mais barato levando o Pacote Completo
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  4 e-books juntos — método, aventuras prontas e atividades — por{" "}
+                <p className="text-xs text-muted-foreground">
+                  4 e-books por{" "}
                   <span className="font-heading text-gold">R$ 45,90</span>{" "}
-                  <span className="text-muted-foreground line-through">R$ 69,80</span>.
-                  Veja a oferta completa mais abaixo.
+                  <span className="line-through">R$ 69,80</span> · ver oferta
+                  <ArrowRight className="ml-1 inline h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                 </p>
               </div>
             </div>
-          </div>
+          </a>
         </section>
 
         {/* O que você aprende */}
