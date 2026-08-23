@@ -88,7 +88,7 @@ function Index() {
         {/* Footer */}
         <footer className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gold/20 py-8 sm:flex-row">
           <div className="flex items-center gap-3">
-            <NerdLogo className="h-12 w-auto" />
+            <NerdLogo className="h-12 w-auto rounded-full" />
             <div>
               <p className="font-heading text-xl tracking-wide text-foreground">
                 NERD <span className="text-gold">EM</span> CENA
