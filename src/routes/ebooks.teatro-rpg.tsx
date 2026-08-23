@@ -107,13 +107,10 @@ function SalesPage() {
             <Dices className="h-3.5 w-3.5" /> E-BOOK NERD EM CENA
           </span>
           <h1 className="mt-4 font-heading text-3xl leading-[1.05] tracking-wide text-foreground sm:text-4xl md:text-6xl">
-            SEU GRUPO DE RPG <span className="text-gold">NA SALA DE AULA</span>
+            RPG SEMPRE FOI UM JOGO DE <span className="text-gold">INTERPRETAR</span>
           </h1>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
-            O guia prático para quem já joga RPG e quer levar essa magia para
-            crianças, adolescentes e até familiares. Transforme a mesa de
-            dados em uma aula de teatro, criatividade e colaboração que ninguém
-            quer que acabe.
+            E com esse guia completo, você vai transformar a diversão da mesa em teatro, criatividade e colaboração que ninguém quer que acabe.
           </p>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
@@ -130,7 +127,7 @@ function SalesPage() {
                   R$ 24,90
                 </span>
                 <span className="text-xs text-muted-foreground sm:text-sm">
-                  pagamento único · acesso imediato
+                  pagamento único • acesso imediato
                 </span>
               </div>
               <a
@@ -235,7 +232,7 @@ function SalesPage() {
             <p className="mt-3 text-sm text-muted-foreground md:text-base">
               Por menos de R$ 21 a mais você não leva só o método — leva a
               biblioteca inteira: <strong className="text-foreground">4 e-books</strong>{" "}
-              com aventuras e atividades prontas para o ano letivo todo.
+              com aventuras e atividades prontas para começar agora mesmo.
             </p>
 
             <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
@@ -286,7 +283,7 @@ function SalesPage() {
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
               <p className="mt-3 text-center text-xs text-muted-foreground">
-                Acesso imediato · Pagamento seguro Hotmart · 7 dias de garantia
+                Acesso imediato • Pagamento seguro Hotmart • 7 dias de garantia
               </p>
             </div>
 
