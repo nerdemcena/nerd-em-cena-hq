@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KitInicianteRouteImport } from './routes/kit-iniciante'
 import { Route as EbooksTeatroRpgRouteImport } from './routes/ebooks.teatro-rpg'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KitInicianteRoute = KitInicianteRouteImport.update({
+  id: '/kit-iniciante',
+  path: '/kit-iniciante',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EbooksTeatroRpgRoute = EbooksTeatroRpgRouteImport.update({
@@ -25,27 +31,31 @@ const EbooksTeatroRpgRoute = EbooksTeatroRpgRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kit-iniciante': typeof KitInicianteRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kit-iniciante': typeof KitInicianteRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kit-iniciante': typeof KitInicianteRoute
   '/ebooks/teatro-rpg': typeof EbooksTeatroRpgRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/ebooks/teatro-rpg'
+  fullPaths: '/' | '/kit-iniciante' | '/ebooks/teatro-rpg'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ebooks/teatro-rpg'
-  id: '__root__' | '/' | '/ebooks/teatro-rpg'
+  to: '/' | '/kit-iniciante' | '/ebooks/teatro-rpg'
+  id: '__root__' | '/' | '/kit-iniciante' | '/ebooks/teatro-rpg'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KitInicianteRoute: typeof KitInicianteRoute
   EbooksTeatroRpgRoute: typeof EbooksTeatroRpgRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kit-iniciante': {
+      id: '/kit-iniciante'
+      path: '/kit-iniciante'
+      fullPath: '/kit-iniciante'
+      preLoaderRoute: typeof KitInicianteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ebooks/teatro-rpg': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KitInicianteRoute: KitInicianteRoute,
   EbooksTeatroRpgRoute: EbooksTeatroRpgRoute,
 }
 export const routeTree = rootRouteImport
