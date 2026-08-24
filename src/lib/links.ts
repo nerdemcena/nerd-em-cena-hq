@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
 };
 
 export const PRODUCT_LINKS = {
-  kitIniciante: "https://teatrorpg-ax9kfudz.manus.space/",
+  kitIniciante: "/kit-iniciante",
   comoEnsinar: "https://teatrorpg-anb2pr9e.manus.space",
   pergaminho: "https://go.hotmart.com/P86223542K",
   cupom: "https://go.hotmart.com/P86223542K",

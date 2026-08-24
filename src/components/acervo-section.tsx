@@ -23,7 +23,7 @@ export const ACERVO_ITEMS: AcervoItem[] = [
     title: "KIT INICIANTE TEATRO-RPG",
     description: "Material introdutório para começar a unir teatro e RPG hoje mesmo",
     price: "GRÁTIS",
-    href: "https://teatrorpg-ax9kfudz.manus.space/",
+    href: "/kit-iniciante",
     cta: "BAIXAR",
   },
   {
