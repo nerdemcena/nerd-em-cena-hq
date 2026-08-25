@@ -1,10 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Instagram, MessageCircle, Mail, ArrowRight } from "lucide-react";
+import { Instagram, Youtube, Music2, MessageCircle, Mail, ArrowRight, Clapperboard } from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
+import { SocialButton } from "@/components/social-button";
 import { AcervoSection } from "@/components/acervo-section";
 import { CONTACT, SOCIAL_LINKS } from "@/lib/links";
+import mascoteAsset from "@/assets/mascote.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +39,90 @@ function Index() {
 
       <main className="relative mx-auto max-w-2xl px-3 py-6 sm:px-6 sm:py-8 lg:px-8">
         <h1 className="sr-only">Nerd em Cena — Acervo original</h1>
+
+        {/* Hero: logo pequeno + texto com mascote à direita */}
+        <header className="flex flex-col items-center">
+          <NerdLogo className="h-20 w-20 rounded-full gold-glow sm:h-24 sm:w-24" />
+          <div className="mt-5 flex w-full items-center gap-4">
+            <div className="min-w-0 flex-1 text-left">
+              <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
+                @NERDEMCENAOFICIAL
+              </p>
+              <div className="mt-3 flex gap-3">
+                <a
+                  href={SOCIAL_LINKS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram do Nerd em Cena"
+                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube do Nerd em Cena"
+                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
+                >
+                  <Youtube className="h-5 w-5" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok do Nerd em Cena"
+                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
+                >
+                  <Music2 className="h-5 w-5" />
+                </a>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground sm:text-base">
+                Animes, games e cobertura de eventos sempre{" "}
+                <span className="font-semibold text-gold">com humor!</span>
+              </p>
+            </div>
+            <img
+              src={mascoteAsset.url}
+              alt="Mascote do Nerd em Cena"
+              width={512}
+              height={512}
+              className="h-32 w-auto shrink-0 sm:h-44"
+            />
+          </div>
+        </header>
+
+        {/* Veja nossos vídeos */}
+        <section className="mt-6">
+          <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
+            <SectionTitle
+              icon={<Clapperboard className="h-5 w-5" />}
+              subtitle="Shorts, reels e momentos épicos da cultura nerd."
+            >
+              VEJA NOSSOS VÍDEOS
+            </SectionTitle>
+            <div className="grid grid-cols-1 gap-4">
+              <SocialButton
+                platform="instagram"
+                label="Instagram"
+                handle="@NerdEmCenaOficial"
+                href={SOCIAL_LINKS.instagram}
+              />
+              <SocialButton
+                platform="youtube"
+                label="YouTube Shorts"
+                handle="Nerd em Cena"
+                href={SOCIAL_LINKS.youtube}
+              />
+              <SocialButton
+                platform="tiktok"
+                label="TikTok"
+                handle="@NerdEmCenaOficial"
+                href={SOCIAL_LINKS.tiktok}
+              />
+            </div>
+          </div>
+        </section>
 
         {/* Acervo / ebooks */}
         <AcervoSection />
