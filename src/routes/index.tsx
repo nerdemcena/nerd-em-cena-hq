@@ -108,7 +108,7 @@ function Index() {
               />
               <SocialButton
                 platform="youtube"
-                label="YouTube Shorts"
+                label="YouTube"
                 handle="Nerd em Cena"
                 href={SOCIAL_LINKS.youtube}
               />
