@@ -40,15 +40,21 @@ function Index() {
       <main className="relative mx-auto max-w-2xl px-3 py-6 sm:px-6 sm:py-8 lg:px-8">
         <h1 className="sr-only">Nerd em Cena — Acervo original</h1>
 
-        {/* Hero: logo pequeno + texto com mascote à direita */}
-        <header className="flex flex-col items-center">
+        {/* Hero: logo pequeno, mascote centralizado flutuando e texto */}
+        <header className="flex flex-col items-center text-center">
           <NerdLogo className="h-20 w-20 rounded-full gold-glow sm:h-24 sm:w-24" />
-          <div className="mt-5 flex w-full items-center gap-4">
-            <div className="min-w-0 flex-1 text-left">
-              <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
-                @NERDEMCENAOFICIAL
-              </p>
-              <div className="mt-3 flex gap-3">
+          <img
+            src={mascoteAsset.url}
+            alt="Mascote do Nerd em Cena"
+            width={512}
+            height={512}
+            className="mt-3 h-40 w-auto animate-float sm:h-48"
+          />
+          <div className="mt-3 flex w-full flex-col items-center">
+            <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
+              @NERDEMCENAOFICIAL
+            </p>
+            <div className="mt-3 flex gap-3">
                 <a
                   href={SOCIAL_LINKS.instagram}
                   target="_blank"
