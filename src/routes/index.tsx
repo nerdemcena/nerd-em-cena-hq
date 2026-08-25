@@ -87,14 +87,6 @@ function Index() {
                 Animes, games e cobertura de eventos sempre{" "}
                 <span className="font-semibold text-gold">com humor!</span>
               </p>
-            </div>
-            <img
-              src={mascoteAsset.url}
-              alt="Mascote do Nerd em Cena"
-              width={512}
-              height={512}
-              className="h-32 w-auto shrink-0 sm:h-44"
-            />
           </div>
         </header>
 
