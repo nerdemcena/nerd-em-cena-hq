@@ -1,12 +1,21 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Instagram, Youtube, Music2, MessageCircle, Mail, ArrowRight, Clapperboard } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  Instagram,
+  Youtube,
+  Music2,
+  MessageCircle,
+  Mail,
+  ArrowRight,
+  Clapperboard,
+  Swords,
+  Lock,
+} from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
 import { SocialButton } from "@/components/social-button";
 import { AcervoSection } from "@/components/acervo-section";
 import { CONTACT, SOCIAL_LINKS } from "@/lib/links";
-import mascoteAsset from "@/assets/mascote.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,6 +123,31 @@ function Index() {
 
         {/* Acervo / ebooks */}
         <AcervoSection />
+
+        {/* Torneios (em breve) */}
+        <section className="mt-6">
+          <Link
+            to="/torneios"
+            className="group block rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm transition-colors hover:border-gold/50 sm:p-6 md:p-8"
+          >
+            <SectionTitle
+              icon={<Swords className="h-5 w-5" />}
+              subtitle="Desafios, disputas e prêmios para quem vive de animes, games e cultura pop."
+            >
+              TORNEIOS <span className="text-gold">(EM BREVE)</span>
+            </SectionTitle>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 font-heading text-[11px] tracking-widest text-gold">
+                <Lock className="h-3 w-3" />
+                SELADO POR ENQUANTO
+              </span>
+              <span className="ml-auto inline-flex items-center gap-2 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+                DESCOBRIR
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
+          </Link>
+        </section>
 
         {/* Contact */}
         <section className="mt-6">
