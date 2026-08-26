@@ -40,17 +40,10 @@ function Index() {
       <main className="relative mx-auto max-w-2xl px-3 py-6 sm:px-6 sm:py-8 lg:px-8">
         <h1 className="sr-only">Nerd em Cena — Acervo original</h1>
 
-        {/* Hero: logo pequeno, mascote centralizado flutuando e texto */}
+        {/* Hero: logo + redes */}
         <header className="flex flex-col items-center text-center">
-          <NerdLogo className="h-20 w-20 rounded-full gold-glow sm:h-24 sm:w-24" />
-          <img
-            src={mascoteAsset.url}
-            alt="Mascote do Nerd em Cena"
-            width={512}
-            height={512}
-            className="mt-3 h-40 w-auto animate-float sm:h-48"
-          />
-          <div className="mt-3 flex w-full flex-col items-center">
+          <NerdLogo className="h-24 w-24 rounded-full gold-glow sm:h-28 sm:w-28" />
+          <div className="mt-4 flex w-full flex-col items-center">
             <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
               @NERDEMCENAOFICIAL
             </p>
