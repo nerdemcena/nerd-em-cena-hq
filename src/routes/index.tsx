@@ -77,7 +77,7 @@ function Index() {
                 </a>
               </div>
               <p className="mt-4 text-sm text-muted-foreground sm:text-base">
-                Animes, games e cobertura de eventos sempre{" "}
+                Animes, games, RPG e cobertura de eventos sempre{" "}
                 <span className="font-semibold text-gold">com humor!</span>
               </p>
           </div>
@@ -86,10 +86,7 @@ function Index() {
         {/* Veja nossos vídeos */}
         <section className="mt-6">
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-            <SectionTitle
-              icon={<Clapperboard className="h-5 w-5" />}
-              subtitle="Shorts, reels e momentos épicos da cultura nerd."
-            >
+            <SectionTitle icon={<Clapperboard className="h-5 w-5" />}>
               VEJA NOSSOS VÍDEOS
             </SectionTitle>
             <div className="grid grid-cols-1 gap-4">
