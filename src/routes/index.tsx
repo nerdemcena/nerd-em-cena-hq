@@ -149,6 +149,30 @@ function Index() {
           </Link>
         </section>
 
+        {/* Mídia Kit 2026 */}
+        <section className="mt-6">
+          <Link
+            to="/midiakit"
+            className="group block rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm transition-colors hover:border-gold/50 sm:p-6 md:p-8"
+          >
+            <SectionTitle
+              icon={<Clapperboard className="h-5 w-5" />}
+              subtitle="21 mil seguidores, 13,39% de engajamento, números reais e formatos de parceria."
+            >
+              MÍDIA KIT <span className="text-gold">2026</span>
+            </SectionTitle>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 font-heading text-[11px] tracking-widest text-gold">
+                PARCERIAS &amp; PATROCÍNIOS
+              </span>
+              <span className="ml-auto inline-flex items-center gap-2 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+                VER MÍDIA KIT
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
+          </Link>
+        </section>
+
         {/* Contact */}
         <section className="mt-6">
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
