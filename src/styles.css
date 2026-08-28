@@ -182,11 +182,11 @@
   box-shadow: 0 0 20px -4px color-mix(in oklab, var(--color-gold) 35%, transparent);
 }
 
-/* Star field / subtle dot pattern */
+/* Star field / gold dot pattern matching reference */
 .stars {
-  background-image: radial-gradient(circle, var(--color-gold) 1px, transparent 1px);
-  background-size: 3rem 3rem;
-  opacity: 0.12;
+  background-image: radial-gradient(circle, rgba(232, 191, 20, 0.22) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  opacity: 0.85;
 }
 
 /* Heading font utility */
@@ -310,8 +310,13 @@
 }
 
 .dots-bg {
-  background-image: radial-gradient(rgba(232, 191, 20, 0.1) 1.2px, transparent 1.2px);
-  background-size: 24px 24px;
+  background-color: #0a0a00;
+  background-image:
+    radial-gradient(circle at 50% 120px, rgba(232, 191, 20, 0.2) 0%, transparent 60%),
+    radial-gradient(rgba(232, 191, 20, 0.22) 1.5px, transparent 1.5px);
+  background-size:
+    100% 100%,
+    24px 24px;
 }
 
 /* ===== Mídia Kit Entrance Animations ===== */

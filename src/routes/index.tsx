@@ -49,17 +49,16 @@ export const Route = createFileRoute("/")({
 
 export function Index() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-black font-nunito text-foreground selection:bg-gold selection:text-black">
-      {/* Decorative starfield / subtle glow */}
-      <div className="pointer-events-none fixed inset-0 stars opacity-70" />
-      <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+    <div className="relative min-h-screen overflow-x-hidden bg-blk dots-bg font-nunito text-foreground selection:bg-gold selection:text-black">
+      {/* Decorative starfield overlay */}
+      <div className="pointer-events-none fixed inset-0 stars opacity-40" />
 
-      <main className="relative mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+      <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <h1 className="sr-only">Nerd em Cena — Links e Acervo Oficial</h1>
 
         {/* HERO: LOGO + REDES + SLOGAN */}
         <header className="flex flex-col items-center text-center">
-          <NerdLogo className="h-24 w-24 rounded-full border-2 border-gold/60 gold-glow transition-transform hover:scale-105 sm:h-28 sm:w-28" />
+          <NerdLogo className="h-28 w-28 transition-transform duration-300 hover:scale-105 sm:h-32 sm:w-32" />
           <div className="mt-4 flex w-full flex-col items-center">
             <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
               @NERDEMCENAOFICIAL
@@ -234,7 +233,7 @@ export function Index() {
         {/* FOOTER */}
         <footer className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gold/20 py-8 sm:flex-row">
           <div className="flex items-center gap-3">
-            <NerdLogo className="h-12 w-12 rounded-full border border-gold/40" />
+            <NerdLogo className="h-12 w-12" glow={false} />
             <div>
               <p className="font-heading text-xl tracking-wide text-foreground">
                 NERD <span className="text-gold">EM</span> CENA

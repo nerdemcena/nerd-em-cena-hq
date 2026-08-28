@@ -309,7 +309,7 @@ function SalesPage() {
 
         <footer className="mt-12 flex flex-col items-center gap-4 border-t border-gold/20 py-8 sm:flex-row sm:justify-between">
           <div className="flex items-center gap-3">
-            <NerdLogo className="h-12 w-auto rounded-full" />
+            <NerdLogo className="h-12 w-12" glow={false} />
             <p className="font-heading text-xl tracking-wide text-foreground">
               NERD <span className="text-gold">EM</span> CENA
             </p>

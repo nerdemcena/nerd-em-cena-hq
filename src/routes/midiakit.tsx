@@ -61,10 +61,10 @@ export function MidiaKitPage() {
             <Link
               to="/"
               aria-label="Voltar para a página inicial"
-              className="animate-mk-pop mx-auto flex h-[112px] w-[112px] shrink-0 items-center justify-center overflow-hidden rounded-full border-[4px] border-y bg-blk2 p-2 shadow-[0_0_0_6px_rgba(232,191,20,0.12)] transition-transform hover:scale-105 sm:mx-0"
+              className="animate-mk-pop mx-auto block h-28 w-28 shrink-0 transition-transform hover:scale-105 sm:mx-0"
               style={{ animationDelay: "0.1s" }}
             >
-              <NerdLogo className="h-full w-full rounded-full object-contain" />
+              <NerdLogo className="h-full w-full" />
             </Link>
 
             <div
