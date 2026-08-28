@@ -1,13 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Instagram,
-  Mail,
-  MessageSquare,
-  Play,
-  Youtube,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Instagram, Mail, MessageSquare, Play, Youtube } from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { CONTACT, SOCIAL_LINKS } from "@/lib/links";
@@ -24,8 +16,7 @@ export const Route = createFileRoute("/midiakit")({
       { property: "og:title", content: "Nerd em Cena — Mídia Kit 2026" },
       {
         property: "og:description",
-        content:
-          "Números reais, audiência e entregáveis de cobertura do @nerdemcenaoficial.",
+        content: "Números reais, audiência e entregáveis de cobertura do @nerdemcenaoficial.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -34,13 +25,7 @@ export const Route = createFileRoute("/midiakit")({
   component: MidiaKitPage,
 });
 
-const HERO_TAGS = [
-  "Animes",
-  "Games",
-  "Cultura Pop",
-  "CNPJ 60.907.624/0001-19",
-  "Emite NF",
-];
+const HERO_TAGS = ["Animes", "Games", "Cultura Pop", "CNPJ 60.907.624/0001-19", "Emite NF"];
 
 const AGE_RANGES = [
   { label: "18–24", value: 13, width: "40%" },
@@ -62,7 +47,7 @@ export function MidiaKitPage() {
   return (
     <div className="min-h-screen bg-blk font-nunito text-wh selection:bg-y selection:text-blk">
       {/* HEADER AMARELO */}
-      <header className="relative overflow-hidden border-b-[5px] border-blk bg-y py-12 pb-10">
+      <header className="animate-mk-in relative overflow-hidden border-b-[5px] border-blk bg-y py-12 pb-10">
         <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(0,0,0,0.04),rgba(0,0,0,0.04)1px,transparent_1px,transparent_12px)]" />
         <div className="relative z-10 mx-auto max-w-[960px] px-6">
           <Link
@@ -76,12 +61,16 @@ export function MidiaKitPage() {
             <Link
               to="/"
               aria-label="Voltar para a página inicial"
-              className="mx-auto block h-[112px] w-[112px] shrink-0 overflow-hidden rounded-full border-[4px] border-y bg-blk2 p-2 shadow-[0_0_0_6px_rgba(232,191,20,0.12)] transition-transform hover:scale-105 sm:mx-0"
+              className="animate-mk-pop mx-auto flex h-[112px] w-[112px] shrink-0 items-center justify-center overflow-hidden rounded-full border-[4px] border-y bg-blk2 p-2 shadow-[0_0_0_6px_rgba(232,191,20,0.12)] transition-transform hover:scale-105 sm:mx-0"
+              style={{ animationDelay: "0.1s" }}
             >
               <NerdLogo className="h-full w-full rounded-full object-contain" />
             </Link>
 
-            <div className="text-center sm:text-left">
+            <div
+              className="animate-mk-in text-center sm:text-left"
+              style={{ animationDelay: "0.15s" }}
+            >
               <h1 className="mb-2 font-bangers text-[clamp(2.6rem,6vw,4.2rem)] leading-[0.92] tracking-[0.04em] text-blk">
                 Nerd em Cena
                 <br />
@@ -110,7 +99,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 1: NÚMEROS REAIS */}
         <section id="numbers" className="border-b border-y/10 bg-black/40 py-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11">
+            <div className="animate-mk-in mb-11" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // dados verificados · Instagram Insights · mai 2026
               </span>
@@ -122,7 +111,10 @@ export function MidiaKitPage() {
             {/* CARDS PRINCIPAIS (SEGUIDORES + ENGAJAMENTO) */}
             <div className="mb-5 grid w-full gap-5 md:grid-cols-2">
               {/* Instagram */}
-              <div className="relative -rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-y bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:-rotate-1 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative -rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-y bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:-rotate-1 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.25s" }}
+              >
                 <div className="absolute -top-2 left-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="absolute -top-2 right-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-y/20 px-3.5 py-1.5 font-bebas text-[0.8rem] uppercase tracking-[0.15em] text-mut">
@@ -143,7 +135,10 @@ export function MidiaKitPage() {
               </div>
 
               {/* Taxa de Engajamento */}
-              <div className="relative h-full rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-org bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:rotate-1 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative h-full rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-org bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:rotate-1 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.3s" }}
+              >
                 <div className="absolute -top-2 left-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="absolute -top-2 right-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-y/20 px-3.5 py-1.5 font-bebas text-[0.8rem] uppercase tracking-[0.15em] text-mut">
@@ -156,30 +151,32 @@ export function MidiaKitPage() {
                   EXCEPCIONAL
                 </span>
                 <div className="text-[0.85rem] leading-[1.6] text-mut">
-                  Média geral do nicho (10K–100K):{" "}
-                  <strong className="text-wh">1% a 5%</strong>
-                  <br />
-                  A cada 100 seguidores, mais de 13 interagem ativamente com a
-                  página todos os dias.
+                  Média geral do nicho (10K–100K): <strong className="text-wh">1% a 5%</strong>
+                  <br />A cada 100 seguidores, mais de 13 interagem ativamente com a página todos os
+                  dias.
                 </div>
               </div>
             </div>
 
             {/* 3 CARDS SECUNDÁRIOS */}
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-              <div className="relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.35s" }}
+              >
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                   // views / mês
                 </span>
-                <span className="block font-bangers text-[3.5rem] leading-[0.9] text-wh">
-                  259K
-                </span>
+                <span className="block font-bangers text-[3.5rem] leading-[0.9] text-wh">259K</span>
                 <p className="mt-3 text-[0.82rem] leading-snug text-mut">
                   Visualizações totais somando vídeos em alta
                 </p>
               </div>
 
-              <div className="relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                   // compartilhamentos
                 </span>
@@ -191,7 +188,10 @@ export function MidiaKitPage() {
                 </p>
               </div>
 
-              <div className="relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.45s" }}
+              >
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                   // salvamentos / mês
                 </span>
@@ -209,7 +209,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 2: PERFIL DO PÚBLICO */}
         <section id="audience" className="border-b border-y/10 py-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11">
+            <div className="animate-mk-in mb-11" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // perfil do público
               </span>
@@ -217,22 +217,24 @@ export function MidiaKitPage() {
                 Quem assiste <span className="text-y">é o seu público</span>
               </h2>
               <p className="mt-2 text-[0.9rem] text-mut">
-                O mesmo fã que compra ingresso, merchandising e quer ir no
-                evento no final de semana.
+                O mesmo fã que compra ingresso, merchandising e quer ir no evento no final de
+                semana.
               </p>
             </div>
 
             <div className="grid w-full gap-5 md:grid-cols-2">
               {/* Faixa Etária */}
-              <div className="relative -rotate-1 rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative -rotate-1 rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.25s" }}
+              >
                 <div className="absolute -top-2 left-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="absolute -top-2 right-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-y">
                   // faixa etária
                 </span>
                 <div className="mb-6 text-[0.85rem] text-mut">
-                  Pico de retenção em 25–44 anos — o adulto fã com poder de
-                  compra.
+                  Pico de retenção em 25–44 anos — o adulto fã com poder de compra.
                 </div>
                 <div className="space-y-4">
                   {AGE_RANGES.map((r) => (
@@ -246,11 +248,7 @@ export function MidiaKitPage() {
                       <div className="h-2.5 overflow-hidden rounded-full border border-white/5 bg-black/50">
                         <div
                           className={`h-full rounded-full ${
-                            r.value >= 25
-                              ? "bg-y"
-                              : r.value >= 15
-                                ? "bg-org"
-                                : "bg-y/30"
+                            r.value >= 25 ? "bg-y" : r.value >= 15 ? "bg-org" : "bg-y/30"
                           }`}
                           style={{ width: r.width }}
                         />
@@ -268,7 +266,10 @@ export function MidiaKitPage() {
 
               {/* Gênero & Demografia / Alcance Regional */}
               <div className="flex flex-col gap-5">
-                <div className="relative h-full rotate-1 rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+                <div
+                  className="animate-mk-in relative h-full rotate-1 rounded-[18px] border-2 border-dashed border-y/20 bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                  style={{ animationDelay: "0.3s" }}
+                >
                   <span className="mb-5 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                     // gênero &amp; demografia
                   </span>
@@ -299,12 +300,11 @@ export function MidiaKitPage() {
                     90% BR
                   </div>
                   <div className="text-[0.85rem] leading-relaxed text-mut">
-                    A esmagadora audiência é{" "}
-                    <strong className="text-wh">brasileira</strong> focada na
-                    região sudeste.
+                    A esmagadora audiência é <strong className="text-wh">brasileira</strong> focada
+                    na região sudeste.
                     <br />
-                    Top 5 capitais: <span className="font-bold text-org">SP</span>{" "}
-                    · RJ · Manaus · Fortaleza · BH
+                    Top 5 capitais: <span className="font-bold text-org">SP</span> · RJ · Manaus ·
+                    Fortaleza · BH
                   </div>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 3: APRESENTAÇÃO */}
         <section id="about" className="border-b border-y/10 py-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11">
+            <div className="animate-mk-in mb-11" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // apresentação
               </span>
@@ -329,7 +329,10 @@ export function MidiaKitPage() {
 
             <div className="grid w-full gap-5 md:grid-cols-2">
               {/* O Criador */}
-              <div className="relative -rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-y bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative -rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-y bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.25s" }}
+              >
                 <div className="absolute -top-2 left-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="absolute -top-2 right-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
@@ -339,10 +342,9 @@ export function MidiaKitPage() {
                   Rogério Horvat
                 </h3>
                 <p className="mb-6 text-[0.9rem] leading-relaxed text-wh/75">
-                  Produtor cultural e ator com anos de experiência, especializado
-                  em transformar a cultura nerd em experiência cênica. Une
-                  teatro, cosplay, anime, RPG, games e cultura pop para levar o
-                  público viver o universo dos personagens.
+                  Produtor cultural e ator com anos de experiência, especializado em transformar a
+                  cultura nerd em experiência cênica. Une teatro, cosplay, anime, RPG, games e
+                  cultura pop para levar o público viver o universo dos personagens.
                 </p>
                 <div className="inline-flex items-center gap-2 rounded-full border border-y/20 bg-y/5 px-4 py-1.5 font-bebas text-xs tracking-[0.1em] text-mut">
                   <span className="inline-block h-2 w-2 rounded-full bg-y" />
@@ -351,17 +353,19 @@ export function MidiaKitPage() {
               </div>
 
               {/* Estilo de Conteúdo */}
-              <div className="relative h-full rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-org bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]">
+              <div
+                className="animate-mk-in relative h-full rotate-1 rounded-[18px] border-2 !border-t-4 border-dashed border-y/20 !border-t-org bg-[#111100] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-y/50 hover:shadow-[0_20px_40px_-12px_rgba(255,214,0,0.15)]"
+                style={{ animationDelay: "0.3s" }}
+              >
                 <div className="absolute -top-2 left-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <div className="absolute -top-2 right-[22px] h-[13px] w-[13px] rounded-full border-2 border-y/20 bg-blk" />
                 <span className="mb-3 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                   // estilo de conteúdo
                 </span>
                 <p className="mb-6 text-[0.9rem] leading-relaxed text-wh/75">
-                  Cobertura de eventos vivida de dentro, curiosidades sobre
-                  animes, games e cultura pop, e muito humor. Entretenimento
-                  leve, com reações genuínas e bastidores — o tipo de conteúdo que
-                  o público assiste até o fim e compartilha.
+                  Cobertura de eventos vivida de dentro, curiosidades sobre animes, games e cultura
+                  pop, e muito humor. Entretenimento leve, com reações genuínas e bastidores — o
+                  tipo de conteúdo que o público assiste até o fim e compartilha.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {CONTENT_TAGS.map((tag) => (
@@ -381,7 +385,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 4: VÍDEOS QUE PERFORMAM */}
         <section id="portfolio" className="border-b border-y/10 bg-black/30 py-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11">
+            <div className="animate-mk-in mb-11" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // conteúdo em três plataformas
               </span>
@@ -395,7 +399,7 @@ export function MidiaKitPage() {
 
             <div className="mt-4 grid grid-cols-1 gap-6 lg:grid-cols-3">
               {/* TikTok */}
-              <div className="flex flex-col">
+              <div className="animate-mk-in flex flex-col" style={{ animationDelay: "0.25s" }}>
                 <div className="flex h-full flex-col rounded-[18px] border-2 border-dashed border-y/30 bg-[#111100] p-4">
                   <div className="mb-3 flex items-center justify-between">
                     <span className="flex items-center gap-2 font-bebas text-[0.8rem] uppercase tracking-[0.18em] text-mut">
@@ -426,7 +430,7 @@ export function MidiaKitPage() {
               </div>
 
               {/* Instagram Reel */}
-              <div className="flex flex-col">
+              <div className="animate-mk-in flex flex-col" style={{ animationDelay: "0.3s" }}>
                 <div className="flex h-full flex-col rounded-[18px] border-2 border-dashed border-y/30 bg-[#111100] p-4">
                   <div className="mb-3 flex items-center justify-between">
                     <span className="flex items-center gap-2 font-bebas text-[0.8rem] uppercase tracking-[0.18em] text-mut">
@@ -456,7 +460,7 @@ export function MidiaKitPage() {
               </div>
 
               {/* YouTube Shorts */}
-              <div className="flex flex-col">
+              <div className="animate-mk-in flex flex-col" style={{ animationDelay: "0.35s" }}>
                 <div className="flex h-full flex-col rounded-[18px] border-2 border-dashed border-y/30 bg-[#111100] p-4">
                   <div className="mb-3 flex items-center justify-between">
                     <span className="flex items-center gap-2 font-bebas text-[0.8rem] uppercase tracking-[0.18em] text-mut">
@@ -492,7 +496,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 5: ENTREGÁVEIS / O QUE EU ENTREGO */}
         <section id="request" className="border-b border-y/10 bg-black/40 pb-24 pt-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11 text-center">
+            <div className="animate-mk-in mb-11 text-center" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // parcerias e patrocínios
               </span>
@@ -504,7 +508,10 @@ export function MidiaKitPage() {
               </p>
             </div>
 
-            <div className="relative mx-auto mt-12 w-full max-w-5xl">
+            <div
+              className="animate-mk-in relative mx-auto mt-12 w-full max-w-5xl"
+              style={{ animationDelay: "0.25s" }}
+            >
               <div className="grid w-full items-stretch gap-6 md:grid-cols-2">
                 {/* Formatos disponíveis */}
                 <div className="relative flex flex-col justify-center overflow-hidden rounded-[20px] border border-y/20 bg-gradient-to-br from-[#1a1200] to-[#332200] p-8 shadow-[0_0_20px_rgba(255,214,0,0.1)]">
@@ -518,13 +525,12 @@ export function MidiaKitPage() {
                     </div>
                     <div className="mb-4 font-bangers text-[clamp(2.5rem,5vw,3.5rem)] leading-[1] text-wh">
                       Publi, cobertura
-                      <br />
-                      e patrocínio
+                      <br />e patrocínio
                     </div>
                     <div className="mb-8 max-w-[90%] text-[0.95rem] leading-relaxed text-mut">
-                      Reels e Shorts patrocinados, cobertura de evento com equipe
-                      de <strong>2 pessoas</strong>, ações de humor e
-                      curiosidades com o produto integrado.
+                      Reels e Shorts patrocinados, cobertura de evento com equipe de{" "}
+                      <strong>2 pessoas</strong>, ações de humor e curiosidades com o produto
+                      integrado.
                     </div>
                     <div className="mt-auto flex flex-wrap gap-4">
                       <div className="rounded border border-y/30 bg-y/10 px-4 py-2.5 font-bebas text-[1.05rem] tracking-[0.1em] text-y">
@@ -552,8 +558,7 @@ export function MidiaKitPage() {
                           Vídeo vertical multiplataforma
                         </strong>
                         <span className="block text-[0.9rem] leading-[1.6] text-mut">
-                          O mesmo conteúdo publicado no Instagram, TikTok e
-                          YouTube Shorts.
+                          O mesmo conteúdo publicado no Instagram, TikTok e YouTube Shorts.
                         </span>
                       </div>
                     </li>
@@ -566,8 +571,7 @@ export function MidiaKitPage() {
                           Stories ao vivo e bastidores
                         </strong>
                         <span className="block text-[0.9rem] leading-[1.6] text-mut">
-                          Interação constante, curiosidades e humor durante toda
-                          a ação.
+                          Interação constante, curiosidades e humor durante toda a ação.
                         </span>
                       </div>
                     </li>
@@ -581,7 +585,7 @@ export function MidiaKitPage() {
         {/* SEÇÃO 6: CONTATO */}
         <section id="contact" className="border-t border-y/20 bg-blk pb-32 pt-16">
           <div className="mx-auto max-w-[960px] px-6">
-            <div className="mb-11">
+            <div className="animate-mk-in mb-11" style={{ animationDelay: "0.2s" }}>
               <span className="mb-2 block font-bebas text-[0.8rem] uppercase tracking-[0.2em] text-org">
                 // vamos crescer juntos
               </span>
@@ -598,7 +602,8 @@ export function MidiaKitPage() {
                 href={SOCIAL_LINKS.instagramDm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-start justify-between gap-4 rounded-xl border-2 border-border bg-[#111100] p-6 shadow-[0_10px_20px_rgba(0,0,0,0.2)] transition-all hover:-translate-y-1 hover:border-org hover:shadow-[0_15px_30px_rgba(255,101,0,0.15)] md:flex-row md:items-center lg:flex-col lg:items-start xl:flex-row xl:items-center"
+                className="animate-mk-in group flex flex-col items-start justify-between gap-4 rounded-xl border-2 border-border bg-[#111100] p-6 shadow-[0_10px_20px_rgba(0,0,0,0.2)] transition-all hover:-translate-y-1 hover:border-org hover:shadow-[0_15px_30px_rgba(255,101,0,0.15)] md:flex-row md:items-center lg:flex-col lg:items-start xl:flex-row xl:items-center"
+                style={{ animationDelay: "0.25s" }}
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-org/20 bg-org/10 text-org transition-all group-hover:scale-110 group-hover:bg-org group-hover:text-black">
@@ -618,7 +623,8 @@ export function MidiaKitPage() {
 
               <a
                 href={CONTACT.email}
-                className="group flex flex-col items-start justify-between gap-4 overflow-hidden rounded-xl border-2 border-border bg-[#111100] p-6 shadow-[0_10px_20px_rgba(0,0,0,0.2)] transition-all hover:-translate-y-1 hover:border-y hover:shadow-[0_15px_30px_rgba(255,214,0,0.15)] md:flex-row md:items-center lg:flex-col lg:items-start xl:flex-row xl:items-center"
+                className="animate-mk-in group flex flex-col items-start justify-between gap-4 overflow-hidden rounded-xl border-2 border-border bg-[#111100] p-6 shadow-[0_10px_20px_rgba(0,0,0,0.2)] transition-all hover:-translate-y-1 hover:border-y hover:shadow-[0_15px_30px_rgba(255,214,0,0.15)] md:flex-row md:items-center lg:flex-col lg:items-start xl:flex-row xl:items-center"
+                style={{ animationDelay: "0.3s" }}
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-y/20 bg-y/10 text-y transition-all group-hover:scale-110 group-hover:bg-y group-hover:text-black">

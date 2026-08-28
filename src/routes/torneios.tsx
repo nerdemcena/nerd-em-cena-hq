@@ -1,14 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  ArrowLeft,
-  Crown,
-  Gamepad2,
-  Instagram,
-  Lock,
-  Swords,
-  Trophy,
-  Zap,
-} from "lucide-react";
+import { ArrowLeft, Crown, Gamepad2, Instagram, Lock, Swords, Trophy, Zap } from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SOCIAL_LINKS } from "@/lib/links";
@@ -35,14 +26,7 @@ export const Route = createFileRoute("/torneios")({
   component: TorneiosPage,
 });
 
-const TAGS = [
-  "Animes",
-  "Games",
-  "Disputas",
-  "Prêmios",
-  "Ranking Geek",
-  "Em Breve",
-];
+const TAGS = ["Animes", "Games", "Disputas", "Prêmios", "Ranking Geek", "Em Breve"];
 
 const PREVIEW_CARDS = [
   {
@@ -139,9 +123,9 @@ export function TorneiosPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl text-[0.95rem] leading-relaxed text-mut sm:text-[1.05rem]">
-              Estamos preparando a arena definitiva para quem ama animes,
-              games, cultura pop e duelos cheios de humor. Teste seus
-              conhecimentos, dispute com amigos e conquiste prêmios reais!
+              Estamos preparando a arena definitiva para quem ama animes, games, cultura pop e
+              duelos cheios de humor. Teste seus conhecimentos, dispute com amigos e conquiste
+              prêmios reais!
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -200,9 +184,7 @@ export function TorneiosPage() {
                       {card.title}
                     </h4>
 
-                    <p className="text-[0.88rem] leading-relaxed text-mut">
-                      {card.desc}
-                    </p>
+                    <p className="text-[0.88rem] leading-relaxed text-mut">{card.desc}</p>
                   </div>
                 );
               })}
@@ -218,9 +200,8 @@ export function TorneiosPage() {
               Fique ligado nos Stories e no canal!
             </h4>
             <p className="mx-auto mt-2 max-w-lg text-[0.9rem] text-mut">
-              As primeiras vagas para o torneio de lançamento serão abertas
-              exclusivamente para quem acompanha o direct do{" "}
-              <strong className="text-y">@nerdemcenaoficial</strong>.
+              As primeiras vagas para o torneio de lançamento serão abertas exclusivamente para quem
+              acompanha o direct do <strong className="text-y">@nerdemcenaoficial</strong>.
             </p>
             <div className="mt-6">
               <a

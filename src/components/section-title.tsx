@@ -22,9 +22,7 @@ export function SectionTitle({ icon, children, subtitle }: SectionTitleProps) {
         <div className="h-1.5 w-1.5 rounded-full bg-gold" />
         <div className="gold-underline flex-1 rounded-full" />
       </div>
-      {subtitle && (
-        <p className="mt-3 text-muted-foreground">{subtitle}</p>
-      )}
+      {subtitle && <p className="mt-3 text-muted-foreground">{subtitle}</p>}
     </div>
   );
 }

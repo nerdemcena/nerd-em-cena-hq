@@ -8,17 +8,17 @@ Identidade visual: **preto e dourado** (cultura nerd/pop), dark-only.
 
 ## Stack de tecnologias
 
-| Camada | Tecnologia |
-|---|---|
-| Framework | **TanStack Start v1** (React 19, full-stack, SSR) |
-| Build | **Vite 8** |
-| Roteamento | **TanStack Router** (file-based routing em `src/routes/`) |
-| Estilo | **Tailwind CSS v4** (tokens semânticos em `src/styles.css`) |
-| Componentes | **shadcn/ui** + Radix UI |
-| Ícones | **lucide-react** |
-| Linguagem | **TypeScript** |
-| Package manager | **bun** |
-| Formulário (Kit) | **@emailjs/browser** + SheetMonkey |
+| Camada           | Tecnologia                                                  |
+| ---------------- | ----------------------------------------------------------- |
+| Framework        | **TanStack Start v1** (React 19, full-stack, SSR)           |
+| Build            | **Vite 8**                                                  |
+| Roteamento       | **TanStack Router** (file-based routing em `src/routes/`)   |
+| Estilo           | **Tailwind CSS v4** (tokens semânticos em `src/styles.css`) |
+| Componentes      | **shadcn/ui** + Radix UI                                    |
+| Ícones           | **lucide-react**                                            |
+| Linguagem        | **TypeScript**                                              |
+| Package manager  | **bun**                                                     |
+| Formulário (Kit) | **@emailjs/browser** + SheetMonkey                          |
 
 ### Tipografia
 
@@ -54,11 +54,11 @@ Identidade visual: **preto e dourado** (cultura nerd/pop), dark-only.
 
 ### Rotas
 
-| Rota | Descrição |
-|---|---|
-| `/` | Home: hero com mascote, "Veja Nossos Vídeos", "Acervo Original", "Fale com a Gente" |
-| `/kit-iniciante` | Captura de leads (nome, e-mail, telefone) → download do PDF de 10 páginas |
-| `/ebooks/teatro-rpg` | Página de vendas do e-book, com upsell do Pacote Completo (4 e-books) |
+| Rota                 | Descrição                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| `/`                  | Home: hero com mascote, "Veja Nossos Vídeos", "Acervo Original", "Fale com a Gente" |
+| `/kit-iniciante`     | Captura de leads (nome, e-mail, telefone) → download do PDF de 10 páginas           |
+| `/ebooks/teatro-rpg` | Página de vendas do e-book, com upsell do Pacote Completo (4 e-books)               |
 
 ### Assets (CDN)
 
@@ -66,7 +66,7 @@ Os binários (logo, mascote, capas de e-books, PDF do kit) ficam fora do reposit
 
 ```tsx
 import mascoteAsset from "@/assets/mascote.png.asset.json";
-<img src={mascoteAsset.url} alt="Mascote" />
+<img src={mascoteAsset.url} alt="Mascote" />;
 ```
 
 ---

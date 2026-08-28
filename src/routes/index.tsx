@@ -17,6 +17,14 @@ import { SocialButton } from "@/components/social-button";
 import { AcervoSection } from "@/components/acervo-section";
 import { CONTACT, SOCIAL_LINKS } from "@/lib/links";
 
+function TwitchIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
+    </svg>
+  );
+}
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -24,13 +32,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Acervo original do Nerd em Cena: kit iniciante gratuito e e-books sobre teatro, RPG e cultura pop.",
+          "Acervo original do Nerd em Cena: animes, games, RPG, cobertura de eventos com humor, e-books e kit iniciante.",
       },
       { property: "og:title", content: "Nerd em Cena — Acervo original de teatro e RPG" },
       {
         property: "og:description",
         content:
-          "Acervo original do Nerd em Cena: kit iniciante gratuito e e-books sobre teatro, RPG e cultura pop.",
+          "Acervo original do Nerd em Cena: animes, games, RPG, cobertura de eventos com humor, e-books e kit iniciante.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -39,66 +47,78 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function Index() {
+export function Index() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-black text-foreground">
-      {/* Decorative starfield */}
-      <div className="pointer-events-none fixed inset-0 stars" />
+    <div className="relative min-h-screen overflow-x-hidden bg-black font-nunito text-foreground selection:bg-gold selection:text-black">
+      {/* Decorative starfield / subtle glow */}
+      <div className="pointer-events-none fixed inset-0 stars opacity-70" />
       <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
-      <main className="relative mx-auto max-w-2xl px-3 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <h1 className="sr-only">Nerd em Cena — Acervo original</h1>
+      <main className="relative mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+        <h1 className="sr-only">Nerd em Cena — Links e Acervo Oficial</h1>
 
-        {/* Hero: logo + redes */}
+        {/* HERO: LOGO + REDES + SLOGAN */}
         <header className="flex flex-col items-center text-center">
-          <NerdLogo className="h-24 w-24 rounded-full gold-glow sm:h-28 sm:w-28" />
+          <NerdLogo className="h-24 w-24 rounded-full border-2 border-gold/60 gold-glow transition-transform hover:scale-105 sm:h-28 sm:w-28" />
           <div className="mt-4 flex w-full flex-col items-center">
             <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
               @NERDEMCENAOFICIAL
             </p>
-            <div className="mt-3 flex gap-3">
-                <a
-                  href={SOCIAL_LINKS.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram do Nerd em Cena"
-                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href={SOCIAL_LINKS.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube do Nerd em Cena"
-                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
-                >
-                  <Youtube className="h-5 w-5" />
-                </a>
-                <a
-                  href={SOCIAL_LINKS.tiktok}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="TikTok do Nerd em Cena"
-                  className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-transform hover:scale-105"
-                >
-                  <Music2 className="h-5 w-5" />
-                </a>
-              </div>
-              <p className="mt-4 text-sm text-muted-foreground sm:text-base">
-                Animes, games, RPG e cobertura de eventos sempre{" "}
-                <span className="font-semibold text-gold">com humor!</span>
-              </p>
+
+            {/* 4 REDES SOCIAIS: INSTAGRAM, YOUTUBE, TIKTOK, TWITCH */}
+            <div className="mt-3.5 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram do Nerd em Cena"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube do Nerd em Cena"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+              >
+                <Youtube className="h-5 w-5" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok do Nerd em Cena"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+              >
+                <Music2 className="h-5 w-5" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.twitch}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitch do Nerd em Cena"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+              >
+                <TwitchIcon className="h-5 w-5" />
+              </a>
+            </div>
+
+            <p className="mt-4 max-w-md text-sm text-muted-foreground sm:text-base">
+              Animes, games, RPG e cobertura de eventos sempre{" "}
+              <span className="font-semibold text-gold">com humor!</span>
+            </p>
           </div>
         </header>
 
-        {/* Veja nossos vídeos */}
-        <section className="mt-6">
+        {/* VEJA NOSSOS VÍDEOS */}
+        <section className="mt-7">
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
             <SectionTitle icon={<Clapperboard className="h-5 w-5" />}>
               VEJA NOSSOS VÍDEOS
             </SectionTitle>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-3.5 sm:gap-4">
               <SocialButton
                 platform="instagram"
                 label="Instagram"
@@ -117,18 +137,24 @@ function Index() {
                 handle="@NerdEmCenaOficial"
                 href={SOCIAL_LINKS.tiktok}
               />
+              <SocialButton
+                platform="twitch"
+                label="Twitch"
+                handle="nerdemcena"
+                href={SOCIAL_LINKS.twitch}
+              />
             </div>
           </div>
         </section>
 
-        {/* Acervo / ebooks */}
+        {/* ACERVO / E-BOOKS */}
         <AcervoSection />
 
-        {/* Torneios (em breve) */}
+        {/* TORNEIOS (EM BREVE) */}
         <section className="mt-6">
           <Link
             to="/torneios"
-            className="group block rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm transition-colors hover:border-gold/50 sm:p-6 md:p-8"
+            className="group block rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm transition-all duration-300 hover:border-gold/60 hover:gold-glow sm:p-6 md:p-8"
           >
             <SectionTitle
               icon={<Swords className="h-5 w-5" />}
@@ -149,78 +175,66 @@ function Index() {
           </Link>
         </section>
 
-        {/* Mídia Kit 2026 */}
-        <section className="mt-6">
-          <Link
-            to="/midiakit"
-            className="group block rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm transition-colors hover:border-gold/50 sm:p-6 md:p-8"
-          >
-            <SectionTitle
-              icon={<Clapperboard className="h-5 w-5" />}
-              subtitle="21 mil seguidores, 13,39% de engajamento, números reais e formatos de parceria."
-            >
-              MÍDIA KIT <span className="text-gold">2026</span>
-            </SectionTitle>
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 font-heading text-[11px] tracking-widest text-gold">
-                PARCERIAS &amp; PATROCÍNIOS
-              </span>
-              <span className="ml-auto inline-flex items-center gap-2 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
-                VER MÍDIA KIT
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </div>
-          </Link>
-        </section>
-
-        {/* Contact */}
+        {/* FALE COM A GENTE (DESKTOP + MOBILE FIX) */}
         <section className="mt-6">
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div>
-                <SectionTitle
-                  icon={<MessageCircle className="h-5 w-5" />}
-                  subtitle="Dúvidas, sugestões, parcerias ou convites para eventos? Chama a gente no Instagram!"
-                >
-                  FALE COM A GENTE
-                </SectionTitle>
-              </div>
-              <div className="flex w-full min-w-0 flex-col gap-3 sm:flex-row md:w-auto md:shrink-0">
-                <a
-                  href={SOCIAL_LINKS.instagramDm}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gold px-5 py-3.5 text-sm font-bold text-black transition-transform hover:scale-[1.02] sm:w-auto"
-                >
-                  <Instagram className="h-4 w-4" />
-                  FALAR NO INSTAGRAM
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-                <a
-                  href={CONTACT.email}
-                  className="group inline-flex w-full min-w-0 items-center gap-3 rounded-xl border border-gold/60 bg-gold/5 px-4 py-3 text-left transition-colors hover:border-gold hover:bg-gold/10 sm:w-auto"
-                >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold text-black">
-                    <Mail className="h-4 w-4" />
+            <SectionTitle
+              icon={<MessageCircle className="h-5 w-5" />}
+              subtitle="Dúvidas, sugestões, parcerias ou convites para eventos? Chama a gente!"
+            >
+              FALE COM A GENTE
+            </SectionTitle>
+
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <a
+                href={SOCIAL_LINKS.instagramDm}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-3 rounded-2xl bg-gold p-4 text-black transition-all duration-300 hover:scale-[1.02] hover:gold-glow sm:p-5"
+              >
+                <div className="flex min-w-0 items-center gap-3.5">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-black text-gold">
+                    <Instagram className="h-5 w-5" />
                   </span>
-                  <span className="flex min-w-0 flex-col">
-                    <span className="font-heading text-[11px] tracking-widest text-gold">
-                      E-MAIL
+                  <div className="min-w-0">
+                    <span className="block font-heading text-xs uppercase tracking-wider text-black/70">
+                      INSTAGRAM DIRECT
                     </span>
-                    <span className="truncate text-[13px] font-medium text-foreground sm:text-sm">
+                    <span className="block truncate font-heading text-base font-bold text-black sm:text-lg">
+                      {CONTACT.handle}
+                    </span>
+                  </div>
+                </div>
+                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
+              </a>
+
+              <a
+                href={CONTACT.email}
+                className="group flex items-center justify-between gap-3 rounded-2xl border border-gold/40 bg-gold/5 p-4 text-foreground transition-all duration-300 hover:border-gold hover:bg-gold/10 sm:p-5"
+              >
+                <div className="flex min-w-0 items-center gap-3.5">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold text-black">
+                    <Mail className="h-5 w-5" />
+                  </span>
+                  <div className="min-w-0">
+                    <span className="block font-heading text-xs uppercase tracking-wider text-gold">
+                      E-MAIL PROFISSIONAL
+                    </span>
+                    <span className="block truncate text-xs font-medium text-foreground sm:text-sm">
                       {CONTACT.emailAddress}
                     </span>
-                  </span>
-                </a>
-              </div>
+                  </div>
+                </div>
+                <ArrowRight className="h-5 w-5 shrink-0 text-gold transition-transform group-hover:translate-x-1" />
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Footer */}
+        {/* FOOTER */}
         <footer className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gold/20 py-8 sm:flex-row">
           <div className="flex items-center gap-3">
-            <NerdLogo className="h-12 w-auto rounded-full" />
+            <NerdLogo className="h-12 w-12 rounded-full border border-gold/40" />
             <div>
               <p className="font-heading text-xl tracking-wide text-foreground">
                 NERD <span className="text-gold">EM</span> CENA

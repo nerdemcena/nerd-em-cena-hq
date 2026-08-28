@@ -9,7 +9,13 @@ interface ServiceCardProps {
   buttonText?: string;
 }
 
-export function ServiceCard({ icon, title, description, href, buttonText = "SAIBA MAIS" }: ServiceCardProps) {
+export function ServiceCard({
+  icon,
+  title,
+  description,
+  href,
+  buttonText = "SAIBA MAIS",
+}: ServiceCardProps) {
   return (
     <a
       href={href}
@@ -30,7 +36,6 @@ export function ServiceCard({ icon, title, description, href, buttonText = "SAIB
         <span>{buttonText}</span>
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </div>
-
     </a>
   );
 }

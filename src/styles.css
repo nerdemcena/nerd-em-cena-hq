@@ -136,16 +136,28 @@
 @layer base {
   * {
     border-color: var(--color-border);
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
   }
 
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Nunito", "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
   }
 
   h1,
@@ -193,9 +205,15 @@
 }
 
 @keyframes kit-float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(5deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 .animate-float {
@@ -215,8 +233,13 @@
 }
 
 @keyframes kit-pulse-slow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .animate-pulse-slow {
@@ -239,27 +262,27 @@
 }
 
 .bg-y {
-  background-color: #E8BF14;
+  background-color: #e8bf14;
 }
 
 .text-y {
-  color: #E8BF14;
+  color: #e8bf14;
 }
 
 .border-y {
-  border-color: #E8BF14;
+  border-color: #e8bf14;
 }
 
 .bg-org {
-  background-color: #FF6500;
+  background-color: #ff6500;
 }
 
 .text-org {
-  color: #FF6500;
+  color: #ff6500;
 }
 
 .border-org {
-  border-color: #FF6500;
+  border-color: #ff6500;
 }
 
 .bg-blk {
@@ -291,3 +314,33 @@
   background-size: 24px 24px;
 }
 
+/* ===== Mídia Kit Entrance Animations ===== */
+@keyframes mkFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mkPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-mk-in {
+  animation: mkFadeInUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-mk-pop {
+  animation: mkPopIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

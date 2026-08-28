@@ -67,30 +67,33 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
               "group flex flex-col gap-3 rounded-2xl border border-gold/30 bg-black p-3 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center sm:gap-4 sm:p-4";
             const inner = (
               <>
-              <img
-                src={item.img}
-                alt={`Capa do e-book ${item.title}`}
-                width={300}
-                height={400}
-                loading="lazy"
-                className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
-              />
-              <div className="min-w-0 flex-1 text-center sm:text-left">
-                <h3 className="font-heading text-lg leading-tight tracking-wide text-gold sm:text-xl">{item.title}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
-                <p className="mt-2 flex flex-wrap items-baseline justify-center gap-2 sm:justify-start">
-                  <span className="font-heading text-2xl text-foreground">{item.price}</span>
-                  {item.oldPrice && (
-                    <span className="text-sm text-muted-foreground line-through">
-                      {item.oldPrice}
-                    </span>
-                  )}
-                </p>
-              </div>
-              <div className="flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
-                <span>{item.cta ?? "COMPRAR"}</span>
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </div>
+                <img
+                  src={item.img}
+                  alt={`Capa do e-book ${item.title}`}
+                  width={160}
+                  height={214}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
+                />
+                <div className="min-w-0 flex-1 text-center sm:text-left">
+                  <h3 className="font-heading text-lg leading-tight tracking-wide text-gold sm:text-xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
+                  <p className="mt-2 flex flex-wrap items-baseline justify-center gap-2 sm:justify-start">
+                    <span className="font-heading text-2xl text-foreground">{item.price}</span>
+                    {item.oldPrice && (
+                      <span className="text-sm text-muted-foreground line-through">
+                        {item.oldPrice}
+                      </span>
+                    )}
+                  </p>
+                </div>
+                <div className="flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+                  <span>{item.cta ?? "COMPRAR"}</span>
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </div>
               </>
             );
             return isInternal ? (

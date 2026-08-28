@@ -127,7 +127,7 @@ function KitIniciantePage() {
           phone: formData.phone,
           reply_to: formData.email,
         },
-        EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY,
       );
 
       // 2. Salva na Planilha (se configurada)
@@ -152,7 +152,7 @@ function KitIniciantePage() {
     } catch (error) {
       console.error("Failed to send data:", error);
       alert(
-        "Houve um pequeno problema ao convocar os corvos. Verifique sua conexão e tente novamente."
+        "Houve um pequeno problema ao convocar os corvos. Verifique sua conexão e tente novamente.",
       );
     } finally {
       setIsSending(false);
@@ -221,8 +221,8 @@ function KitIniciantePage() {
                       <span className="font-bold block text-base mb-0.5 font-rpg">
                         Ficha de Personagem Exclusiva:
                       </span>
-                      Um modelo simples para organizar ideias, habilidades e até
-                      os medos dos personagens.
+                      Um modelo simples para organizar ideias, habilidades e até os medos dos
+                      personagens.
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -233,8 +233,8 @@ function KitIniciantePage() {
                       <span className="font-bold block text-base mb-0.5 font-rpg">
                         Guia de 2 Jogos Práticos:
                       </span>
-                      Instruções para as dinâmicas que treinam foco, prontidão e
-                      aquecem para o jogo.
+                      Instruções para as dinâmicas que treinam foco, prontidão e aquecem para o
+                      jogo.
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -287,8 +287,7 @@ function KitIniciantePage() {
                   htmlFor="email"
                   className="block text-[#2D1B2E] font-bold mb-1 ml-1 text-sm uppercase tracking-wider font-rpg"
                 >
-                  Pergaminho de Contato (E-mail){" "}
-                  <span className="text-[#D64585]">*</span>
+                  Pergaminho de Contato (E-mail) <span className="text-[#D64585]">*</span>
                 </label>
                 <div className="relative">
                   <input
@@ -347,9 +346,7 @@ function KitIniciantePage() {
                   </>
                 ) : (
                   <>
-                    <span className="hidden sm:inline">
-                      Iniciar Aventura (Baixar)
-                    </span>
+                    <span className="hidden sm:inline">Iniciar Aventura (Baixar)</span>
                     <span className="sm:hidden">Baixar Kit</span>
                     <Download className="sm:size-6 size-4" strokeWidth={3} />
                   </>
@@ -382,11 +379,7 @@ function KitIniciantePage() {
           <div className="flex flex-col items-center text-center animate-pulse-slow py-8 px-4">
             <div className="mb-6 relative">
               <div className="absolute inset-0 blur-xl opacity-50 rounded-full bg-green-200" />
-              <CheckCircle
-                size={80}
-                className="text-green-600 relative z-10"
-                strokeWidth={1.5}
-              />
+              <CheckCircle size={80} className="text-green-600 relative z-10" strokeWidth={1.5} />
             </div>
 
             <h2 className="text-3xl md:text-4xl font-rpg text-[#2D1B2E] font-bold mb-8 leading-tight">
@@ -405,8 +398,8 @@ function KitIniciantePage() {
                 já está a caminho do seu e-mail.
                 <br />
                 <br />
-                Em alguns minutos você receberá o material com a ficha, os
-                jogos e a aventura base para começar.
+                Em alguns minutos você receberá o material com a ficha, os jogos e a aventura base
+                para começar.
                 <br />
                 <span className="text-sm text-gray-600 mt-2 block font-bold">
                   (Confere o Spam também! 😉)
@@ -421,10 +414,7 @@ function KitIniciantePage() {
 
               <div className="flex flex-col md:flex-row items-center gap-6 mt-4">
                 {/* Book Cover */}
-                <Link
-                  to="/ebooks/teatro-rpg"
-                  className="shrink-0 group cursor-pointer"
-                >
+                <Link to="/ebooks/teatro-rpg" className="shrink-0 group cursor-pointer">
                   <div className="w-32 h-44 bg-[#2D1B2E] flex flex-col items-center justify-center text-[#FDF2D0] shadow-md border-2 border-[#2D1B2E] relative overflow-hidden rounded-sm">
                     <img
                       src={livroCapa.url}
@@ -440,9 +430,7 @@ function KitIniciantePage() {
                   </h3>
                   <p className="text-[#2D1B2E] text-sm mb-5 leading-relaxed text-center md:text-left">
                     Descubra o método completo no livro{" "}
-                    <span className="font-bold text-[#D64585]">
-                      "Como Ensinar Teatro com RPG"
-                    </span>{" "}
+                    <span className="font-bold text-[#D64585]">"Como Ensinar Teatro com RPG"</span>{" "}
                     e transforme o ensino em aventuras inesquecíveis.
                   </p>
 

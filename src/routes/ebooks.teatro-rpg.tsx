@@ -1,14 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import {
-  ArrowRight,
-  Book,
-  BookOpen,
-  Check,
-  Dices,
-  Sparkles,
-  Star,
-  Users,
-} from "lucide-react";
+import { ArrowRight, Book, BookOpen, Check, Dices, Sparkles, Star, Users } from "lucide-react";
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
@@ -77,8 +68,7 @@ export const Route = createFileRoute("/ebooks/teatro-rpg")({
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Como Ensinar Teatro com RPG",
-          description:
-            "E-book com o método para unir teatro e RPG em sala de aula.",
+          description: "E-book com o método para unir teatro e RPG em sala de aula.",
           brand: { "@type": "Brand", name: "Nerd em Cena" },
           offers: {
             "@type": "Offer",
@@ -110,7 +100,8 @@ function SalesPage() {
             RPG SEMPRE FOI UM JOGO DE <span className="text-gold">INTERPRETAR</span>
           </h1>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
-            E com esse guia completo, você vai transformar a diversão da mesa em teatro, criatividade e colaboração que ninguém quer que acabe.
+            E com esse guia completo, você vai transformar a diversão da mesa em teatro,
+            criatividade e colaboração que ninguém quer que acabe.
           </p>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
@@ -123,9 +114,7 @@ function SalesPage() {
             />
             <div className="min-w-0 flex-1">
               <div className="flex flex-col items-center gap-1 sm:items-start">
-                <span className="font-heading text-4xl leading-none text-gold">
-                  R$ 24,90
-                </span>
+                <span className="font-heading text-4xl leading-none text-gold">R$ 24,90</span>
                 <span className="text-xs text-muted-foreground sm:text-sm">
                   pagamento único • acesso imediato
                 </span>
@@ -140,8 +129,7 @@ function SalesPage() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <p className="mt-3 text-xs text-muted-foreground">
-                PDF para ler no celular, tablet ou imprimir. Compra segura via
-                Hotmart.
+                PDF para ler no celular, tablet ou imprimir. Compra segura via Hotmart.
               </p>
             </div>
           </div>
@@ -164,8 +152,7 @@ function SalesPage() {
                 </p>
                 <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground">
                   <span>
-                    4 e-books por{" "}
-                    <span className="font-heading text-gold">R$ 45,90</span>
+                    4 e-books por <span className="font-heading text-gold">R$ 45,90</span>
                   </span>
                   <span className="line-through">R$ 69,80</span>
                   <span className="inline-flex items-center whitespace-nowrap text-gold">
@@ -200,9 +187,7 @@ function SalesPage() {
 
         {/* Para quem é — pais nerds e RPGistas em primeiro lugar */}
         <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-          <SectionTitle icon={<Users className="h-5 w-5" />}>
-            PARA QUEM É
-          </SectionTitle>
+          <SectionTitle icon={<Users className="h-5 w-5" />}>PARA QUEM É</SectionTitle>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
               "Pais nerds que jogam RPG com os filhos",
@@ -230,9 +215,9 @@ function SalesPage() {
               LEVE O PACOTE COMPLETO
             </h2>
             <p className="mt-3 text-sm text-muted-foreground md:text-base">
-              Por menos de R$ 21 a mais você não leva só o método — leva a
-              biblioteca inteira: <strong className="text-foreground">4 e-books</strong>{" "}
-              com aventuras e atividades prontas para começar agora mesmo.
+              Por menos de R$ 21 a mais você não leva só o método — leva a biblioteca inteira:{" "}
+              <strong className="text-foreground">4 e-books</strong> com aventuras e atividades
+              prontas para começar agora mesmo.
             </p>
 
             <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
@@ -252,9 +237,7 @@ function SalesPage() {
                     <span className="text-sm">
                       <strong className="text-foreground">{item.title}</strong>
                       <br />
-                      <span className="text-muted-foreground">
-                        {item.description}
-                      </span>
+                      <span className="text-muted-foreground">{item.description}</span>
                     </span>
                   </li>
                 ))}
@@ -263,9 +246,7 @@ function SalesPage() {
 
             <div className="mt-6 rounded-2xl border border-gold/30 bg-black p-5">
               <p className="flex flex-wrap items-baseline gap-3">
-                <span className="text-sm text-muted-foreground line-through">
-                  R$ 69,80
-                </span>
+                <span className="text-sm text-muted-foreground line-through">R$ 69,80</span>
                 <span className="font-heading text-3xl text-gold sm:text-4xl md:text-5xl">
                   R$ 45,90
                 </span>
@@ -302,9 +283,7 @@ function SalesPage() {
 
         {/* FAQ simples */}
         <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-          <SectionTitle icon={<Dices className="h-5 w-5" />}>
-            PERGUNTAS RÁPIDAS
-          </SectionTitle>
+          <SectionTitle icon={<Dices className="h-5 w-5" />}>PERGUNTAS RÁPIDAS</SectionTitle>
           <div className="grid gap-4">
             {[
               {
@@ -321,9 +300,7 @@ function SalesPage() {
               },
             ].map((f) => (
               <div key={f.q}>
-                <p className="font-heading text-lg tracking-wide text-gold">
-                  {f.q}
-                </p>
+                <p className="font-heading text-lg tracking-wide text-gold">{f.q}</p>
                 <p className="text-sm text-muted-foreground">{f.a}</p>
               </div>
             ))}

@@ -2,6 +2,7 @@ export const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/nerdemcenaoficial",
   youtube: "https://www.youtube.com/@NerdEmCenaOficial",
   tiktok: "https://www.tiktok.com/@nerdemcenaoficial",
+  twitch: "https://www.twitch.tv/nerdemcena",
   instagramDm: "https://ig.me/m/nerdemcenaoficial",
 };
 
@@ -15,7 +16,6 @@ export const PRODUCT_LINKS = {
   teatroCriancas:
     "https://hotmart.com/pt-br/marketplace/produtos/como-ensinar-teatro-para-criancas/P86223542K?sck=HOTMART_PRODUCT_PAGE",
 };
-
 
 export const CONTACT = {
   email: "mailto:contato.nerdemcena@gmail.com",

@@ -17,9 +17,7 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-heading text-8xl text-gold">404</h1>
-        <h2 className="mt-4 font-heading text-2xl text-foreground">
-          Página não encontrada
-        </h2>
+        <h2 className="mt-4 font-heading text-2xl text-foreground">Página não encontrada</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           A página que você procurou não existe ou foi movida.
         </p>
@@ -50,8 +48,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           Ops, algo deu errado
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          A página não carregou corretamente. Tente recarregar ou voltar para o
-          início.
+          A página não carregou corretamente. Tente recarregar ou voltar para o início.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <button
@@ -79,19 +76,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, viewport-fit=cover",
+      },
+      { name: "theme-color", content: "#0b0b00" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
       { title: "Nerd em Cena" },
       {
         name: "description",
-        content:
-          "Nerd em Cena: animes, games, cobertura de eventos, RPG e teatro com humor.",
+        content: "Nerd em Cena: animes, games, cobertura de eventos, RPG e teatro com humor.",
       },
       { name: "author", content: "Nerd em Cena" },
       { property: "og:title", content: "Nerd em Cena" },
       {
         property: "og:description",
-        content:
-          "Animes, games, cobertura de eventos, RPG e teatro. Siga o Nerd em Cena.",
+        content: "Animes, games, cobertura de eventos, RPG e teatro. Siga o Nerd em Cena.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -110,6 +111,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
         crossOrigin: "anonymous",
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://fonts.gstatic.com",
       },
       {
         rel: "stylesheet",
