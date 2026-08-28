@@ -90,7 +90,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                     )}
                   </p>
                 </div>
-                <div className="flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+                <div className="btn-gold-gradient flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl px-4 py-2.5 text-sm font-bold text-black">
                   <span>{item.cta ?? "COMPRAR"}</span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>

@@ -61,6 +61,7 @@
   --color-black-soft: var(--black-soft);
   --color-black-card: var(--black-card);
   --color-gold-muted: var(--gold-muted);
+  --color-orange: var(--orange);
 }
 
 :root {
@@ -94,6 +95,7 @@
   --black-soft: oklch(0.08 0.02 260);
   --black-card: oklch(0.1 0.02 260);
   --gold-muted: oklch(0.6 0.1 85);
+  --orange: oklch(0.68 0.22 35);
 
   --chart-1: oklch(0.75 0.18 85);
   --chart-2: oklch(0.65 0.15 250);
@@ -173,20 +175,31 @@
 
 /* Decorative gold underline used for section titles */
 .gold-underline {
-  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-muted) 60%, transparent);
+  background: linear-gradient(90deg, var(--color-gold), var(--color-orange) 60%, transparent);
   height: 2px;
 }
 
-/* Gold glow for primary buttons */
+/* Orange/Gold glow for primary buttons */
 .gold-glow {
-  box-shadow: 0 0 20px -4px color-mix(in oklab, var(--color-gold) 35%, transparent);
+  box-shadow: 0 0 24px -4px color-mix(in oklab, var(--color-orange) 45%, transparent);
+}
+
+/* Gradient hover for main buttons */
+.btn-gold-gradient {
+  background: var(--color-gold);
+  background-size: 200% auto;
+  transition: all 0.3s ease;
+}
+
+.btn-gold-gradient:hover {
+  background-image: linear-gradient(to right, var(--color-gold) 0%, var(--color-orange) 51%, var(--color-gold) 100%);
+  background-position: right center;
 }
 
 /* Star field / gold dot pattern matching reference */
 .stars {
-  background-image: radial-gradient(circle, rgba(232, 191, 20, 0.22) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(232, 191, 20, 0.3) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
-  opacity: 0.85;
 }
 
 /* Heading font utility */
@@ -310,13 +323,10 @@
 }
 
 .dots-bg {
-  background-color: #0a0a00;
+  background-color: #000000;
   background-image:
-    radial-gradient(circle at 50% 120px, rgba(232, 191, 20, 0.2) 0%, transparent 60%),
-    radial-gradient(rgba(232, 191, 20, 0.22) 1.5px, transparent 1.5px);
-  background-size:
-    100% 100%,
-    24px 24px;
+    radial-gradient(circle, rgba(232, 191, 20, 0.3) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
 }
 
 /* ===== Mídia Kit Entrance Animations ===== */

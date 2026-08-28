@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Instagram,
   Youtube,
-  Music2,
   MessageCircle,
   Mail,
   ArrowRight,
@@ -21,6 +20,14 @@ function TwitchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
       <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
+    </svg>
+  );
+}
+
+function TikTokIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
     </svg>
   );
 }
@@ -49,16 +56,13 @@ export const Route = createFileRoute("/")({
 
 export function Index() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-blk dots-bg font-nunito text-foreground selection:bg-gold selection:text-black">
-      {/* Decorative starfield overlay */}
-      <div className="pointer-events-none fixed inset-0 stars opacity-40" />
-
+    <div className="relative min-h-screen overflow-x-hidden bg-black dots-bg font-nunito text-foreground selection:bg-gold selection:text-black">
       <main className="relative mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <h1 className="sr-only">Nerd em Cena — Links e Acervo Oficial</h1>
 
         {/* HERO: LOGO + REDES + SLOGAN */}
         <header className="flex flex-col items-center text-center">
-          <NerdLogo className="h-28 w-28 transition-transform duration-300 hover:scale-105 sm:h-32 sm:w-32" />
+          <NerdLogo glow={false} className="h-28 w-28 transition-transform duration-300 hover:scale-105 sm:h-32 sm:w-32" />
           <div className="mt-4 flex w-full flex-col items-center">
             <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
               @NERDEMCENAOFICIAL
@@ -91,7 +95,7 @@ export function Index() {
                 aria-label="TikTok do Nerd em Cena"
                 className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
               >
-                <Music2 className="h-5 w-5" />
+                <TikTokIcon className="h-5 w-5" />
               </a>
               <a
                 href={SOCIAL_LINKS.twitch}
@@ -161,12 +165,12 @@ export function Index() {
             >
               TORNEIOS <span className="text-gold">(EM BREVE)</span>
             </SectionTitle>
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 font-heading text-[11px] tracking-widest text-gold">
+            <div className="mt-4 flex flex-col items-start gap-4 sm:flex-col sm:items-start">
+              <span className="inline-flex items-center gap-2 rounded-full border border-orange/40 px-3 py-1 font-heading text-[11px] tracking-widest text-[#e85d04]">
                 <Lock className="h-3 w-3" />
                 SELADO POR ENQUANTO
               </span>
-              <span className="ml-auto inline-flex items-center gap-2 rounded-xl bg-gold px-4 py-2.5 text-sm font-bold text-black transition-colors group-hover:bg-gold-muted">
+              <span className="btn-gold-gradient inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold text-black sm:w-auto">
                 DESCOBRIR
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>

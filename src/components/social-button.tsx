@@ -1,4 +1,4 @@
-import { ArrowRight, Instagram, Youtube, Music2 } from "lucide-react";
+import { ArrowRight, Instagram, Youtube } from "lucide-react";
 
 interface SocialButtonProps {
   platform: "instagram" | "youtube" | "tiktok" | "twitch";
@@ -16,10 +16,18 @@ function TwitchIcon({ className = "h-6 w-6" }: { className?: string }) {
   );
 }
 
+function TikTokIcon({ className = "h-6 w-6" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+    </svg>
+  );
+}
+
 const icons = {
   instagram: Instagram,
   youtube: Youtube,
-  tiktok: Music2,
+  tiktok: TikTokIcon,
   twitch: TwitchIcon,
 };
 
@@ -50,8 +58,8 @@ export function SocialButton({
           <p className="text-sm text-muted-foreground">{handle}</p>
         </div>
       </div>
-      <div className="flex shrink-0 items-center justify-between gap-3 rounded-xl bg-gold px-4 py-2.5 text-sm font-semibold text-black transition-colors group-hover:bg-gold-muted">
-        <span>VER NA {label.toUpperCase()}</span>
+      <div className="btn-gold-gradient flex shrink-0 items-center justify-between gap-3 rounded-xl px-4 py-2.5 text-sm font-semibold text-black">
+        <span>VER N{['Instagram', 'YouTube', 'TikTok'].includes(label) ? 'O' : 'A'} {label.toUpperCase()}</span>
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </div>
     </a>
