@@ -179,27 +179,15 @@
   height: 2px;
 }
 
-/* Orange/Gold glow for primary buttons */
+/* Gold glow for primary buttons */
 .gold-glow {
-  box-shadow: 0 0 24px -4px color-mix(in oklab, var(--color-orange) 45%, transparent);
-}
-
-/* Gradient hover for main buttons */
-.btn-gold-gradient {
-  background: var(--color-gold);
-  background-size: 200% auto;
-  transition: all 0.3s ease;
-}
-
-.btn-gold-gradient:hover {
-  background-image: linear-gradient(to right, var(--color-gold) 0%, var(--color-orange) 51%, var(--color-gold) 100%);
-  background-position: right center;
+  box-shadow: 0 0 20px -4px color-mix(in oklab, var(--color-gold) 35%, transparent);
 }
 
 /* Star field / gold dot pattern matching reference */
 .stars {
-  background-image: radial-gradient(circle, rgba(232, 191, 20, 0.3) 1.5px, transparent 1.5px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(232, 191, 20, 0.2) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
 }
 
 /* Heading font utility */
@@ -325,8 +313,8 @@
 .dots-bg {
   background-color: #000000;
   background-image:
-    radial-gradient(circle, rgba(232, 191, 20, 0.3) 1.5px, transparent 1.5px);
-  background-size: 24px 24px;
+    radial-gradient(circle, rgba(232, 191, 20, 0.2) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
 }
 
 /* ===== Mídia Kit Entrance Animations ===== */

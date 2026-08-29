@@ -131,7 +131,7 @@ export function TorneiosPage() {
                 href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-gold-gradient inline-flex w-full items-center justify-center gap-2.5 rounded-[12px] border-2 border-blk/30 px-6 py-3.5 font-bebas text-[1rem] uppercase tracking-[0.14em] text-blk shadow-[3px_3px_0_rgba(255,140,0,0.6)] transition-all hover:-translate-y-1 hover:shadow-[5px_5px_0_rgba(255,140,0,0.6)] sm:w-auto"
+                className="bg-gold transition-colors group-hover:bg-gold-muted inline-flex w-full items-center justify-center gap-2.5 rounded-[12px] border-2 border-blk/30 px-6 py-3.5 font-bebas text-[1rem] uppercase tracking-[0.14em] text-blk shadow-[3px_3px_0_rgba(255,140,0,0.6)] transition-all hover:-translate-y-1 hover:shadow-[5px_5px_0_rgba(255,140,0,0.6)] sm:w-auto"
               >
                 <Instagram className="h-4 w-4" />
                 Quero ser avisado primeiro

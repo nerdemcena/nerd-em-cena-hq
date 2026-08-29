@@ -50,17 +50,17 @@ export function SocialButton({
       }`}
     >
       <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold text-black">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00]">
           <Icon className="h-6 w-6" />
         </div>
         <div>
-          <p className="font-heading text-xl tracking-wide text-gold">{label}</p>
+          <p className="font-heading text-xl tracking-wide text-white">{label}</p>
           <p className="text-sm text-muted-foreground">{handle}</p>
         </div>
       </div>
-      <div className="btn-gold-gradient flex shrink-0 items-center justify-between gap-3 rounded-xl px-4 py-2.5 text-sm font-semibold text-black">
+      <div className="bg-gold transition-colors group-hover:bg-gold-muted flex shrink-0 items-center justify-between gap-2 rounded-lg px-3 py-2 text-xs font-bold text-black">
         <span>VER N{['Instagram', 'YouTube', 'TikTok'].includes(label) ? 'O' : 'A'} {label.toUpperCase()}</span>
-        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
       </div>
     </a>
   );

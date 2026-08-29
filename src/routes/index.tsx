@@ -62,9 +62,9 @@ export function Index() {
 
         {/* HERO: LOGO + REDES + SLOGAN */}
         <header className="flex flex-col items-center text-center">
-          <NerdLogo glow={false} className="h-28 w-28 transition-transform duration-300 hover:scale-105 sm:h-32 sm:w-32" />
+          <NerdLogo glow={false} className="h-28 w-28 rounded-full border-[3px] border-gold p-[3px] shadow-[0_0_20px_rgba(232,191,20,0.4)] transition-transform duration-300 hover:scale-105 sm:h-32 sm:w-32 bg-black" />
           <div className="mt-4 flex w-full flex-col items-center">
-            <p className="font-heading text-sm tracking-[0.25em] text-gold sm:text-base">
+            <p className="font-heading text-sm tracking-[0.25em] text-white sm:text-base">
               @NERDEMCENAOFICIAL
             </p>
 
@@ -75,7 +75,7 @@ export function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram do Nerd em Cena"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00] transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -84,7 +84,7 @@ export function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube do Nerd em Cena"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00] transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
               >
                 <Youtube className="h-5 w-5" />
               </a>
@@ -93,7 +93,7 @@ export function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok do Nerd em Cena"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00] transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
               >
                 <TikTokIcon className="h-5 w-5" />
               </a>
@@ -102,7 +102,7 @@ export function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitch do Nerd em Cena"
-                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00] transition-all duration-200 hover:-translate-y-1 hover:scale-105 hover:gold-glow"
               >
                 <TwitchIcon className="h-5 w-5" />
               </a>
@@ -110,7 +110,7 @@ export function Index() {
 
             <p className="mt-4 max-w-md text-sm text-muted-foreground sm:text-base">
               Animes, games, RPG e cobertura de eventos sempre{" "}
-              <span className="font-semibold text-gold">com humor!</span>
+              <span className="font-semibold text-white">com humor!</span>
             </p>
           </div>
         </header>
@@ -170,7 +170,7 @@ export function Index() {
                 <Lock className="h-3 w-3" />
                 SELADO POR ENQUANTO
               </span>
-              <span className="btn-gold-gradient inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold text-black sm:w-auto">
+              <span className="bg-gold transition-colors group-hover:bg-gold-muted inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold text-black sm:w-auto">
                 DESCOBRIR
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
@@ -196,14 +196,14 @@ export function Index() {
                 className="group flex items-center justify-between gap-3 rounded-2xl bg-gold p-4 text-black transition-all duration-300 hover:scale-[1.02] hover:gold-glow sm:p-5"
               >
                 <div className="flex min-w-0 items-center gap-3.5">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-black text-gold">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00]">
                     <Instagram className="h-5 w-5" />
                   </span>
                   <div className="min-w-0">
                     <span className="block font-heading text-xs uppercase tracking-wider text-black/70">
                       INSTAGRAM DIRECT
                     </span>
-                    <span className="block truncate font-heading text-base font-bold text-black sm:text-lg">
+                    <span className="block truncate text-xl text-black sm:text-2xl font-bebas tracking-wider">
                       {CONTACT.handle}
                     </span>
                   </div>
@@ -216,11 +216,11 @@ export function Index() {
                 className="group flex items-center justify-between gap-3 rounded-2xl border border-gold/40 bg-gold/5 p-4 text-foreground transition-all duration-300 hover:border-gold hover:bg-gold/10 sm:p-5"
               >
                 <div className="flex min-w-0 items-center gap-3.5">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold text-black">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00]">
                     <Mail className="h-5 w-5" />
                   </span>
                   <div className="min-w-0">
-                    <span className="block font-heading text-xs uppercase tracking-wider text-gold">
+                    <span className="block font-heading text-xs uppercase tracking-wider text-[#ff6500]">
                       E-MAIL PROFISSIONAL
                     </span>
                     <span className="block truncate text-xs font-medium text-foreground sm:text-sm">
@@ -235,10 +235,10 @@ export function Index() {
         </section>
 
         {/* FOOTER */}
-        <footer className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gold/20 py-8 sm:flex-row">
-          <div className="flex items-center gap-3">
-            <NerdLogo className="h-12 w-12" glow={false} />
-            <div>
+        <footer className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-gold/20 py-8 sm:flex-row">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+            <NerdLogo className="h-14 w-14" glow={false} />
+            <div className="text-center sm:text-left">
               <p className="font-heading text-xl tracking-wide text-foreground">
                 NERD <span className="text-gold">EM</span> CENA
               </p>
@@ -248,9 +248,8 @@ export function Index() {
             </div>
           </div>
           <p className="text-center text-sm text-muted-foreground sm:text-right">
-            © {new Date().getFullYear()} Nerd em Cena.
-            <br />
-            Todos os direitos reservados.
+            © {new Date().getFullYear()} Nerd em Cena.<br className="hidden sm:inline" />
+            <span className="sm:hidden"> </span>Todos os direitos reservados.
           </p>
         </footer>
       </main>

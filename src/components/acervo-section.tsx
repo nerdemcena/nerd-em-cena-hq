@@ -15,6 +15,7 @@ export interface AcervoItem {
   oldPrice?: string;
   href: string;
   cta?: string;
+  tag?: string;
 }
 
 export const ACERVO_ITEMS: AcervoItem[] = [
@@ -47,6 +48,7 @@ export const ACERVO_ITEMS: AcervoItem[] = [
     price: "R$ 45,90",
     oldPrice: "R$ 69,80",
     href: "https://go.hotmart.com/L104847133B",
+    tag: "MAIOR DESCONTO",
   },
 ];
 
@@ -77,12 +79,19 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                   className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
                 />
                 <div className="min-w-0 flex-1 text-center sm:text-left">
-                  <h3 className="font-heading text-lg leading-tight tracking-wide text-gold sm:text-xl">
+                  {item.tag && (
+                    <span className="mb-2 inline-flex items-center gap-2 rounded-full border border-orange/40 px-3 py-1 font-heading text-[11px] tracking-widest text-[#e85d04]">
+                      {item.tag}
+                    </span>
+                  )}
+                  <h3 className="font-heading text-lg leading-tight tracking-wide text-[#ff6500] sm:text-xl">
                     {item.title}
                   </h3>
                   <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
                   <p className="mt-2 flex flex-wrap items-baseline justify-center gap-2 sm:justify-start">
-                    <span className="font-heading text-2xl text-foreground">{item.price}</span>
+                    <span className={`font-heading text-2xl ${item.price === 'GRÁTIS' ? 'text-green-500' : 'text-foreground'}`}>
+                      {item.price}
+                    </span>
                     {item.oldPrice && (
                       <span className="text-sm text-muted-foreground line-through">
                         {item.oldPrice}
@@ -90,7 +99,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                     )}
                   </p>
                 </div>
-                <div className="btn-gold-gradient flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl px-4 py-2.5 text-sm font-bold text-black">
+                <div className="bg-gold transition-colors group-hover:bg-gold-muted flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl px-4 py-2.5 text-sm font-bold text-black">
                   <span>{item.cta ?? "COMPRAR"}</span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
