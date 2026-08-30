@@ -17,8 +17,8 @@ import {
   MessageSquare,
 } from "lucide-react";
 
-import kitPdf from "@/assets/kit-iniciante.pdf.asset.json";
-import livroCapa from "@/assets/livro-teatro-rpg-capa.png.asset.json";
+const kitPdf = { url: "/assets-v1/kit-iniciante.pdf" };
+const livroCapa = { url: "/assets-v1/livro-teatro-rpg-capa.png" };
 
 // =========================================================
 // CONFIGURAÇÕES DO EMAILJS (mesmas do site original)

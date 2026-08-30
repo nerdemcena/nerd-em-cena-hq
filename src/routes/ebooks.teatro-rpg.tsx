@@ -3,8 +3,8 @@ import { ArrowRight, Book, BookOpen, Check, Dices, Sparkles, Star, Users } from 
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
-import ebookRpg from "@/assets/ebook-rpg.jpg.asset.json";
-import ebookPacote from "@/assets/ebook-pacote.png.asset.json";
+const ebookRpg = { url: "/assets-v1/ebook-rpg.jpg" };
+const ebookPacote = { url: "/assets-v1/ebook-pacote.png" };
 
 const CHECKOUT_UNICO =
   "https://pay.hotmart.com/I104079611H?sck=HOTMART_PRODUCT_PAGE&off=4c5nx472&hotfeature=32&bid=1787343121644";

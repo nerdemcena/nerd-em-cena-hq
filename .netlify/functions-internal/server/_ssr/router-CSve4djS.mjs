@@ -1,11 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-import { a as ebook_rpg_jpg_asset_default, i as ebook_pacote_png_asset_default, n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CScb0KiN.mjs";
+import { n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CQTq-Tfl.mjs";
 import { r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { A as ArrowRight, T as Clapperboard, _ as Lock, a as Trophy, b as Gamepad2, d as Play, g as Mail, j as ArrowLeft, k as BookOpen, m as MessageCircle, n as Youtube, o as Swords, p as MessageSquare, t as Zap, w as Crown, y as Instagram } from "../_libs/lucide-react.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BOkK0c5C.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CSve4djS.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var styles_default = "/assets/styles-BCTD-eqq.css";
@@ -397,32 +397,10 @@ function SocialButton({ platform, label, handle, href, variant = "outline" }) {
 		columnNumber: 5
 	}, this);
 }
-var kit_iniciante_capa_jpg_asset_default = {
-	version: 1,
-	asset_id: "240aa0b1-9f2a-4204-974d-a91f97815f57",
-	project_id: "14dd786f-ae3b-441a-ab20-7bfe5c8bb194",
-	url: "/__l5e/assets-v1/240aa0b1-9f2a-4204-974d-a91f97815f57/kit-iniciante-capa.jpg",
-	r2_key: "a/v1/14dd786f-ae3b-441a-ab20-7bfe5c8bb194/240aa0b1-9f2a-4204-974d-a91f97815f57/kit-iniciante-capa.jpg",
-	original_filename: "kit-iniciante-capa.jpg",
-	size: 121869,
-	content_type: "image/jpeg",
-	created_at: "2026-08-21T20:00:05Z"
-};
-var ebook_criancas_jpg_asset_default = {
-	version: 1,
-	asset_id: "e94ff6a7-dfec-4988-baac-ed2e9004ba82",
-	project_id: "14dd786f-ae3b-441a-ab20-7bfe5c8bb194",
-	url: "/__l5e/assets-v1/e94ff6a7-dfec-4988-baac-ed2e9004ba82/ebook-criancas.jpg",
-	r2_key: "a/v1/14dd786f-ae3b-441a-ab20-7bfe5c8bb194/e94ff6a7-dfec-4988-baac-ed2e9004ba82/ebook-criancas.jpg",
-	original_filename: "ebook-criancas.jpg",
-	size: 3268565,
-	content_type: "image/jpeg",
-	created_at: "2026-08-21T03:18:51Z"
-};
 var _jsxFileName$3 = "/app/applet/src/components/acervo-section.tsx";
 var ACERVO_ITEMS = [
 	{
-		img: kit_iniciante_capa_jpg_asset_default.url,
+		img: { url: "/assets-v1/kit-iniciante-capa.jpg" }.url,
 		title: "KIT INICIANTE TEATRO-RPG",
 		description: "Material introdutório para começar a unir teatro e RPG hoje mesmo",
 		price: "GRÁTIS",
@@ -430,7 +408,7 @@ var ACERVO_ITEMS = [
 		cta: "BAIXAR"
 	},
 	{
-		img: ebook_rpg_jpg_asset_default.url,
+		img: { url: "/assets-v1/ebook-rpg.jpg" }.url,
 		title: "COMO ENSINAR TEATRO COM RPG",
 		description: "Guia completo para integrar RPG no ensino teatral",
 		price: "R$ 24,90",
@@ -438,14 +416,14 @@ var ACERVO_ITEMS = [
 		variant: "blue"
 	},
 	{
-		img: ebook_criancas_jpg_asset_default.url,
+		img: { url: "/assets-v1/ebook-criancas.jpg" }.url,
 		title: "TEATRO PARA CRIANÇAS",
 		description: "Técnicas e atividades teatrais para crianças",
 		price: "R$ 19,90",
 		href: "https://hotmart.com/pt-br/marketplace/produtos/como-ensinar-teatro-para-criancas/P86223542K?sck=HOTMART_PRODUCT_PAGE"
 	},
 	{
-		img: ebook_pacote_png_asset_default.url,
+		img: { url: "/assets-v1/ebook-pacote.png" }.url,
 		title: "SUPER PACOTE COMPLETO",
 		description: "Todos os 3 ebooks em um único pacote com desconto especial",
 		price: "R$ 45,90",
@@ -1186,7 +1164,7 @@ function Index() {
 		columnNumber: 5
 	}, this);
 }
-var $$splitComponentImporter$1 = () => import("./kit-iniciante-Czc7XgyT.mjs");
+var $$splitComponentImporter$1 = () => import("./kit-iniciante-DHgfzFgn.mjs");
 var Route$3 = createFileRoute("/kit-iniciante")({
 	head: () => ({
 		meta: [
@@ -3397,7 +3375,7 @@ function TorneiosPage() {
 		columnNumber: 5
 	}, this);
 }
-var $$splitComponentImporter = () => import("./ebooks.teatro-rpg-CrTANI66.mjs");
+var $$splitComponentImporter = () => import("./ebooks.teatro-rpg-DHXA8mwp.mjs");
 var Route = createFileRoute("/ebooks/teatro-rpg")({
 	head: () => ({
 		meta: [

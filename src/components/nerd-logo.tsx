@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logo-nerd-em-cena.png.asset.json";
+const logoAsset = { url: "/assets-v1/logo-nerd-em-cena.png" };
 
 interface NerdLogoProps {
   className?: string;

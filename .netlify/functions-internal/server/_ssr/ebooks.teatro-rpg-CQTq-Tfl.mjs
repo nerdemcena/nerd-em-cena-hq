@@ -1,23 +1,13 @@
 import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-CScb0KiN.js
+//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-CQTq-Tfl.js
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
-var logo_nerd_em_cena_png_asset_default = {
-	version: 1,
-	asset_id: "3970a005-5304-4fc8-9138-5c172ee81959",
-	project_id: "14dd786f-ae3b-441a-ab20-7bfe5c8bb194",
-	url: "/__l5e/assets-v1/3970a005-5304-4fc8-9138-5c172ee81959/logo-nerd-em-cena.png",
-	r2_key: "a/v1/14dd786f-ae3b-441a-ab20-7bfe5c8bb194/3970a005-5304-4fc8-9138-5c172ee81959/logo-nerd-em-cena.png",
-	original_filename: "logo-nerd-em-cena.png",
-	size: 630390,
-	content_type: "image/png",
-	created_at: "2026-08-21T03:18:39Z"
-};
 var _jsxFileName$1 = "/app/applet/src/components/nerd-logo.tsx";
+var logoAsset = { url: "/assets-v1/logo-nerd-em-cena.png" };
 function NerdLogo({ className = "h-28 w-28", alt = "Nerd em Cena", glow = true, loading = "eager" }) {
 	return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 		className: `relative inline-flex shrink-0 items-center justify-center rounded-full ${className}`,
 		children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
-			src: logo_nerd_em_cena_png_asset_default.url,
+			src: logoAsset.url,
 			alt,
 			loading,
 			className: `h-full w-full rounded-full object-contain ${glow ? "drop-shadow-[0_0_30px_rgba(232,191,20,0.5)]" : ""}`
@@ -99,28 +89,6 @@ function SectionTitle({ icon, children, subtitle, variant = "default" }) {
 		columnNumber: 5
 	}, this);
 }
-var ebook_pacote_png_asset_default = {
-	version: 1,
-	asset_id: "2a025b41-68c7-4fb1-894a-db36f1729d3b",
-	project_id: "14dd786f-ae3b-441a-ab20-7bfe5c8bb194",
-	url: "/__l5e/assets-v1/2a025b41-68c7-4fb1-894a-db36f1729d3b/ebook-pacote.png",
-	r2_key: "a/v1/14dd786f-ae3b-441a-ab20-7bfe5c8bb194/2a025b41-68c7-4fb1-894a-db36f1729d3b/ebook-pacote.png",
-	original_filename: "ebook-pacote.png",
-	size: 1785425,
-	content_type: "image/png",
-	created_at: "2026-08-21T03:18:45Z"
-};
-var ebook_rpg_jpg_asset_default = {
-	version: 1,
-	asset_id: "27a2f5fa-435b-46c1-8697-d8dc59dd8278",
-	project_id: "14dd786f-ae3b-441a-ab20-7bfe5c8bb194",
-	url: "/__l5e/assets-v1/27a2f5fa-435b-46c1-8697-d8dc59dd8278/ebook-rpg.jpg",
-	r2_key: "a/v1/14dd786f-ae3b-441a-ab20-7bfe5c8bb194/27a2f5fa-435b-46c1-8697-d8dc59dd8278/ebook-rpg.jpg",
-	original_filename: "ebook-rpg.jpg",
-	size: 556981,
-	content_type: "image/jpeg",
-	created_at: "2026-08-21T03:18:48Z"
-};
 var CHECKOUT_UNICO = "https://pay.hotmart.com/I104079611H?sck=HOTMART_PRODUCT_PAGE&off=4c5nx472&hotfeature=32&bid=1787343121644";
 //#endregion
-export { ebook_rpg_jpg_asset_default as a, ebook_pacote_png_asset_default as i, NerdLogo as n, SectionTitle as r, CHECKOUT_UNICO as t };
+export { NerdLogo as n, SectionTitle as r, CHECKOUT_UNICO as t };

@@ -2,10 +2,10 @@ import { ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 import { SectionTitle } from "@/components/section-title";
-import kitCapa from "@/assets/kit-iniciante-capa.jpg.asset.json";
-import ebookPacote from "@/assets/ebook-pacote.png.asset.json";
-import ebookRpg from "@/assets/ebook-rpg.jpg.asset.json";
-import ebookCriancas from "@/assets/ebook-criancas.jpg.asset.json";
+const kitCapa = { url: "/assets-v1/kit-iniciante-capa.jpg" };
+const ebookPacote = { url: "/assets-v1/ebook-pacote.png" };
+const ebookRpg = { url: "/assets-v1/ebook-rpg.jpg" };
+const ebookCriancas = { url: "/assets-v1/ebook-criancas.jpg" };
 
 export interface AcervoItem {
   img: string;

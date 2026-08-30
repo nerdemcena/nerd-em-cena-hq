@@ -1,9 +1,11 @@
 import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-import { a as ebook_rpg_jpg_asset_default, i as ebook_pacote_png_asset_default, n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CScb0KiN.mjs";
+import { n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CQTq-Tfl.mjs";
 import { A as ArrowRight, C as Dices, D as Check, O as Book, c as Sparkles, k as BookOpen, r as Users, s as Star } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-CrTANI66.js
+//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-DHXA8mwp.js
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var _jsxFileName = "/app/applet/src/routes/ebooks.teatro-rpg.tsx?tsr-split=component";
+var ebookRpg = { url: "/assets-v1/ebook-rpg.jpg" };
+var ebookPacote = { url: "/assets-v1/ebook-pacote.png" };
 var CHECKOUT_PACOTE = "https://pay.hotmart.com/L104847133B?sck=HOTMART_PRODUCT_PAGE&off=mp5a34do&hotfeature=32&bid=1787343101244";
 var PACOTE_ITEMS = [
 	{
@@ -36,12 +38,12 @@ function SalesPage() {
 		children: [
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "pointer-events-none fixed inset-0 stars" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 24,
+				lineNumber: 28,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "pointer-events-none fixed inset-0 bg-gradient-to-b from-\\[#0a192f\\] via-transparent to-\\[#020817\\]" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 25,
+				lineNumber: 29,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
@@ -54,12 +56,12 @@ function SalesPage() {
 								className: "inline-flex items-center gap-2 rounded-full border border-blue-500/40 px-3 py-1 text-xs font-bold tracking-widest text-blue-400",
 								children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Dices, { className: "h-3.5 w-3.5" }, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 31,
+									lineNumber: 35,
 									columnNumber: 13
 								}, this), " E-BOOK NERD EM CENA"]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 30,
+								lineNumber: 34,
 								columnNumber: 11
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
@@ -69,12 +71,12 @@ function SalesPage() {
 									children: "INTERPRETAR"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 34,
+									lineNumber: 38,
 									columnNumber: 39
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 33,
+								lineNumber: 37,
 								columnNumber: 11
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -82,7 +84,7 @@ function SalesPage() {
 								children: "E com esse guia completo, você vai transformar a diversão da mesa em teatro, criatividade e colaboração que ninguém quer que acabe."
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 36,
+								lineNumber: 40,
 								columnNumber: 11
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -91,22 +93,22 @@ function SalesPage() {
 									className: "relative flex shrink-0 justify-center sm:block",
 									children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" }, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 43,
+										lineNumber: 47,
 										columnNumber: 15
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
-										src: ebook_rpg_jpg_asset_default.url,
+										src: ebookRpg.url,
 										alt: "Capa do e-book Como Ensinar Teatro com RPG",
 										width: 300,
 										height: 400,
 										className: "relative z-10 h-44 w-auto shrink-0 self-center rounded-xl object-contain sm:h-48"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 44,
+										lineNumber: 48,
 										columnNumber: 15
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 42,
+									lineNumber: 46,
 									columnNumber: 13
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 									className: "min-w-0 flex-1",
@@ -118,19 +120,19 @@ function SalesPage() {
 												children: "R$ 24,90"
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 48,
+												lineNumber: 52,
 												columnNumber: 17
 											}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
 												className: "text-xs text-muted-foreground sm:text-sm",
 												children: "pagamento único • acesso imediato"
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 49,
+												lineNumber: 53,
 												columnNumber: 17
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 47,
+											lineNumber: 51,
 											columnNumber: 15
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -140,12 +142,12 @@ function SalesPage() {
 											className: "group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 px-4 py-3 sm:px-6 sm:py-4 text-sm font-bold text-white transition-all hover:scale-[1.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_4px_15px_rgba(37,99,235,0.4)] hover:from-blue-400 hover:to-blue-600",
 											children: ["QUERO O E-BOOK", /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowRight, { className: "h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" }, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 55,
+												lineNumber: 59,
 												columnNumber: 17
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 53,
+											lineNumber: 57,
 											columnNumber: 15
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -153,18 +155,18 @@ function SalesPage() {
 											children: "PDF para ler no celular, tablet ou imprimir. Compra segura via Hotmart."
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 57,
+											lineNumber: 61,
 											columnNumber: 15
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 46,
+									lineNumber: 50,
 									columnNumber: 13
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 41,
+								lineNumber: 45,
 								columnNumber: 11
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -178,16 +180,16 @@ function SalesPage() {
 										className: "relative flex h-10 w-10 shrink-0 items-center justify-center text-gold",
 										children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Book, { className: "absolute -left-0.5 top-0.5 h-5 w-5 rotate-[-8deg] opacity-60" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 67,
+											lineNumber: 71,
 											columnNumber: 17
 										}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(BookOpen, { className: "relative h-6 w-6" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 68,
+											lineNumber: 72,
 											columnNumber: 17
 										}, this)]
 									}, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 66,
+										lineNumber: 70,
 										columnNumber: 15
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 										className: "min-w-0 flex-1",
@@ -196,7 +198,7 @@ function SalesPage() {
 											children: "Ainda mais barato levando o Pacote Completo"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 71,
+											lineNumber: 75,
 											columnNumber: 17
 										}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 											className: "mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-muted-foreground",
@@ -206,11 +208,11 @@ function SalesPage() {
 													children: "R$ 45,90"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 76,
+													lineNumber: 80,
 													columnNumber: 35
 												}, this)] }, void 0, true, {
 													fileName: _jsxFileName,
-													lineNumber: 75,
+													lineNumber: 79,
 													columnNumber: 19
 												}, this),
 												/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -218,46 +220,46 @@ function SalesPage() {
 													children: "R$ 69,80"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 78,
+													lineNumber: 82,
 													columnNumber: 19
 												}, this),
 												/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
 													className: "inline-flex items-center whitespace-nowrap text-gold",
 													children: ["· ver oferta", /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowRight, { className: "ml-1 h-3 w-3 transition-transform group-hover:translate-x-0.5" }, void 0, false, {
 														fileName: _jsxFileName,
-														lineNumber: 81,
+														lineNumber: 85,
 														columnNumber: 21
 													}, this)]
 												}, void 0, true, {
 													fileName: _jsxFileName,
-													lineNumber: 79,
+													lineNumber: 83,
 													columnNumber: 19
 												}, this)
 											]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 74,
+											lineNumber: 78,
 											columnNumber: 17
 										}, this)]
 									}, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 70,
+										lineNumber: 74,
 										columnNumber: 15
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 65,
+									lineNumber: 69,
 									columnNumber: 13
 								}, this)
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 64,
+								lineNumber: 68,
 								columnNumber: 11
 							}, this)
 						]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 29,
+						lineNumber: 33,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", {
@@ -266,14 +268,14 @@ function SalesPage() {
 							variant: "blue",
 							icon: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Sparkles, { className: "h-5 w-5" }, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 91,
+								lineNumber: 95,
 								columnNumber: 46
 							}, this),
 							subtitle: "Nada de teoria solta: tudo pensado para aplicar na próxima mesa ou aula.",
 							children: "O QUE VOCÊ VAI DOMINAR"
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 91,
+							lineNumber: 95,
 							columnNumber: 11
 						}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
 							className: "grid gap-3",
@@ -283,34 +285,34 @@ function SalesPage() {
 									className: "mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white",
 									children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Check, { className: "h-4 w-4" }, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 97,
+										lineNumber: 101,
 										columnNumber: 19
 									}, this)
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 96,
+									lineNumber: 100,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
 									className: "text-foreground",
 									children: a
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 99,
+									lineNumber: 103,
 									columnNumber: 17
 								}, this)]
 							}, a, true, {
 								fileName: _jsxFileName,
-								lineNumber: 95,
+								lineNumber: 99,
 								columnNumber: 36
 							}, this))
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 94,
+							lineNumber: 98,
 							columnNumber: 11
 						}, this)]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 90,
+						lineNumber: 94,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", {
@@ -319,13 +321,13 @@ function SalesPage() {
 							variant: "blue",
 							icon: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Users, { className: "h-5 w-5" }, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 106,
+								lineNumber: 110,
 								columnNumber: 46
 							}, this),
 							children: "PARA QUEM É"
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 106,
+							lineNumber: 110,
 							columnNumber: 11
 						}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 							className: "grid gap-3 sm:grid-cols-2",
@@ -340,34 +342,34 @@ function SalesPage() {
 									className: "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition-colors group-hover:bg-gold group-hover:text-black",
 									children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Check, { className: "h-3 w-3" }, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 110,
+										lineNumber: 114,
 										columnNumber: 19
 									}, this)
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 109,
+									lineNumber: 113,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
 									className: "leading-snug",
 									children: p
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 112,
+									lineNumber: 116,
 									columnNumber: 17
 								}, this)]
 							}, p, true, {
 								fileName: _jsxFileName,
-								lineNumber: 108,
+								lineNumber: 112,
 								columnNumber: 179
 							}, this))
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 107,
+							lineNumber: 111,
 							columnNumber: 11
 						}, this)]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 105,
+						lineNumber: 109,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", {
@@ -379,12 +381,12 @@ function SalesPage() {
 									className: "inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold tracking-widest text-black",
 									children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Star, { className: "h-3.5 w-3.5" }, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 121,
+										lineNumber: 125,
 										columnNumber: 15
 									}, this), " ESCOLHA INTELIGENTE"]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 120,
+									lineNumber: 124,
 									columnNumber: 13
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
@@ -392,7 +394,7 @@ function SalesPage() {
 									children: "LEVE O PACOTE COMPLETO"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 123,
+									lineNumber: 127,
 									columnNumber: 13
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -405,14 +407,14 @@ function SalesPage() {
 											children: "4 e-books"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 128,
+											lineNumber: 132,
 											columnNumber: 15
 										}, this),
 										" com aventuras e atividades prontas para começar agora mesmo."
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 126,
+									lineNumber: 130,
 									columnNumber: 13
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -421,22 +423,22 @@ function SalesPage() {
 										className: "relative flex shrink-0 justify-center sm:block",
 										children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 134,
+											lineNumber: 138,
 											columnNumber: 17
 										}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
-											src: ebook_pacote_png_asset_default.url,
+											src: ebookPacote.url,
 											alt: "Capa do Super Pacote com 4 e-books de Teatro-RPG",
 											width: 400,
 											height: 400,
 											className: "relative z-10 h-44 w-auto shrink-0 self-center rounded-xl object-contain sm:h-48"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 135,
+											lineNumber: 139,
 											columnNumber: 17
 										}, this)]
 									}, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 133,
+										lineNumber: 137,
 										columnNumber: 15
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
 										className: "grid min-w-0 flex-1 gap-3",
@@ -446,12 +448,12 @@ function SalesPage() {
 												className: "mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white",
 												children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(BookOpen, { className: "h-3.5 w-3.5" }, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 140,
+													lineNumber: 144,
 													columnNumber: 23
 												}, this)
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 139,
+												lineNumber: 143,
 												columnNumber: 21
 											}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
 												className: "text-sm",
@@ -461,12 +463,12 @@ function SalesPage() {
 														children: item.title
 													}, void 0, false, {
 														fileName: _jsxFileName,
-														lineNumber: 143,
+														lineNumber: 147,
 														columnNumber: 23
 													}, this),
 													/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
 														fileName: _jsxFileName,
-														lineNumber: 144,
+														lineNumber: 148,
 														columnNumber: 23
 													}, this),
 													/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -474,28 +476,28 @@ function SalesPage() {
 														children: item.description
 													}, void 0, false, {
 														fileName: _jsxFileName,
-														lineNumber: 145,
+														lineNumber: 149,
 														columnNumber: 23
 													}, this)
 												]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 142,
+												lineNumber: 146,
 												columnNumber: 21
 											}, this)]
 										}, item.title, true, {
 											fileName: _jsxFileName,
-											lineNumber: 138,
+											lineNumber: 142,
 											columnNumber: 43
 										}, this))
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 137,
+										lineNumber: 141,
 										columnNumber: 15
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 132,
+									lineNumber: 136,
 									columnNumber: 13
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -509,7 +511,7 @@ function SalesPage() {
 													children: "R$ 69,80"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 153,
+													lineNumber: 157,
 													columnNumber: 17
 												}, this),
 												/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -517,7 +519,7 @@ function SalesPage() {
 													children: "R$ 45,90"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 154,
+													lineNumber: 158,
 													columnNumber: 17
 												}, this),
 												/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -525,13 +527,13 @@ function SalesPage() {
 													children: "ECONOMIZE R$ 23,90"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 157,
+													lineNumber: 161,
 													columnNumber: 17
 												}, this)
 											]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 152,
+											lineNumber: 156,
 											columnNumber: 15
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -541,12 +543,12 @@ function SalesPage() {
 											className: "group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 px-4 py-3 sm:px-6 sm:py-4 text-sm sm:text-base font-bold text-white transition-all hover:scale-[1.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_4px_15px_rgba(37,99,235,0.4)] hover:from-blue-400 hover:to-blue-600",
 											children: ["QUERO OS 4 E-BOOKS", /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowRight, { className: "h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" }, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 163,
+												lineNumber: 167,
 												columnNumber: 17
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 161,
+											lineNumber: 165,
 											columnNumber: 15
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -554,13 +556,13 @@ function SalesPage() {
 											children: "Acesso imediato • Pagamento seguro Hotmart • 7 dias de garantia"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 165,
+											lineNumber: 169,
 											columnNumber: 15
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 151,
+									lineNumber: 155,
 									columnNumber: 13
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -573,23 +575,23 @@ function SalesPage() {
 										children: "Prefiro só o e-book \"Como Ensinar Teatro com RPG\" por R$ 24,90"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 171,
+										lineNumber: 175,
 										columnNumber: 15
 									}, this)
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 170,
+									lineNumber: 174,
 									columnNumber: 13
 								}, this)
 							]
 						}, void 0, true, {
 							fileName: _jsxFileName,
-							lineNumber: 119,
+							lineNumber: 123,
 							columnNumber: 11
 						}, this)
 					}, void 0, false, {
 						fileName: _jsxFileName,
-						lineNumber: 118,
+						lineNumber: 122,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", {
@@ -598,13 +600,13 @@ function SalesPage() {
 							variant: "blue",
 							icon: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Dices, { className: "h-5 w-5" }, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 180,
+								lineNumber: 184,
 								columnNumber: 46
 							}, this),
 							children: "PERGUNTAS RÁPIDAS"
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 180,
+							lineNumber: 184,
 							columnNumber: 11
 						}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 							className: "grid gap-4",
@@ -626,28 +628,28 @@ function SalesPage() {
 								children: f.q
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 192,
+								lineNumber: 196,
 								columnNumber: 17
 							}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 								className: "text-sm text-muted-foreground",
 								children: f.a
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 193,
+								lineNumber: 197,
 								columnNumber: 17
 							}, this)] }, f.q, true, {
 								fileName: _jsxFileName,
-								lineNumber: 191,
+								lineNumber: 195,
 								columnNumber: 23
 							}, this))
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 181,
+							lineNumber: 185,
 							columnNumber: 11
 						}, this)]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 179,
+						lineNumber: 183,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("footer", {
@@ -659,7 +661,7 @@ function SalesPage() {
 								glow: false
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 200,
+								lineNumber: 204,
 								columnNumber: 13
 							}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 								className: "font-heading text-xl tracking-wide text-foreground",
@@ -670,19 +672,19 @@ function SalesPage() {
 										children: "EM"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 202,
+										lineNumber: 206,
 										columnNumber: 20
 									}, this),
 									" CENA"
 								]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 201,
+								lineNumber: 205,
 								columnNumber: 13
 							}, this)]
 						}, void 0, true, {
 							fileName: _jsxFileName,
-							lineNumber: 199,
+							lineNumber: 203,
 							columnNumber: 11
 						}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 							className: "text-center text-sm text-muted-foreground sm:text-right",
@@ -692,31 +694,31 @@ function SalesPage() {
 								" Nerd em Cena.",
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 207,
+									lineNumber: 211,
 									columnNumber: 13
 								}, this),
 								"Todos os direitos reservados."
 							]
 						}, void 0, true, {
 							fileName: _jsxFileName,
-							lineNumber: 205,
+							lineNumber: 209,
 							columnNumber: 11
 						}, this)]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 198,
+						lineNumber: 202,
 						columnNumber: 9
 					}, this)
 				]
 			}, void 0, true, {
 				fileName: _jsxFileName,
-				lineNumber: 27,
+				lineNumber: 31,
 				columnNumber: 7
 			}, this)
 		]
 	}, void 0, true, {
 		fileName: _jsxFileName,
-		lineNumber: 23,
+		lineNumber: 27,
 		columnNumber: 10
 	}, this);
 }
