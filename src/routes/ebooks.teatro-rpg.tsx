@@ -105,14 +105,14 @@ function SalesPage() {
           </p>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
-            <div className="relative flex justify-center sm:block">
+            <div className="relative flex shrink-0 justify-center sm:block">
               <div className="absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" />
               <img
                 src={ebookRpg.url}
                 alt="Capa do e-book Como Ensinar Teatro com RPG"
                 width={300}
                 height={400}
-                className="relative z-10 h-44 w-auto self-center rounded-xl object-contain sm:h-48"
+                className="relative z-10 h-44 w-auto shrink-0 self-center rounded-xl object-contain sm:h-48"
               />
             </div>
             <div className="min-w-0 flex-1">
@@ -227,14 +227,14 @@ function SalesPage() {
             </p>
 
             <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
-              <div className="relative flex justify-center sm:block">
+              <div className="relative flex shrink-0 justify-center sm:block">
                 <div className="absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" />
                 <img
                   src={ebookPacote.url}
                   alt="Capa do Super Pacote com 4 e-books de Teatro-RPG"
                   width={400}
                   height={400}
-                  className="relative z-10 h-44 w-auto self-center rounded-xl object-contain sm:h-48"
+                  className="relative z-10 h-44 w-auto shrink-0 self-center rounded-xl object-contain sm:h-48"
                 />
               </div>
               <ul className="grid min-w-0 flex-1 gap-3">

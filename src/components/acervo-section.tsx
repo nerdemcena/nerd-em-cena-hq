@@ -90,7 +90,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                   height={214}
                   loading="lazy"
                   decoding="async"
-                  className="h-40 w-auto self-center rounded-xl object-contain sm:h-32"
+                  className="h-40 w-auto shrink-0 self-center rounded-xl object-contain sm:h-32"
                 />
                 <div className="min-w-0 flex-1 text-center sm:text-left">
                   {item.tag && (
