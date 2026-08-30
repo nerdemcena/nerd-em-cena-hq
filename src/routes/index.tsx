@@ -109,17 +109,16 @@ export function Index() {
             </div>
 
             <p className="mt-4 max-w-md text-sm text-muted-foreground sm:text-base">
-              Animes, games, RPG e cobertura de eventos sempre{" "}
-              <span className="font-semibold text-white">com humor!</span>
+              Animes, games, Eventos e RPG
             </p>
           </div>
         </header>
 
-        {/* VEJA NOSSOS VÍDEOS */}
+        {/* NOSSO CONTEÚDO */}
         <section className="mt-7">
           <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
             <SectionTitle icon={<Clapperboard className="h-5 w-5" />}>
-              VEJA NOSSOS VÍDEOS
+              NOSSO CONTEÚDO
             </SectionTitle>
             <div className="grid grid-cols-1 gap-3.5 sm:gap-4">
               <SocialButton

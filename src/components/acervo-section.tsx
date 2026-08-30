@@ -58,7 +58,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
       <div className="rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
         <SectionTitle
           icon={<BookOpen className="h-5 w-5" />}
-          subtitle="Nossos e-books sobre teatro, RPG e cultura pop."
+          subtitle="Nossos E-books autorais escritos por Rogério Horvat"
         >
           ACERVO ORIGINAL
         </SectionTitle>
@@ -84,7 +84,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                       {item.tag}
                     </span>
                   )}
-                  <h3 className="font-heading text-lg leading-tight tracking-wide text-[#ff6500] sm:text-xl">
+                  <h3 className="font-heading text-lg leading-tight tracking-wide text-white sm:text-xl">
                     {item.title}
                   </h3>
                   <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>

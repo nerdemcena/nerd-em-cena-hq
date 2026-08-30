@@ -13,7 +13,7 @@ export function SectionTitle({ icon, children, subtitle }: SectionTitleProps) {
         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold text-black shadow-[inset_-2px_-3px_0_#b38a00]">
           {icon}
         </div>
-        <h2 className="font-heading text-3xl tracking-wide text-foreground md:text-4xl">
+        <h2 className="font-heading text-[26px] sm:text-3xl tracking-wide text-foreground md:text-4xl whitespace-nowrap">
           {children}
         </h2>
       </div>
