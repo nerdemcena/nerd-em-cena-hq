@@ -2,6 +2,7 @@ import { ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 import { SectionTitle } from "@/components/section-title";
+// Assets
 const kitCapa = { url: "/assets-v1/kit-iniciante-capa.jpg" };
 const ebookPacote = { url: "/assets-v1/ebook-pacote.png" };
 const ebookRpg = { url: "/assets-v1/ebook-rpg.jpg" };

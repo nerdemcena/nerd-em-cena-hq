@@ -1,3 +1,4 @@
+// Asset logo
 const logoAsset = { url: "/assets-v1/logo-nerd-em-cena.png" };
 
 interface NerdLogoProps {

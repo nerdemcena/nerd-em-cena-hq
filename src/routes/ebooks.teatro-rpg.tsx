@@ -3,6 +3,7 @@ import { ArrowRight, Book, BookOpen, Check, Dices, Sparkles, Star, Users } from 
 
 import { NerdLogo } from "@/components/nerd-logo";
 import { SectionTitle } from "@/components/section-title";
+// Ebook assets
 const ebookRpg = { url: "/assets-v1/ebook-rpg.jpg" };
 const ebookPacote = { url: "/assets-v1/ebook-pacote.png" };
 

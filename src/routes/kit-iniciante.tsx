@@ -17,6 +17,7 @@ import {
   MessageSquare,
 } from "lucide-react";
 
+// Kit assets
 const kitPdf = { url: "/assets-v1/kit-iniciante.pdf" };
 const livroCapa = { url: "/assets-v1/livro-teatro-rpg-capa.png" };
 
