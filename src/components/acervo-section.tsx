@@ -16,6 +16,7 @@ export interface AcervoItem {
   href: string;
   cta?: string;
   tag?: string;
+  variant?: "default" | "blue";
 }
 
 export const ACERVO_ITEMS: AcervoItem[] = [
@@ -33,6 +34,7 @@ export const ACERVO_ITEMS: AcervoItem[] = [
     description: "Guia completo para integrar RPG no ensino teatral",
     price: "R$ 24,90",
     href: "/ebooks/teatro-rpg",
+    variant: "blue",
   },
   {
     img: ebookCriancas.url,
@@ -65,8 +67,20 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
         <div className="grid grid-cols-1 gap-5">
           {items.map((item) => {
             const isInternal = item.href.startsWith("/");
+            const isBlue = item.variant === "blue";
             const cardClass =
-              "group flex flex-col gap-3 rounded-2xl border border-gold/30 bg-black p-3 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:flex-row sm:items-center sm:gap-4 sm:p-4";
+              `group flex flex-col gap-3 rounded-2xl border p-3 transition-all duration-300 hover:-translate-y-1 sm:flex-row sm:items-center sm:gap-4 sm:p-4 ${
+                isBlue 
+                  ? "border-blue-900/40 bg-gradient-to-br from-[#0a192f] to-[#020817] hover:border-blue-500/60 shadow-[inset_0_1px_2px_rgba(255,255,255,0.05)]" 
+                  : "border-gold/30 bg-black hover:border-gold"
+              }`;
+            const btnClass = 
+              `transition-colors flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl px-4 py-2.5 text-sm font-bold ${
+                isBlue
+                  ? "bg-blue-600 text-white hover:bg-blue-500 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]"
+                  : "bg-gold text-black group-hover:bg-gold-muted"
+              }`;
+
             const inner = (
               <>
                 <img
@@ -87,9 +101,9 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                   <h3 className="font-heading text-lg leading-tight tracking-wide text-white sm:text-xl">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
+                  <p className={`mt-1 text-sm ${isBlue ? 'text-blue-100/70' : 'text-muted-foreground'}`}>{item.description}</p>
                   <p className="mt-2 flex flex-wrap items-baseline justify-center gap-2 sm:justify-start">
-                    <span className={`font-heading text-2xl ${item.price === 'GRÁTIS' ? 'text-green-500' : 'text-foreground'}`}>
+                    <span className={`font-heading text-2xl ${item.price === 'GRÁTIS' ? 'text-green-500' : isBlue ? 'text-blue-400' : 'text-foreground'}`}>
                       {item.price}
                     </span>
                     {item.oldPrice && (
@@ -99,7 +113,7 @@ export function AcervoSection({ items = ACERVO_ITEMS }: { items?: AcervoItem[] }
                     )}
                   </p>
                 </div>
-                <div className="bg-gold transition-colors group-hover:bg-gold-muted flex shrink-0 items-center justify-center gap-2 sm:justify-between rounded-xl px-4 py-2.5 text-sm font-bold text-black">
+                <div className={btnClass}>
                   <span>{item.cta ?? "COMPRAR"}</span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>

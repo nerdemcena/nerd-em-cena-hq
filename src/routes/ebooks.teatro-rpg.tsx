@@ -86,14 +86,14 @@ export const Route = createFileRoute("/ebooks/teatro-rpg")({
 
 function SalesPage() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-black text-foreground">
+    <div className="relative min-h-screen overflow-x-hidden bg-[#020817] text-foreground">
       <div className="pointer-events-none fixed inset-0 stars" />
-      <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+      <div className="pointer-events-none fixed inset-0 bg-gradient-to-b from-\[#0a192f\] via-transparent to-\[#020817\]" />
 
       <main className="relative mx-auto max-w-3xl px-3 py-6 sm:px-6 sm:py-8">
         {/* Hero — foco em pais nerds e RPGistas */}
-        <section className="rounded-3xl border border-gold/20 bg-black-card/50 p-5 backdrop-blur-sm sm:p-6 md:p-10">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-3 py-1 text-xs font-bold tracking-widest text-gold">
+        <section className="rounded-3xl border border-blue-900/50 bg-[#0a192f]/50 p-5 backdrop-blur-sm sm:p-6 md:p-10">
+          <span className="inline-flex items-center gap-2 rounded-full border border-blue-500/40 px-3 py-1 text-xs font-bold tracking-widest text-blue-400">
             <Dices className="h-3.5 w-3.5" /> E-BOOK NERD EM CENA
           </span>
           <h1 className="mt-4 font-heading text-3xl leading-[1.05] tracking-wide text-foreground sm:text-4xl md:text-6xl">
@@ -105,13 +105,16 @@ function SalesPage() {
           </p>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
-            <img
-              src={ebookRpg.url}
-              alt="Capa do e-book Como Ensinar Teatro com RPG"
-              width={300}
-              height={400}
-              className="h-44 w-auto self-center rounded-xl object-contain sm:h-48"
-            />
+            <div className="relative flex justify-center sm:block">
+              <div className="absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" />
+              <img
+                src={ebookRpg.url}
+                alt="Capa do e-book Como Ensinar Teatro com RPG"
+                width={300}
+                height={400}
+                className="relative z-10 h-44 w-auto self-center rounded-xl object-contain sm:h-48"
+              />
+            </div>
             <div className="min-w-0 flex-1">
               <div className="flex flex-col items-center gap-1 sm:items-start">
                 <span className="font-heading text-4xl leading-none text-gold">R$ 24,90</span>
@@ -123,12 +126,12 @@ function SalesPage() {
                 href={CHECKOUT_UNICO}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gold px-6 py-4 text-sm font-bold text-black transition-transform hover:scale-[1.02]"
+                className="group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 px-4 py-3 sm:px-6 sm:py-4 text-sm font-bold text-white transition-all hover:scale-[1.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_4px_15px_rgba(37,99,235,0.4)] hover:from-blue-400 hover:to-blue-600"
               >
                 QUERO O E-BOOK
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" />
               </a>
-              <p className="mt-3 text-xs text-muted-foreground">
+              <p className="mt-3 text-xs text-center sm:text-left text-muted-foreground">
                 PDF para ler no celular, tablet ou imprimir. Compra segura via Hotmart.
               </p>
             </div>
@@ -139,7 +142,7 @@ function SalesPage() {
             href={CHECKOUT_PACOTE}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-6 block rounded-2xl border border-gold/30 bg-gold/10 p-4 transition-colors hover:bg-gold/20"
+            className="group mt-6 block rounded-2xl border border-blue-900/70 bg-blue-600/10 p-4 transition-colors hover:bg-blue-600/20"
           >
             <div className="flex items-center gap-3">
               <span className="relative flex h-10 w-10 shrink-0 items-center justify-center text-gold">
@@ -166,8 +169,8 @@ function SalesPage() {
         </section>
 
         {/* O que você aprende */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-          <SectionTitle
+        <section className="mt-6 rounded-3xl border border-blue-900/50 bg-[#0a192f]/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
+          <SectionTitle variant="blue"
             icon={<Sparkles className="h-5 w-5" />}
             subtitle="Nada de teoria solta: tudo pensado para aplicar na próxima mesa ou aula."
           >
@@ -176,7 +179,7 @@ function SalesPage() {
           <ul className="grid gap-3">
             {APRENDIZADOS.map((a) => (
               <li key={a} className="flex items-start gap-3 text-sm">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold text-black">
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white">
                   <Check className="h-4 w-4" />
                 </span>
                 <span className="text-foreground">{a}</span>
@@ -186,8 +189,8 @@ function SalesPage() {
         </section>
 
         {/* Para quem é — pais nerds e RPGistas em primeiro lugar */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-          <SectionTitle icon={<Users className="h-5 w-5" />}>PARA QUEM É</SectionTitle>
+        <section className="mt-6 rounded-3xl border border-blue-900/50 bg-[#0a192f]/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
+          <SectionTitle variant="blue" icon={<Users className="h-5 w-5" />}>PARA QUEM É</SectionTitle>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
               "Pais nerds que jogam RPG com os filhos",
@@ -197,9 +200,12 @@ function SalesPage() {
             ].map((p) => (
               <div
                 key={p}
-                className="rounded-xl border border-gold/25 bg-black p-4 text-sm font-semibold text-foreground"
+                className="group flex items-start gap-3 rounded-xl border border-blue-900/60 bg-[#020817] p-4 text-sm font-semibold text-foreground transition-all hover:-translate-y-1 hover:border-blue-500/40 hover:shadow-[0_4px_20px_-5px_rgba(37,99,235,0.3)]"
               >
-                {p}
+                <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition-colors group-hover:bg-gold group-hover:text-black">
+                  <Check className="h-3 w-3" />
+                </div>
+                <span className="leading-snug">{p}</span>
               </div>
             ))}
           </div>
@@ -207,11 +213,11 @@ function SalesPage() {
 
         {/* Oferta do pacote — destaque */}
         <section className="mt-8">
-          <div className="relative overflow-hidden rounded-3xl border-2 border-gold bg-black-card p-5 gold-glow sm:p-6 md:p-10">
+          <div className="relative overflow-hidden rounded-3xl border-2 border-blue-600 bg-[#0a192f] p-5 shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] sm:p-6 md:p-10">
             <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold tracking-widest text-black">
               <Star className="h-3.5 w-3.5" /> ESCOLHA INTELIGENTE
             </span>
-            <h2 className="mt-4 font-heading text-2xl leading-tight tracking-wide text-gold sm:text-3xl md:text-5xl">
+            <h2 className="mt-4 font-heading text-2xl leading-tight tracking-wide text-white sm:text-3xl md:text-5xl">
               LEVE O PACOTE COMPLETO
             </h2>
             <p className="mt-3 text-sm text-muted-foreground md:text-base">
@@ -221,17 +227,20 @@ function SalesPage() {
             </p>
 
             <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
-              <img
-                src={ebookPacote.url}
-                alt="Capa do Super Pacote com 4 e-books de Teatro-RPG"
-                width={400}
-                height={400}
-                className="h-44 w-auto self-center rounded-xl object-contain sm:h-48"
-              />
+              <div className="relative flex justify-center sm:block">
+                <div className="absolute inset-0 scale-125 rounded-full bg-blue-500/20 blur-2xl" />
+                <img
+                  src={ebookPacote.url}
+                  alt="Capa do Super Pacote com 4 e-books de Teatro-RPG"
+                  width={400}
+                  height={400}
+                  className="relative z-10 h-44 w-auto self-center rounded-xl object-contain sm:h-48"
+                />
+              </div>
               <ul className="grid min-w-0 flex-1 gap-3">
                 {PACOTE_ITEMS.map((item) => (
                   <li key={item.title} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold text-black">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white">
                       <BookOpen className="h-3.5 w-3.5" />
                     </span>
                     <span className="text-sm">
@@ -244,7 +253,7 @@ function SalesPage() {
               </ul>
             </div>
 
-            <div className="mt-6 rounded-2xl border border-gold/30 bg-black p-5">
+            <div className="mt-6 rounded-2xl border border-blue-900/70 bg-[#020817] p-5">
               <p className="flex flex-wrap items-baseline gap-3">
                 <span className="text-sm text-muted-foreground line-through">R$ 69,80</span>
                 <span className="font-heading text-3xl text-gold sm:text-4xl md:text-5xl">
@@ -258,10 +267,10 @@ function SalesPage() {
                 href={CHECKOUT_PACOTE}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gold px-6 py-4 text-base font-bold text-black transition-transform hover:scale-[1.02]"
+                className="group mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 px-4 py-3 sm:px-6 sm:py-4 text-sm sm:text-base font-bold text-white transition-all hover:scale-[1.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_4px_15px_rgba(37,99,235,0.4)] hover:from-blue-400 hover:to-blue-600"
               >
                 QUERO OS 4 E-BOOKS
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
               </a>
               <p className="mt-3 text-center text-xs text-muted-foreground">
                 Acesso imediato • Pagamento seguro Hotmart • 7 dias de garantia
@@ -273,7 +282,7 @@ function SalesPage() {
                 href={CHECKOUT_UNICO}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-muted-foreground underline underline-offset-4 hover:text-gold"
+                className="text-xs text-muted-foreground underline underline-offset-4 hover:text-blue-400"
               >
                 Prefiro só o e-book "Como Ensinar Teatro com RPG" por R$ 24,90
               </a>
@@ -282,8 +291,8 @@ function SalesPage() {
         </section>
 
         {/* FAQ simples */}
-        <section className="mt-6 rounded-3xl border border-gold/20 bg-black-card/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
-          <SectionTitle icon={<Dices className="h-5 w-5" />}>PERGUNTAS RÁPIDAS</SectionTitle>
+        <section className="mt-6 rounded-3xl border border-blue-900/50 bg-[#0a192f]/50 p-4 backdrop-blur-sm sm:p-6 md:p-8">
+          <SectionTitle variant="blue" icon={<Dices className="h-5 w-5" />}>PERGUNTAS RÁPIDAS</SectionTitle>
           <div className="grid gap-4">
             {[
               {
@@ -300,14 +309,14 @@ function SalesPage() {
               },
             ].map((f) => (
               <div key={f.q}>
-                <p className="font-heading text-lg tracking-wide text-gold">{f.q}</p>
+                <p className="font-heading text-lg tracking-wide text-blue-400">{f.q}</p>
                 <p className="text-sm text-muted-foreground">{f.a}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <footer className="mt-12 flex flex-col items-center gap-4 border-t border-gold/20 py-8 sm:flex-row sm:justify-between">
+        <footer className="mt-12 flex flex-col items-center gap-4 border-t border-blue-900/50 py-8 sm:flex-row sm:justify-between">
           <div className="flex items-center gap-3">
             <NerdLogo className="h-12 w-12" glow={false} />
             <p className="font-heading text-xl tracking-wide text-foreground">
