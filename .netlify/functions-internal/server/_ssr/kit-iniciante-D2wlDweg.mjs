@@ -3,7 +3,7 @@ import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
 import { r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { A as ArrowRight, E as CircleCheckBig, S as Download, b as Gamepad2, f as Phone, g as Mail, h as Map, i as User, j as ArrowLeft, l as Shield, p as MessageSquare, u as Scroll, v as LoaderCircle, x as FileText } from "../_libs/lucide-react.mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/kit-iniciante-DHgfzFgn.js
+//#region node_modules/.nitro/vite/services/ssr/assets/kit-iniciante-D2wlDweg.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var _jsxFileName = "/app/applet/src/routes/kit-iniciante.tsx?tsr-split=component";
@@ -27,37 +27,37 @@ function D20Icon({ size = 60, stroke = "#D64585", className = "" }) {
 		children: [
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 32,
+				lineNumber: 34,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M50 5 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 34,
+				lineNumber: 36,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M90 25 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 35,
+				lineNumber: 37,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M90 75 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 36,
+				lineNumber: 38,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M50 95 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 37,
+				lineNumber: 39,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M10 75 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 38,
+				lineNumber: 40,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M10 25 L50 50" }, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 39,
+				lineNumber: 41,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", {
@@ -65,13 +65,13 @@ function D20Icon({ size = 60, stroke = "#D64585", className = "" }) {
 				opacity: "0.5"
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 41,
+				lineNumber: 43,
 				columnNumber: 7
 			}, this)
 		]
 	}, void 0, true, {
 		fileName: _jsxFileName,
-		lineNumber: 30,
+		lineNumber: 32,
 		columnNumber: 10
 	}, this);
 }
@@ -136,7 +136,7 @@ function KitIniciantePage() {
 				children: "Kit Iniciante de Teatro-RPG — Download gratuito"
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 109,
+				lineNumber: 111,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -146,12 +146,12 @@ function KitIniciantePage() {
 					stroke: "#9D174D"
 				}, void 0, false, {
 					fileName: _jsxFileName,
-					lineNumber: 113,
+					lineNumber: 115,
 					columnNumber: 9
 				}, this)
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 112,
+				lineNumber: 114,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -162,12 +162,12 @@ function KitIniciantePage() {
 					strokeWidth: 1.5
 				}, void 0, false, {
 					fileName: _jsxFileName,
-					lineNumber: 117,
+					lineNumber: 119,
 					columnNumber: 9
 				}, this)
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 116,
+				lineNumber: 118,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -178,12 +178,12 @@ function KitIniciantePage() {
 					strokeWidth: 1.5
 				}, void 0, false, {
 					fileName: _jsxFileName,
-					lineNumber: 121,
+					lineNumber: 123,
 					columnNumber: 9
 				}, this)
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 120,
+				lineNumber: 122,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -194,12 +194,12 @@ function KitIniciantePage() {
 					className: "rotate-12"
 				}, void 0, false, {
 					fileName: _jsxFileName,
-					lineNumber: 125,
+					lineNumber: 127,
 					columnNumber: 9
 				}, this)
 			}, void 0, false, {
 				fileName: _jsxFileName,
-				lineNumber: 124,
+				lineNumber: 126,
 				columnNumber: 7
 			}, this),
 			/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -207,22 +207,22 @@ function KitIniciantePage() {
 				children: [
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute top-2 left-2 w-2 h-2 rounded-full bg-[#2D1B2E] opacity-50" }, void 0, false, {
 						fileName: _jsxFileName,
-						lineNumber: 131,
+						lineNumber: 133,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute top-2 right-2 w-2 h-2 rounded-full bg-[#2D1B2E] opacity-50" }, void 0, false, {
 						fileName: _jsxFileName,
-						lineNumber: 132,
+						lineNumber: 134,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute bottom-2 left-2 w-2 h-2 rounded-full bg-[#2D1B2E] opacity-50" }, void 0, false, {
 						fileName: _jsxFileName,
-						lineNumber: 133,
+						lineNumber: 135,
 						columnNumber: 9
 					}, this),
 					/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute bottom-2 right-2 w-2 h-2 rounded-full bg-[#2D1B2E] opacity-50" }, void 0, false, {
 						fileName: _jsxFileName,
-						lineNumber: 134,
+						lineNumber: 136,
 						columnNumber: 9
 					}, this),
 					!submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, { children: [
@@ -235,19 +235,19 @@ function KitIniciantePage() {
 									children: "Pronto para começar sua aventura?"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 140,
+									lineNumber: 142,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 									className: "text-xl md:text-2xl font-rpg text-[#D64585] whitespace-normal sm:whitespace-nowrap font-bold leading-tight",
 									children: "Baixe o Kit Iniciante de Teatro-RPG"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 143,
+									lineNumber: 145,
 									columnNumber: 17
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 139,
+								lineNumber: 141,
 								columnNumber: 15
 							}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 								className: "w-full bg-[#FDF2D0] border-[3px] border-[#2D1B2E] p-5 shadow-[4px_4px_0px_0px_rgba(45,27,46,0.3)] transform rotate-1 hover:rotate-0 transition-transform duration-300 mt-2 relative",
@@ -256,7 +256,7 @@ function KitIniciantePage() {
 									children: "Inventário do Kit"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 150,
+									lineNumber: 152,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
 									className: "space-y-4 mt-2",
@@ -270,12 +270,12 @@ function KitIniciantePage() {
 													className: "text-[#2D1B2E]"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 157,
+													lineNumber: 159,
 													columnNumber: 23
 												}, this)
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 156,
+												lineNumber: 158,
 												columnNumber: 21
 											}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 												className: "text-sm leading-snug text-[#2D1B2E]",
@@ -284,17 +284,17 @@ function KitIniciantePage() {
 													children: "Ficha de Personagem Exclusiva:"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 160,
+													lineNumber: 162,
 													columnNumber: 23
 												}, this), "Um modelo simples para organizar ideias, habilidades e até os medos dos personagens."]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 159,
+												lineNumber: 161,
 												columnNumber: 21
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 155,
+											lineNumber: 157,
 											columnNumber: 19
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
@@ -306,12 +306,12 @@ function KitIniciantePage() {
 													className: "text-[#2D1B2E]"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 169,
+													lineNumber: 171,
 													columnNumber: 23
 												}, this)
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 168,
+												lineNumber: 170,
 												columnNumber: 21
 											}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 												className: "text-sm leading-snug text-[#2D1B2E]",
@@ -320,17 +320,17 @@ function KitIniciantePage() {
 													children: "Guia de 2 Jogos Práticos:"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 172,
+													lineNumber: 174,
 													columnNumber: 23
 												}, this), "Instruções para as dinâmicas que treinam foco, prontidão e aquecem para o jogo."]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 171,
+												lineNumber: 173,
 												columnNumber: 21
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 167,
+											lineNumber: 169,
 											columnNumber: 19
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
@@ -342,12 +342,12 @@ function KitIniciantePage() {
 													className: "text-[#2D1B2E]"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 181,
+													lineNumber: 183,
 													columnNumber: 23
 												}, this)
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 180,
+												lineNumber: 182,
 												columnNumber: 21
 											}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 												className: "text-sm leading-snug text-[#2D1B2E]",
@@ -356,38 +356,38 @@ function KitIniciantePage() {
 													children: "Uma Aventura Base:"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 184,
+													lineNumber: 186,
 													columnNumber: 23
 												}, this), "Um pequeno mundo para criar sua aventura a partir dele."]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 183,
+												lineNumber: 185,
 												columnNumber: 21
 											}, this)]
 										}, void 0, true, {
 											fileName: _jsxFileName,
-											lineNumber: 179,
+											lineNumber: 181,
 											columnNumber: 19
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 154,
+									lineNumber: 156,
 									columnNumber: 17
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 149,
+								lineNumber: 151,
 								columnNumber: 15
 							}, this)]
 						}, void 0, true, {
 							fileName: _jsxFileName,
-							lineNumber: 138,
+							lineNumber: 140,
 							columnNumber: 13
 						}, this),
 						/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("hr", { className: "border-t-2 border-[#2D1B2E] mb-8 border-dashed opacity-50" }, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 194,
+							lineNumber: 196,
 							columnNumber: 13
 						}, this),
 						/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", {
@@ -402,12 +402,12 @@ function KitIniciantePage() {
 										children: "*"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 200,
+										lineNumber: 202,
 										columnNumber: 35
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 199,
+									lineNumber: 201,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 									className: "relative",
@@ -423,23 +423,23 @@ function KitIniciantePage() {
 										placeholder: "Seu nome completo"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 203,
+										lineNumber: 205,
 										columnNumber: 19
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(User, {
 										className: "absolute right-3 top-3.5 text-gray-400 pointer-events-none",
 										size: 20
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 204,
+										lineNumber: 206,
 										columnNumber: 19
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 202,
+									lineNumber: 204,
 									columnNumber: 17
 								}, this)] }, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 198,
+									lineNumber: 200,
 									columnNumber: 15
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", {
@@ -450,12 +450,12 @@ function KitIniciantePage() {
 										children: "*"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 210,
+										lineNumber: 212,
 										columnNumber: 50
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 209,
+									lineNumber: 211,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 									className: "relative",
@@ -471,23 +471,23 @@ function KitIniciantePage() {
 										placeholder: "exemplo@email.com"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 213,
+										lineNumber: 215,
 										columnNumber: 19
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Mail, {
 										className: "absolute right-3 top-3.5 text-gray-400 pointer-events-none",
 										size: 20
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 214,
+										lineNumber: 216,
 										columnNumber: 19
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 212,
+									lineNumber: 214,
 									columnNumber: 17
 								}, this)] }, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 208,
+									lineNumber: 210,
 									columnNumber: 15
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", {
@@ -496,7 +496,7 @@ function KitIniciantePage() {
 									children: "Telefone (Opcional)"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 219,
+									lineNumber: 221,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 									className: "relative",
@@ -511,23 +511,23 @@ function KitIniciantePage() {
 										placeholder: "(00) 00000-0000"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 223,
+										lineNumber: 225,
 										columnNumber: 19
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Phone, {
 										className: "absolute right-3 top-3.5 text-gray-400 pointer-events-none",
 										size: 20
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 224,
+										lineNumber: 226,
 										columnNumber: 19
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 222,
+									lineNumber: 224,
 									columnNumber: 17
 								}, this)] }, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 218,
+									lineNumber: 220,
 									columnNumber: 15
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
@@ -540,7 +540,7 @@ function KitIniciantePage() {
 											children: "Enviando Corvos..."
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 230,
+											lineNumber: 232,
 											columnNumber: 21
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -548,17 +548,17 @@ function KitIniciantePage() {
 											children: "Enviando..."
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 231,
+											lineNumber: 233,
 											columnNumber: 21
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(LoaderCircle, { className: "animate-spin sm:size-6 size-4" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 232,
+											lineNumber: 234,
 											columnNumber: 21
 										}, this)
 									] }, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 229,
+										lineNumber: 231,
 										columnNumber: 30
 									}, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, { children: [
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -566,7 +566,7 @@ function KitIniciantePage() {
 											children: "Iniciar Aventura (Baixar)"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 234,
+											lineNumber: 236,
 											columnNumber: 21
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -574,7 +574,7 @@ function KitIniciantePage() {
 											children: "Baixar Kit"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 235,
+											lineNumber: 237,
 											columnNumber: 21
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Download, {
@@ -582,23 +582,23 @@ function KitIniciantePage() {
 											strokeWidth: 3
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 236,
+											lineNumber: 238,
 											columnNumber: 21
 										}, this)
 									] }, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 233,
+										lineNumber: 235,
 										columnNumber: 25
 									}, this)
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 228,
+									lineNumber: 230,
 									columnNumber: 15
 								}, this)
 							]
 						}, void 0, true, {
 							fileName: _jsxFileName,
-							lineNumber: 197,
+							lineNumber: 199,
 							columnNumber: 13
 						}, this),
 						/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -613,19 +613,19 @@ function KitIniciantePage() {
 									children: [
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "Direct (Instagram)" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 245,
+											lineNumber: 247,
 											columnNumber: 19
 										}, this),
 										" ",
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(MessageSquare, { size: 16 }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 245,
+											lineNumber: 247,
 											columnNumber: 51
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 244,
+									lineNumber: 246,
 									columnNumber: 17
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
 									href: "mailto:contato.nerdemcena@gmail.com",
@@ -633,34 +633,34 @@ function KitIniciantePage() {
 									children: [
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "E-mail" }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 248,
+											lineNumber: 250,
 											columnNumber: 19
 										}, this),
 										" ",
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Mail, { size: 16 }, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 248,
+											lineNumber: 250,
 											columnNumber: 39
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 247,
+									lineNumber: 249,
 									columnNumber: 17
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 243,
+								lineNumber: 245,
 								columnNumber: 15
 							}, this)
 						}, void 0, false, {
 							fileName: _jsxFileName,
-							lineNumber: 242,
+							lineNumber: 244,
 							columnNumber: 13
 						}, this)
 					] }, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 136,
+						lineNumber: 138,
 						columnNumber: 23
 					}, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 						className: "flex flex-col items-center text-center animate-pulse-slow py-8 px-4",
@@ -669,7 +669,7 @@ function KitIniciantePage() {
 								className: "mb-6 relative",
 								children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "absolute inset-0 blur-xl opacity-50 rounded-full bg-green-200" }, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 255,
+									lineNumber: 257,
 									columnNumber: 15
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(CircleCheckBig, {
 									size: 80,
@@ -677,12 +677,12 @@ function KitIniciantePage() {
 									strokeWidth: 1.5
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 256,
+									lineNumber: 258,
 									columnNumber: 15
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 254,
+								lineNumber: 256,
 								columnNumber: 13
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
@@ -690,7 +690,7 @@ function KitIniciantePage() {
 								children: "Sua aventura já vai começar!"
 							}, void 0, false, {
 								fileName: _jsxFileName,
-								lineNumber: 259,
+								lineNumber: 261,
 								columnNumber: 13
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -700,7 +700,7 @@ function KitIniciantePage() {
 									children: "Missão Aceita"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 264,
+									lineNumber: 266,
 									columnNumber: 15
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
 									className: "text-[#2D1B2E] text-lg leading-relaxed",
@@ -712,25 +712,25 @@ function KitIniciantePage() {
 											children: "Kit do Aventureiro Iniciante"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 269,
+											lineNumber: 271,
 											columnNumber: 17
 										}, this),
 										" ",
 										"já está a caminho do seu e-mail.",
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 273,
+											lineNumber: 275,
 											columnNumber: 17
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 274,
+											lineNumber: 276,
 											columnNumber: 17
 										}, this),
 										"Em alguns minutos você receberá o material com a ficha, os jogos e a aventura base para começar.",
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 277,
+											lineNumber: 279,
 											columnNumber: 17
 										}, this),
 										/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -738,18 +738,18 @@ function KitIniciantePage() {
 											children: "(Confere o Spam também! 😉)"
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 278,
+											lineNumber: 280,
 											columnNumber: 17
 										}, this)
 									]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 267,
+									lineNumber: 269,
 									columnNumber: 15
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 263,
+								lineNumber: 265,
 								columnNumber: 13
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -759,7 +759,7 @@ function KitIniciantePage() {
 									children: "Oferta Especial"
 								}, void 0, false, {
 									fileName: _jsxFileName,
-									lineNumber: 285,
+									lineNumber: 287,
 									columnNumber: 15
 								}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 									className: "flex flex-col md:flex-row items-center gap-6 mt-4",
@@ -774,17 +774,17 @@ function KitIniciantePage() {
 												className: "w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 293,
+												lineNumber: 295,
 												columnNumber: 21
 											}, this)
 										}, void 0, false, {
 											fileName: _jsxFileName,
-											lineNumber: 292,
+											lineNumber: 294,
 											columnNumber: 19
 										}, this)
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 291,
+										lineNumber: 293,
 										columnNumber: 17
 									}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 										className: "text-left flex-1 flex flex-col items-center md:items-start",
@@ -794,7 +794,7 @@ function KitIniciantePage() {
 												children: "Quer ir além do Kit Iniciante?"
 											}, void 0, false, {
 												fileName: _jsxFileName,
-												lineNumber: 298,
+												lineNumber: 300,
 												columnNumber: 19
 											}, this),
 											/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -807,7 +807,7 @@ function KitIniciantePage() {
 														children: "\"Como Ensinar Teatro com RPG\""
 													}, void 0, false, {
 														fileName: _jsxFileName,
-														lineNumber: 303,
+														lineNumber: 305,
 														columnNumber: 21
 													}, this),
 													" ",
@@ -815,7 +815,7 @@ function KitIniciantePage() {
 												]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 301,
+												lineNumber: 303,
 												columnNumber: 19
 											}, this),
 											/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, {
@@ -823,35 +823,35 @@ function KitIniciantePage() {
 												className: "inline-flex items-center justify-center gap-2 bg-[#D64585] text-white font-bold py-3 px-6 border-[2px] border-[#2D1B2E] shadow-[4px_4px_0px_0px_#2D1B2E] hover:shadow-[2px_2px_0px_0px_#2D1B2E] hover:translate-y-1 hover:translate-x-1 transition-all font-rpg tracking-wider text-sm uppercase w-full md:w-auto text-center no-underline rounded-sm group",
 												children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "Ver o Livro Completo" }, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 308,
+													lineNumber: 310,
 													columnNumber: 21
 												}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowRight, {
 													size: 18,
 													className: "group-hover:translate-x-1 transition-transform"
 												}, void 0, false, {
 													fileName: _jsxFileName,
-													lineNumber: 309,
+													lineNumber: 311,
 													columnNumber: 21
 												}, this)]
 											}, void 0, true, {
 												fileName: _jsxFileName,
-												lineNumber: 307,
+												lineNumber: 309,
 												columnNumber: 19
 											}, this)
 										]
 									}, void 0, true, {
 										fileName: _jsxFileName,
-										lineNumber: 297,
+										lineNumber: 299,
 										columnNumber: 17
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName,
-									lineNumber: 289,
+									lineNumber: 291,
 									columnNumber: 15
 								}, this)]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 284,
+								lineNumber: 286,
 								columnNumber: 13
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -864,7 +864,7 @@ function KitIniciantePage() {
 										children: "BAIXAR KIT INICIANTE (PDF)"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 316,
+										lineNumber: 318,
 										columnNumber: 15
 									}, this),
 									/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -872,7 +872,7 @@ function KitIniciantePage() {
 										children: "BAIXAR KIT (PDF)"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 317,
+										lineNumber: 319,
 										columnNumber: 15
 									}, this),
 									/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Download, {
@@ -880,13 +880,13 @@ function KitIniciantePage() {
 										strokeWidth: 3
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 318,
+										lineNumber: 320,
 										columnNumber: 15
 									}, this)
 								]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 315,
+								lineNumber: 317,
 								columnNumber: 13
 							}, this),
 							/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
@@ -895,7 +895,7 @@ function KitIniciantePage() {
 								children: [
 									/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowLeft, { size: 18 }, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 322,
+										lineNumber: 324,
 										columnNumber: 15
 									}, this),
 									/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -903,7 +903,7 @@ function KitIniciantePage() {
 										children: "Voltar (Nova Aventura)"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 323,
+										lineNumber: 325,
 										columnNumber: 15
 									}, this),
 									/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
@@ -911,31 +911,31 @@ function KitIniciantePage() {
 										children: "Voltar"
 									}, void 0, false, {
 										fileName: _jsxFileName,
-										lineNumber: 324,
+										lineNumber: 326,
 										columnNumber: 15
 									}, this)
 								]
 							}, void 0, true, {
 								fileName: _jsxFileName,
-								lineNumber: 321,
+								lineNumber: 323,
 								columnNumber: 13
 							}, this)
 						]
 					}, void 0, true, {
 						fileName: _jsxFileName,
-						lineNumber: 253,
+						lineNumber: 255,
 						columnNumber: 7
 					}, this)
 				]
 			}, void 0, true, {
 				fileName: _jsxFileName,
-				lineNumber: 129,
+				lineNumber: 131,
 				columnNumber: 7
 			}, this)
 		]
 	}, void 0, true, {
 		fileName: _jsxFileName,
-		lineNumber: 108,
+		lineNumber: 110,
 		columnNumber: 10
 	}, this);
 }

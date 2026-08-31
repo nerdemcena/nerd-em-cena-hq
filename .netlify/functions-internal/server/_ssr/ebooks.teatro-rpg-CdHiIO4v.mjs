@@ -1,5 +1,5 @@
 import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-CQTq-Tfl.js
+//#region node_modules/.nitro/vite/services/ssr/assets/ebooks.teatro-rpg-CdHiIO4v.js
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var _jsxFileName$1 = "/app/applet/src/components/nerd-logo.tsx";
 var logoAsset = { url: "/assets-v1/logo-nerd-em-cena.png" };
@@ -13,12 +13,12 @@ function NerdLogo({ className = "h-28 w-28", alt = "Nerd em Cena", glow = true, 
 			className: `h-full w-full rounded-full object-contain ${glow ? "drop-shadow-[0_0_30px_rgba(232,191,20,0.5)]" : ""}`
 		}, void 0, false, {
 			fileName: _jsxFileName$1,
-			lineNumber: 20,
+			lineNumber: 21,
 			columnNumber: 7
 		}, this)
 	}, void 0, false, {
 		fileName: _jsxFileName$1,
-		lineNumber: 17,
+		lineNumber: 18,
 		columnNumber: 5
 	}, this);
 }

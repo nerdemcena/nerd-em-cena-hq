@@ -1,11 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-import { n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CQTq-Tfl.mjs";
+import { n as NerdLogo, r as SectionTitle, t as CHECKOUT_UNICO } from "./ebooks.teatro-rpg-CdHiIO4v.mjs";
 import { r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { A as ArrowRight, T as Clapperboard, _ as Lock, a as Trophy, b as Gamepad2, d as Play, g as Mail, j as ArrowLeft, k as BookOpen, m as MessageCircle, n as Youtube, o as Swords, p as MessageSquare, t as Zap, w as Crown, y as Instagram } from "../_libs/lucide-react.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CSve4djS.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-C3L7R9gX.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var styles_default = "/assets/styles-BCTD-eqq.css";
@@ -440,14 +440,14 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 			children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(SectionTitle, {
 				icon: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(BookOpen, { className: "h-5 w-5" }, void 0, false, {
 					fileName: _jsxFileName$3,
-					lineNumber: 62,
+					lineNumber: 63,
 					columnNumber: 17
 				}, this),
 				subtitle: "Nossos E-books autorais escritos por Rogério Horvat",
 				children: "ACERVO ORIGINAL"
 			}, void 0, false, {
 				fileName: _jsxFileName$3,
-				lineNumber: 61,
+				lineNumber: 62,
 				columnNumber: 9
 			}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 				className: "grid grid-cols-1 gap-5",
@@ -467,7 +467,7 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 							className: "h-40 w-auto shrink-0 self-center rounded-xl object-contain sm:h-32"
 						}, void 0, false, {
 							fileName: _jsxFileName$3,
-							lineNumber: 86,
+							lineNumber: 87,
 							columnNumber: 17
 						}, this),
 						/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -478,7 +478,7 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 									children: item.tag
 								}, void 0, false, {
 									fileName: _jsxFileName$3,
-									lineNumber: 97,
+									lineNumber: 98,
 									columnNumber: 21
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", {
@@ -486,7 +486,7 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 									children: item.title
 								}, void 0, false, {
 									fileName: _jsxFileName$3,
-									lineNumber: 101,
+									lineNumber: 102,
 									columnNumber: 19
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -494,7 +494,7 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 									children: item.description
 								}, void 0, false, {
 									fileName: _jsxFileName$3,
-									lineNumber: 104,
+									lineNumber: 105,
 									columnNumber: 19
 								}, this),
 								/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -504,46 +504,46 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 										children: item.price
 									}, void 0, false, {
 										fileName: _jsxFileName$3,
-										lineNumber: 106,
+										lineNumber: 107,
 										columnNumber: 21
 									}, this), item.oldPrice && /* @__PURE__ */ (void 0)("span", {
 										className: "text-sm text-muted-foreground line-through",
 										children: item.oldPrice
 									}, void 0, false, {
 										fileName: _jsxFileName$3,
-										lineNumber: 110,
+										lineNumber: 111,
 										columnNumber: 23
 									}, this)]
 								}, void 0, true, {
 									fileName: _jsxFileName$3,
-									lineNumber: 105,
+									lineNumber: 106,
 									columnNumber: 19
 								}, this)
 							]
 						}, void 0, true, {
 							fileName: _jsxFileName$3,
-							lineNumber: 95,
+							lineNumber: 96,
 							columnNumber: 17
 						}, this),
 						/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
 							className: btnClass,
 							children: [/* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: item.cta ?? "COMPRAR" }, void 0, false, {
 								fileName: _jsxFileName$3,
-								lineNumber: 117,
+								lineNumber: 118,
 								columnNumber: 19
 							}, this), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" }, void 0, false, {
 								fileName: _jsxFileName$3,
-								lineNumber: 118,
+								lineNumber: 119,
 								columnNumber: 19
 							}, this)]
 						}, void 0, true, {
 							fileName: _jsxFileName$3,
-							lineNumber: 116,
+							lineNumber: 117,
 							columnNumber: 17
 						}, this)
 					] }, void 0, true, {
 						fileName: _jsxFileName$3,
-						lineNumber: 85,
+						lineNumber: 86,
 						columnNumber: 15
 					}, this);
 					return isInternal ? /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, {
@@ -552,7 +552,7 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 						children: inner
 					}, item.title, false, {
 						fileName: _jsxFileName$3,
-						lineNumber: 123,
+						lineNumber: 124,
 						columnNumber: 15
 					}, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
 						href: item.href,
@@ -562,23 +562,23 @@ function AcervoSection({ items = ACERVO_ITEMS }) {
 						children: inner
 					}, item.title, false, {
 						fileName: _jsxFileName$3,
-						lineNumber: 127,
+						lineNumber: 128,
 						columnNumber: 15
 					}, this);
 				})
 			}, void 0, false, {
 				fileName: _jsxFileName$3,
-				lineNumber: 67,
+				lineNumber: 68,
 				columnNumber: 9
 			}, this)]
 		}, void 0, true, {
 			fileName: _jsxFileName$3,
-			lineNumber: 60,
+			lineNumber: 61,
 			columnNumber: 7
 		}, this)
 	}, void 0, false, {
 		fileName: _jsxFileName$3,
-		lineNumber: 59,
+		lineNumber: 60,
 		columnNumber: 5
 	}, this);
 }
@@ -1164,7 +1164,7 @@ function Index() {
 		columnNumber: 5
 	}, this);
 }
-var $$splitComponentImporter$1 = () => import("./kit-iniciante-DHgfzFgn.mjs");
+var $$splitComponentImporter$1 = () => import("./kit-iniciante-D2wlDweg.mjs");
 var Route$3 = createFileRoute("/kit-iniciante")({
 	head: () => ({
 		meta: [
@@ -3375,7 +3375,7 @@ function TorneiosPage() {
 		columnNumber: 5
 	}, this);
 }
-var $$splitComponentImporter = () => import("./ebooks.teatro-rpg-DHXA8mwp.mjs");
+var $$splitComponentImporter = () => import("./ebooks.teatro-rpg-rTgkVKML.mjs");
 var Route = createFileRoute("/ebooks/teatro-rpg")({
 	head: () => ({
 		meta: [
